@@ -11,6 +11,6 @@
 // For simplicity, all the SPI devices connect to the same clock, produced
 // somewhere else.
 
-module spi
-(output clock);
+module Spi
+(input clock);
 endmodule

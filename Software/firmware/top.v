@@ -6,8 +6,11 @@
 // It is stateful. More specifically, it is a state machine. It means that at a
 // given point, not all functions can be called. For instance, to change the
 // target distance it is required to stop the scanning.
+//
+// For simplicity, the clock signal is the same on the FPGA and the SPI devices.
+// For now, there's no need to deal with synchronization problems.
 
 module top
-(output spi_clock);
-Clock clock (spi_clock);
+(input clk);
+Spi spi1 (clk);
 endmodule
