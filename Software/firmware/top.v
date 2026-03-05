@@ -12,5 +12,18 @@
 
 module top
 (input clk);
-Spi spi1 (clk);
+// To keep things consistent, I'm rejecting abbreviations. But I guess is a good
+// thing to not change generated files manually, so I'm keeping the external
+// input clk with the same name, and just naming a wire according to my
+// conventions.
+wire clock = clk;
+
+// There should be a better way to define an array of modules, but let's keep it
+// simple for now.
+Dac dac1(clock);
+Dac dac2(clock);
+Dac dac3(clock);
+Dac dac4(clock);
+Dac dac5(clock);
+
 endmodule
