@@ -18,6 +18,11 @@ module top
 // conventions.
 wire clock = clk;
 
+localparam IDLE = 1'b0;
+localparam SCANNING = 1'b1;
+
+reg state = IDLE;
+
 // There should be a better way to define an array of modules, but let's keep it
 // simple for now.
 Dac dac1(clock);
