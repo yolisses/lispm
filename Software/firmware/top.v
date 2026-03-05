@@ -8,6 +8,6 @@
 // target distance it is required to stop the scanning.
 
 module top
-
-    
+(output spi_clock);
+Clock clock (spi_clock);
 endmodule
