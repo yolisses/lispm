@@ -10,7 +10,7 @@ marketing and lessons learned.
 It is based on some previous DIY STM’s:  
 [Dan Berard’s STM](https://dberard.com/home-built-stm/)  
 [Open STM by Weilin
-Ma](https://www.hardware-x.com/article/S2468-0672\(23\)00111-6/fulltext)  
+Ma](<https://www.hardware-x.com/article/S2468-0672(23)00111-6/fulltext>)  
 [Red Panda STM by Mech Red Panda](https://github.com/MechRedPanda/red-panda-stm)  
 All of them achieved atomic imaging of HOPG samples. Dan Berard also reported
 images of atomic layers of metals, but with no separation of atoms (due to the
@@ -81,7 +81,7 @@ at the right position any time.
 
 ## DAC (AD5761R)
 
-[https://www.analog.com/media/en/technical-documentation/data-sheets/ad5761r\_5721r.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/ad5761r_5721r.pdf)
+[https://www.analog.com/media/en/technical-documentation/data-sheets/ad5761r_5721r.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/ad5761r_5721r.pdf)
 
 The DAC needs power supply, connection to the controller and be initialized.
 
@@ -119,34 +119,34 @@ Sonda para Aplicações Sensíveis ao Custo. 10.13140/RG.2.2.11595.31524.
 
 # Reasons for the name LiSTM
 
-- My name is Ulisses. My mom calls me Li.  
+- My name is Ulisses. My mom calls me Li.
 - The single syllable sounds great like the “i” in “iPhone”, or the
-  “[mi.com](http://mi.com)”, or Pi, or Phi, or G.  
+  “[mi.com](http://mi.com)”, or Pi, or Phi, or G.
 - Li is the chemical symbol of lithium, which is used in remarkably widespread
-  electronics.  
+  electronics.
 - “Li” like a little version of “lil”, which means “little”. It’s a little
-  microscope.  
+  microscope.
 - “Li” like a lightweight version of “lightweight”. It’s a lightweight
-  microscope.  
+  microscope.
 - LiSTM can be pronounced “listem” which is close to “listen”. I want people to
-  listen to me talking about it.  
+  listen to me talking about it.
 - It’s a short name, which saves time. And time is money.
 
 Searching “li meaning chinese” the results include:
 
 - As a Surname (李 \- Lǐ): The most common Chinese surname, meaning "plum".
-  Sounds cool to me like “Apple”.  
+  Sounds cool to me like “Apple”.
 - As a Female Given Name (丽 or 麗 \- Lì): Means "beautiful," "pretty," or
-  "charming". I want the microscope to be pretty too.  
+  "charming". I want the microscope to be pretty too.
 - As a Philosophical Concept (理 \- Lǐ): Refers to "reason," "logic," or the
-  "organizing principles" of the universe (Neo-Confucianism).  
+  "organizing principles" of the universe (Neo-Confucianism).
 - Measurement (厘 \- lí): Refers to small traditional units: 1/1000 of a chi
   (length) or 50 mg in mainland China (weight).
 - As a Unit of Distance (里 \- Lǐ): A traditional Chinese unit of length,
-currently standardized as 500 meters.
+  currently standardized as 500 meters.
 - As "Strength" (力 \- Lì): Means power, force, or strength.
 
 Other common characters:
 
-- 立 (Lì): To establish or stand.  
+- 立 (Lì): To establish or stand.
 - 利 (Lì): Benefit or profit.
