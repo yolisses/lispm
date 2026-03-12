@@ -7,6 +7,8 @@
 //   can cause a lot of problems, so it makes sense to suppose they need to
 //   receive a turn on signal.
 
-module Dac
-(input clock);
+module Dac (
+input clock,
+output mosi
+);
 endmodule
