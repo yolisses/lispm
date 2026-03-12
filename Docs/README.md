@@ -99,6 +99,15 @@ To keep things simple, I will ignore the bipolar range -2.5V to +7.5V, since it'
 
 I should do the calculation of precision.
 
+## Voltage Reference
+
+I'm not sure which. They have different initial accurancies.
+
+| Model           | mV  | %    | cost    |
+| --------------- | --- | ---- | ------- |
+| ADR421ARZ-REEL7 | 3   | 0.12 | $3.8022 |
+| ADR421BRZ-REEL7 | 1   | 0.04 | $9.0539 |
+
 ## ADC (ADS8685IPWR)
 
 [Datasheet](https://www.ti.com/lit/ds/symlink/ads8685.pdf)
