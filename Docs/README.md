@@ -16,12 +16,11 @@ All of them achieved atomic imaging of HOPG samples. Dan Berard also reported
 images of atomic layers of metals, but with no separation of atoms (due to the
 low forces holding electrons).
 
-| Part | Dan Berard’s STM | OpenSTM | Red Panda STM | LiSTM |
-| :---- | :---- | :---- | :---- | :---- |
-| ADC | LTC2326-16 |  | LTC2326-16 | ADS8685IPWR |
-| DAC(s) | DAC8814IBDBT |  | AD5761R | AD5761R |
-| Controller | Teensy 3.1 |  | Teensy 4.1 | Tang Nano 9K |
-|  |  |  |  |  |
+| Part       | Dan Berard’s STM | OpenSTM | Red Panda STM | LiSTM        | David D.   |
+| :--------- | :--------------- | :------ | :------------ | :----------- | :--------- |
+| ADC        | LTC2326-16       |         | LTC2326-16    | ADS8685IPWR  | LTC2326-16 |
+| DAC(s)     | DAC8814IBDBT     |         | AD5761R       | AD5761R      | LTC2664-16 |
+| Controller | Teensy 3.1       |         | Teensy 4.1    | Tang Nano 9K |            |
 
 ## Design goals
 
@@ -96,6 +95,10 @@ bipolar mode. By doing that, there’s a stable voltage for 0 displacement and a
 good balance between positive and negative values. If we use unipolar mode, the
 resting position would be a non zero voltage, which would fluctuate more.
 
+To keep things simple, I will ignore the bipolar range -2.5V to +7.5V, since it's not symetrical. It leave us with ±3V, ±5V and ±10V.
+
+I should do the calculation of precision.
+
 ## ADC (ADS8685IPWR)
 
 [https://www.ti.com/lit/ds/symlink/ads8685.pdf](https://www.ti.com/lit/ds/symlink/ads8685.pdf)
@@ -106,6 +109,8 @@ resting position would be a non zero voltage, which would fluctuate more.
 
 [https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588887202109796352](https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588887202109796352)  
 This 11mm, 4mm diameter glass tube fuse adapted like in
+
+Dan Berard used one 1/2″ long (12.7mm)
 
 ## Referências
 
@@ -137,10 +142,8 @@ Searching “li meaning chinese” the results include:
   "organizing principles" of the universe (Neo-Confucianism).  
 - Measurement (厘 \- lí): Refers to small traditional units: 1/1000 of a chi
   (length) or 50 mg in mainland China (weight).
-
-As a Unit of Distance (里 \- Lǐ): A traditional Chinese unit of length,
+- As a Unit of Distance (里 \- Lǐ): A traditional Chinese unit of length,
 currently standardized as 500 meters.
-
 - As "Strength" (力 \- Lì): Means power, force, or strength.
 
 Other common characters:
