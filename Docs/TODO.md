@@ -8,7 +8,7 @@
 - [ ] Tip etching  
 - [ ] Tip reducing  
 - [ ] DAC  
-      - [ ] Decide ranges  
+      - [ ] Decide ranges. The Dan Berard
       - [ ] Decide input voltage  
-      - [ ] PCB  
+      - [ ] PCB
 - [ ] ACD/TIA PCB
