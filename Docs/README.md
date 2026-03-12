@@ -16,11 +16,11 @@ All of them achieved atomic imaging of HOPG samples. Dan Berard also reported
 images of atomic layers of metals, but with no separation of atoms (due to the
 low forces holding electrons).
 
-| Part       | Dan Berard’s STM | OpenSTM | Red Panda STM | LiSTM        | David D.   |
-| :--------- | :--------------- | :------ | :------------ | :----------- | :--------- |
-| ADC        | LTC2326-16       |         | LTC2326-16    | ADS8685IPWR  | LTC2326-16 |
-| DAC(s)     | DAC8814IBDBT     |         | AD5761R       | AD5761R      | LTC2664-16 |
-| Controller | Teensy 3.1       |         | Teensy 4.1    | Tang Nano 9K |            |
+| Part       | LiSTM        | Dan Berard’s STM | OpenSTM | Red Panda STM | David D.   |
+| ---------- | ------------ | ---------------- | ------- | ------------- | ---------- |
+| ADC        | ADS8685IPWR  | LTC2326-16       |         | LTC2326-16    | LTC2326-16 |
+| DAC(s)     | AD5761R      | DAC8814IBDBT     |         | AD5761R       | LTC2664-16 |
+| Controller | Tang Nano 9K | Teensy 3.1       |         | Teensy 4.1    |            |
 
 ## Design goals
 
@@ -81,7 +81,7 @@ at the right position any time.
 
 ## DAC (AD5761R)
 
-[https://www.analog.com/media/en/technical-documentation/data-sheets/ad5761r_5721r.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/ad5761r_5721r.pdf)
+[Datasheet](https://www.analog.com/media/en/technical-documentation/data-sheets/ad5761r_5721r.pdf)
 
 The DAC needs power supply, connection to the controller and be initialized.
 
@@ -101,13 +101,13 @@ I should do the calculation of precision.
 
 ## ADC (ADS8685IPWR)
 
-[https://www.ti.com/lit/ds/symlink/ads8685.pdf](https://www.ti.com/lit/ds/symlink/ads8685.pdf)
+[Datasheet](https://www.ti.com/lit/ds/symlink/ads8685.pdf)
 
 ## MGN7H (Linear rail)
 
 ## Standoff
 
-[https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588887202109796352](https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588887202109796352)  
+[Datasheet](https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588887202109796352)  
 This 11mm, 4mm diameter glass tube fuse adapted like in
 
 Dan Berard used one 1/2″ long (12.7mm)
