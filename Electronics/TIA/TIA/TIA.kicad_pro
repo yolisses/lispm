@@ -410,7 +410,7 @@
         "version": 0
       },
       "model_mode": 4,
-      "workbook_filename": "TIA.wbk"
+      "workbook_filename": "TIA2.wbk"
     },
     "page_layout_descr_file": "",
     "plot_directory": "",
@@ -424,7 +424,7 @@
         "uuid": "4ee58e91-3450-4e96-9dd3-03c5f9c408fe"
       }
     ],
-    "used_designators": "U1,#GND1-3,V1,R1-2,I1,C1",
+    "used_designators": "U1,#GND1-4,V1-2,R1-2,I1,C1",
     "variants": []
   },
   "sheets": [

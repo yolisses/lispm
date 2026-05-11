@@ -5,17 +5,13 @@
     {
       "analysis": "AC",
       "commands": [
-        ".ac dec 10 1 1G",
+        ".ac dec 10 100 10k",
         ".kicad adjustpaths",
         ".save all",
         ".probe alli",
         ".probe allp"
       ],
       "dottedSecondary": true,
-      "legend": {
-        "x": 0,
-        "y": 0
-      },
       "margins": {
         "bottom": 45,
         "left": 70,
@@ -24,22 +20,7 @@
       },
       "measurements": [],
       "showGrid": true,
-      "traces": [
-        {
-          "color": "rgb(228, 26, 28)",
-          "cursor1": {
-            "position": 193591.0368679673,
-            "x_format": "3~s",
-            "y_format": "3~V"
-          },
-          "cursorD": {
-            "x_format": "3~s",
-            "y_format": "3~V"
-          },
-          "signal": "V(/OUT) (gain)",
-          "trace_type": 521
-        }
-      ]
+      "traces": []
     }
   ],
   "user_defined_signals": [],
