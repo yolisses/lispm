@@ -3,9 +3,9 @@
   "last_sch_text_sim_command": "",
   "tabs": [
     {
-      "analysis": "TRAN",
+      "analysis": "AC",
       "commands": [
-        ".tran 100m 10 0 100m uic",
+        ".ac dec 10 1 100",
         ".kicad adjustpaths",
         ".save all",
         ".probe alli",
@@ -15,16 +15,21 @@
       "margins": {
         "bottom": 45,
         "left": 70,
-        "right": 160,
+        "right": 70,
         "top": 30
       },
       "measurements": [],
       "showGrid": true,
       "traces": [
         {
+          "color": "rgb(0, 194, 0)",
+          "signal": "V(Net-_C1-Pad1_) (phase)",
+          "trace_type": 517
+        },
+        {
           "color": "rgb(228, 26, 28)",
-          "signal": "V(/VCap)",
-          "trace_type": 257
+          "signal": "V(Net-_C1-Pad1_) (gain)",
+          "trace_type": 521
         }
       ]
     }
