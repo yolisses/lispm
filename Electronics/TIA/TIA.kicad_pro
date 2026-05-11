@@ -253,7 +253,9 @@
   },
   "libraries": {
     "pinned_footprint_libs": [],
-    "pinned_symbol_libs": []
+    "pinned_symbol_libs": [
+      "Device"
+    ]
   },
   "meta": {
     "filename": "TIA.kicad_pro",
@@ -424,7 +426,7 @@
         "uuid": "54290178-5b03-4b9d-bd2e-fef7d018d5b4"
       }
     ],
-    "used_designators": "#GND5,R2,C2",
+    "used_designators": "I1,C1,V3,#GND5",
     "variants": []
   },
   "sheets": [
