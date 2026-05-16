@@ -411,7 +411,7 @@
       "meta": {
         "version": 0
       },
-      "model_mode": 4,
+      "model_mode": 0,
       "workbook_filename": "TIA.wbk"
     },
     "page_layout_descr_file": "",
@@ -422,17 +422,25 @@
     "top_level_sheets": [
       {
         "filename": "TIA.kicad_sch",
-        "name": "Root",
+        "name": "Single amplifier",
         "uuid": "54290178-5b03-4b9d-bd2e-fef7d018d5b4"
       }
     ],
-    "used_designators": "I1,C1,V3,#GND5",
+    "used_designators": "V1-2,U1-2,RF1,R1-5,RC1,I1,C1-4,#GND1",
     "variants": []
   },
   "sheets": [
     [
       "54290178-5b03-4b9d-bd2e-fef7d018d5b4",
-      "Root"
+      "Single amplifier"
+    ],
+    [
+      "5df078fc-cfb3-4595-a36d-c999085cd816",
+      "Single Amplifier"
+    ],
+    [
+      "06543960-6df5-427c-bcfd-4b08397f7203",
+      "Two Amplifiers"
     ]
   ],
   "text_variables": {},
