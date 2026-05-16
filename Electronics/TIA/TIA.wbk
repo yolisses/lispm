@@ -5,7 +5,7 @@
     {
       "analysis": "AC",
       "commands": [
-        ".ac dec 100 10 10Meg",
+        ".ac dec 100 100 10G",
         ".kicad adjustpaths",
         ".save all",
         ".probe alli",
@@ -22,14 +22,14 @@
       "showGrid": true,
       "traces": [
         {
-          "color": "rgb(228, 26, 28)",
+          "color": "rgb(55, 126, 184)",
           "cursor1": {
-            "position": 1000.0,
+            "position": 100.0,
             "x_format": "3~Hz",
             "y_format": "3~dB"
           },
           "cursor2": {
-            "position": 768000.0,
+            "position": 768100.0,
             "x_format": "3~Hz",
             "y_format": "3~dB"
           },
@@ -37,8 +37,8 @@
             "x_format": "3~Hz",
             "y_format": "3~dB"
           },
-          "signal": "V(/OUT) (gain)",
-          "trace_type": 521
+          "signal": "V(/OUT2) (gain)",
+          "trace_type": 9
         }
       ]
     }
