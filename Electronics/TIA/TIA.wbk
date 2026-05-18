@@ -22,14 +22,19 @@
       "showGrid": true,
       "traces": [
         {
-          "color": "rgb(55, 126, 184)",
+          "color": "rgb(228, 72, 202)",
+          "signal": "V(/OUT4) (phase)",
+          "trace_type": 517
+        },
+        {
+          "color": "rgb(228, 26, 28)",
           "cursor1": {
-            "position": 100.0,
+            "position": 1000.0,
             "x_format": "3~Hz",
             "y_format": "3~dB"
           },
           "cursor2": {
-            "position": 768100.0,
+            "position": 768000.0,
             "x_format": "3~Hz",
             "y_format": "3~dB"
           },
@@ -37,8 +42,34 @@
             "x_format": "3~Hz",
             "y_format": "3~dB"
           },
-          "signal": "V(/OUT2) (gain)",
-          "trace_type": 9
+          "signal": "V(/OUT4) (gain)",
+          "trace_type": 521
+        }
+      ]
+    },
+    {
+      "analysis": "DC",
+      "commands": [
+        ".dc I1 0 100n 10p",
+        ".kicad adjustpaths",
+        ".save all",
+        ".probe alli",
+        ".probe allp"
+      ],
+      "dottedSecondary": true,
+      "margins": {
+        "bottom": 45,
+        "left": 70,
+        "right": 70,
+        "top": 30
+      },
+      "measurements": [],
+      "showGrid": true,
+      "traces": [
+        {
+          "color": "rgb(228, 26, 28)",
+          "signal": "V(/OUT4)",
+          "trace_type": 2049
         }
       ]
     }
