@@ -1,0 +1,10 @@
+* source OPA859
+V_V1         VCC 0 5Vdc
+R_R2         VREF N07087  45.3 TC=0,0 
+V_V2         VREF 0 2.5Vdc
+R_R1         N07087 VOUT  453 TC=0,0 
+V_V3         VEE 0 0Vdc
+R_R4         VOUT VREF  200 TC=0,0 
+V_V4         N06887 VREF  AC 1
++SIN 0 0.1 100e6 0 0 0
+X_U1         N06887 N07087 VCC VEE VOUT VCC OPA859

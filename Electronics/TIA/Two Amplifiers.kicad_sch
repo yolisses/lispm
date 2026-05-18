@@ -815,7 +815,7 @@
 		)
 		(uuid "f679e9c7-71f4-4a98-8b0d-d6c9822b909a")
 	)
-	(global_label "-15V"
+	(global_label "-5V"
 		(shape input)
 		(at 173.99 128.27 0)
 		(fields_autoplaced yes)
@@ -827,7 +827,7 @@
 		)
 		(uuid "1d517d5d-4ccb-4e6a-bcee-3489a82b6cd2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 182.0552 128.27 0)
+			(at 180.8457 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -887,7 +887,7 @@
 			)
 		)
 	)
-	(global_label "+15V"
+	(global_label "+5V"
 		(shape input)
 		(at 173.99 107.95 0)
 		(fields_autoplaced yes)
@@ -899,7 +899,7 @@
 		)
 		(uuid "b207e8c4-f55f-4dc6-907f-4b27da6e9116")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 182.0552 107.95 0)
+			(at 180.8457 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1170,7 +1170,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "71f96380-92a6-42e4-853c-13eed680963a")
-		(property "Reference" "R4"
+		(property "Reference" "R5"
 			(at 200.66 95.25 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1232,7 +1232,7 @@
 		(instances
 			(project "TIA"
 				(path "/54290178-5b03-4b9d-bd2e-fef7d018d5b4/06543960-6df5-427c-bcfd-4b08397f7203"
-					(reference "R4")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -1412,7 +1412,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "db5ab89c-f45b-443c-9a27-1519c823eaa3")
-		(property "Reference" "R5"
+		(property "Reference" "R4"
 			(at 194.31 104.14 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1474,7 +1474,7 @@
 		(instances
 			(project "TIA"
 				(path "/54290178-5b03-4b9d-bd2e-fef7d018d5b4/06543960-6df5-427c-bcfd-4b08397f7203"
-					(reference "R5")
+					(reference "R4")
 					(unit 1)
 				)
 			)

@@ -1,0 +1,153 @@
+
+**** 05/26/21 16:05:24 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-TransientAnalysis"  [ C:\Users\a0232073\Downloads\OPA859\opa859-pspicefiles\schematic1\transientanalysis.sim
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "TransientAnalysis.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+.INC "C:\Users\a0232073\Downloads\OPA859\opa859-pspicefiles\schematic1\TransientAnalysis\TransientAnalysis_profile.inc" 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpiceTIPSpice_Install\17.4.0\PSpice.ini file:
+
+**** INCLUDING TransientAnalysis_profile.inc ****
+.LIB    ".\OPA859.lib" 
+
+**** RESUMING TransientAnalysis.cir ****
+.lib "nom_pspti.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 20ns 0 0.01e-9 
+.OPTIONS ADVCONV
+.OPTIONS FILEMODELSEARCH
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source OPA859
+V_V1         VCC 0 5Vdc
+R_R2         VREF N07087  45.3 TC=0,0 
+V_V2         VREF 0 2.5Vdc
+R_R1         N07087 VOUT  453 TC=0,0 
+V_V3         VEE 0 0Vdc
+R_R4         VOUT VREF  200 TC=0,0 
+V_V4         N06887 VREF  AC 1
++SIN 0 0.1 100e6 0 0 0
+X_U1         N06887 N07087 VCC VEE VOUT VCC OPA859
+
+**** RESUMING TransientAnalysis.cir ****
+.END
+
+INFO(ORPSIM-15423): Unable to find index file OPA859.ind for library file OPA859.lib.
+
+INFO(ORPSIM-15422): Making new index file OPA859.ind for library file OPA859.lib.
+
+Index has 27 entries from 1 file(s).
+
+**** 05/26/21 16:05:24 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-TransientAnalysis"  [ C:\Users\a0232073\Downloads\OPA859\opa859-pspicefiles\schematic1\transientanalysis.sim
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.XU1.XI18.X1.DVNF 
+          IS  100.000000E-18 
+          KF  100.000000E-15 
+
+
+               X_U1.XU1.XI63.X1.DVNF 
+          IS  100.000000E-18 
+          KF  100.000000E-15 
+
+
+               X_U1.XU1.XI17.X1.DVN 
+          IS  100.000000E-18 
+          KF   10.000000E-12 
+
+
+ERROR(ORPSIM-16583): Detected an imported model containing transistors or diodes. For such models, PSpice for TI supports a minimum of one and maximum of three traces. Reduce the number of traces and simulate again.
+
+
+ABORTING SIMULATION
+**** 05/26/21 16:05:24 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-TransientAnalysis"  [ C:\Users\a0232073\Downloads\OPA859\opa859-pspicefiles\schematic1\transientanalysis.sim
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+Node counts:
+  Top level (NUNODS)                =           7
+  External (NCNODS)                 =         108
+  Total (NUMNOD)                    =         108
+
+Total device count (NUMEL)          =         202
+  Capacitors (C)                    =          26
+  Diodes (D)                        =           6
+  VCVS (E)                          =          36
+  VCCS (G)                          =          26
+  CCVS (H)                          =           2
+  Current Sources (I)               =           6
+  Inductors (L)                     =           8
+  Resistors (R)                     =          60
+  Voltage Sources (V)               =          24
+
+Number of subcircuits (X)           =          40
+
+Matrix statistics:
+  Matrix size (NSTOP)               =         178
+  Initial no. elements (NTTAR)      =         496
+  No. elements w/ fillin (NTTBR)    =         496
+  No. fillins (IFILL)               =           0
+  No. overflows (NTTOV)             =           0
+  No. LU operations (IOPS)          =           0
+  Percent sparsity (PERSPA)         =      98.435
+
+Analysis statistics:
+  No. total time points (NUMTTP)    =           0
+  No. rejected time points (NUMRTP) =           0
+  No. iterations (NUMNIT)           =           0
+
+Load Threads                        =           1
+
+Runtime statistics:                       Seconds      Iterations
+  Matrix load                       =        0.00
+  Matrix solution                   =        0.00               1
+  Readin                            =        7.52
+  General setup                     =         .03
+  CMI setup                     =        0.00
+  Setup                             =        0.00
+  DC sweep                          =        0.00               0
+  Bias point                        =        0.00               0
+  AC and noise                      =        0.00               0
+  Total transient analysis          =        0.00
+  Output                            =        0.00
+  Overhead                          =         .17
+  Total job time (using Solver 1)   =        7.56
+
