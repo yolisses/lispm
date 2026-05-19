@@ -1347,6 +1347,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "It's unstable.\nWhen the gain crosses 0db, the phase is -230 deg"
+		(exclude_from_sim no)
+		(at 212.852 104.902 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "6037d0a4-1c5f-46d8-b548-92a714cf8f7c")
+	)
 	(junction
 		(at 190.5 88.9)
 		(diameter 0)

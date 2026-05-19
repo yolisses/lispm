@@ -424,7 +424,7 @@
         "uuid": "01684154-c57f-44f9-be7e-34aae891c09d"
       }
     ],
-    "used_designators": "#GND1-2,C1-3,I1-2,V1-4,R1-2,#PWR1-20,U1-3",
+    "used_designators": "#GND1-3,C1-3,I1-3,V1-6,R1-3,#PWR1-29,U1-3",
     "variants": []
   },
   "sheets": [
@@ -439,6 +439,10 @@
     [
       "f47afcbe-c28a-4d4b-964b-46171e822017",
       "Resistor and capacitor"
+    ],
+    [
+      "af6fbcc9-ba59-496d-ae60-6517b8674c74",
+      "Stability compensation"
     ]
   ],
   "text_variables": {},
