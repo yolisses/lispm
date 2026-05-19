@@ -5,7 +5,7 @@
     {
       "analysis": "AC",
       "commands": [
-        ".ac dec 100 100 100T",
+        ".ac dec 100 100 1000T",
         ".kicad adjustpaths",
         ".save all",
         ".probe alli",
@@ -22,13 +22,22 @@
       "showGrid": true,
       "traces": [
         {
-          "color": "rgb(3, 11, 228)",
-          "signal": "V(/Just_resistor/OUT) (phase)",
+          "color": "rgb(1, 175, 155)",
+          "cursor1": {
+            "position": 120128489894314.08,
+            "x_format": "3~s",
+            "y_format": "3~V"
+          },
+          "cursorD": {
+            "x_format": "3~s",
+            "y_format": "3~V"
+          },
+          "signal": "V(/Stability_compensation/OUT) (phase)",
           "trace_type": 517
         },
         {
-          "color": "rgb(228, 26, 28)",
-          "signal": "V(/Just_resistor/OUT) (gain)",
+          "color": "rgb(77, 175, 74)",
+          "signal": "V(/Stability_compensation/OUT) (gain)",
           "trace_type": 521
         }
       ]
