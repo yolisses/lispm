@@ -253,12 +253,10 @@
   },
   "libraries": {
     "pinned_footprint_libs": [],
-    "pinned_symbol_libs": [
-      "Device"
-    ]
+    "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "TIA.kicad_pro",
+    "filename": "Stability.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -412,7 +410,7 @@
         "version": 0
       },
       "model_mode": 2,
-      "workbook_filename": "TIA.wbk"
+      "workbook_filename": "Stability.wbk"
     },
     "page_layout_descr_file": "",
     "plot_directory": "",
@@ -421,42 +419,22 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "TIA.kicad_sch",
-        "name": "TIA",
-        "uuid": "54290178-5b03-4b9d-bd2e-fef7d018d5b4"
+        "filename": "Stability.kicad_sch",
+        "name": "Root",
+        "uuid": "01684154-c57f-44f9-be7e-34aae891c09d"
       }
     ],
-    "used_designators": "RP5-8,R6,R21-30,CP11-22,U4,U7,I2,C9-13",
+    "used_designators": "#GND1,I1,V1-2,R1,#PWR1-9,U1",
     "variants": []
   },
   "sheets": [
     [
-      "54290178-5b03-4b9d-bd2e-fef7d018d5b4",
-      "TIA"
+      "01684154-c57f-44f9-be7e-34aae891c09d",
+      "Root"
     ],
     [
-      "5df078fc-cfb3-4595-a36d-c999085cd816",
-      "Single Amplifier"
-    ],
-    [
-      "06543960-6df5-427c-bcfd-4b08397f7203",
-      "Two Amplifiers"
-    ],
-    [
-      "df7fde62-ac01-4c02-b668-caf82c81ee74",
-      "OPA858"
-    ],
-    [
-      "e80855d3-fd1b-486b-9760-6d9a69fd0b65",
-      "OPA859"
-    ],
-    [
-      "9aa46cdb-e23c-4f77-9dc0-c132692a82fc",
-      "OPA859 1G"
-    ],
-    [
-      "f116f47b-3638-4010-9ce2-d75928f10e59",
-      "OPA858 Complex"
+      "1267cec3-be69-45b6-8945-3c9ccb834dde",
+      "Just resistor"
     ]
   ],
   "text_variables": {},
