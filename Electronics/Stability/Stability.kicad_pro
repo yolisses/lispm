@@ -424,7 +424,7 @@
         "uuid": "01684154-c57f-44f9-be7e-34aae891c09d"
       }
     ],
-    "used_designators": "#GND1,I1,V1-2,R1,#PWR1-9,U1",
+    "used_designators": "#GND1-2,C1-3,I1-2,V1-4,R1-2,#PWR1-20,U1-3",
     "variants": []
   },
   "sheets": [
@@ -435,6 +435,10 @@
     [
       "1267cec3-be69-45b6-8945-3c9ccb834dde",
       "Just resistor"
+    ],
+    [
+      "f47afcbe-c28a-4d4b-964b-46171e822017",
+      "Resistor and capacitor"
     ]
   ],
   "text_variables": {},

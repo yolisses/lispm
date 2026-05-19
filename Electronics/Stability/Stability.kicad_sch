@@ -6,9 +6,9 @@
 	(paper "A4")
 	(lib_symbols)
 	(sheet
-		(at 101.6 101.6)
+		(at 25.4 25.4)
 		(size 12.7 12.7)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -22,7 +22,7 @@
 		)
 		(uuid "1267cec3-be69-45b6-8945-3c9ccb834dde")
 		(property "Sheetname" "Just resistor"
-			(at 101.6 100.8884 0)
+			(at 25.4 24.6884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -33,7 +33,7 @@
 			)
 		)
 		(property "Sheetfile" "Just resistor.kicad_sch"
-			(at 101.6 114.8846 0)
+			(at 25.4 38.6846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -47,6 +47,52 @@
 			(project "Stability"
 				(path "/01684154-c57f-44f9-be7e-34aae891c09d"
 					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 25.4 50.8)
+		(size 12.7 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "f47afcbe-c28a-4d4b-964b-46171e822017")
+		(property "Sheetname" "Resistor and capacitor"
+			(at 25.4 50.0884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Resistor and capacitor.kicad_sch"
+			(at 25.4 64.0846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Stability"
+				(path "/01684154-c57f-44f9-be7e-34aae891c09d"
+					(page "3")
 				)
 			)
 		)
