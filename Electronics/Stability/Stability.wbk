@@ -5,7 +5,7 @@
     {
       "analysis": "AC",
       "commands": [
-        ".ac dec 100 100 100Meg",
+        ".ac dec 100 100 100T",
         ".kicad adjustpaths",
         ".save all",
         ".probe alli",
@@ -21,6 +21,11 @@
       "measurements": [],
       "showGrid": true,
       "traces": [
+        {
+          "color": "rgb(3, 11, 228)",
+          "signal": "V(/Just_resistor/OUT) (phase)",
+          "trace_type": 517
+        },
         {
           "color": "rgb(228, 26, 28)",
           "signal": "V(/Just_resistor/OUT) (gain)",
