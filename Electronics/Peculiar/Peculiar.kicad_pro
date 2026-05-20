@@ -256,7 +256,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "ULCA.kicad_pro",
+    "filename": "Peculiar.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -410,7 +410,7 @@
         "version": 0
       },
       "model_mode": 2,
-      "workbook_filename": "ULCA.wbk"
+      "workbook_filename": ""
     },
     "page_layout_descr_file": "",
     "plot_directory": "",
@@ -419,30 +419,18 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "ULCA.kicad_sch",
+        "filename": "Peculiar.kicad_sch",
         "name": "Root",
-        "uuid": "ad97f578-e6f0-4b7f-b1a4-b9871390a9f6"
+        "uuid": "db27cf5d-1015-467f-a739-ab2eb7f0a1b5"
       }
     ],
-    "used_designators": "",
+    "used_designators": "#GND1,V1-2,I1,C1-4,R1-3,#PWR1-14,U1-2",
     "variants": []
   },
   "sheets": [
     [
-      "ad97f578-e6f0-4b7f-b1a4-b9871390a9f6",
+      "db27cf5d-1015-467f-a739-ab2eb7f0a1b5",
       "Root"
-    ],
-    [
-      "52fd40e7-7351-47e5-832d-2a11ae3c0af6",
-      "Voltage output"
-    ],
-    [
-      "b6d832f2-7fb3-43d2-8c1f-3bf7ee2a5b20",
-      "Parasitic capacitance"
-    ],
-    [
-      "0a182779-1552-4f81-91a1-33ce46ffed49",
-      "Tunning"
     ]
   ],
   "text_variables": {},
