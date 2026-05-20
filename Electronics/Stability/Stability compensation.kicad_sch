@@ -1347,7 +1347,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "It's unstable.\nWhen the gain crosses 0db, the phase is -119 deg.\nBut it is impractible, because of such low capacitance on the feedback."
+	(text "It's unstable.\nWhen the gain crosses 0db, the phase is -119 deg.\nBut it is impractible, because of such low capacitance\n on the feedback and high pole (whatever it means)."
 		(exclude_from_sim no)
 		(at 212.852 117.602 0)
 		(effects

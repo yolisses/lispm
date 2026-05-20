@@ -22,22 +22,13 @@
       "showGrid": true,
       "traces": [
         {
-          "color": "rgb(1, 175, 155)",
-          "cursor1": {
-            "position": 120128489894314.08,
-            "x_format": "3~s",
-            "y_format": "3~V"
-          },
-          "cursorD": {
-            "x_format": "3~s",
-            "y_format": "3~V"
-          },
-          "signal": "V(/Stability_compensation/OUT) (phase)",
+          "color": "rgb(11, 0, 228)",
+          "signal": "V(/Resistor_and_capacitor/OUT) (phase)",
           "trace_type": 517
         },
         {
-          "color": "rgb(77, 175, 74)",
-          "signal": "V(/Stability_compensation/OUT) (gain)",
+          "color": "rgb(228, 26, 28)",
+          "signal": "V(/Resistor_and_capacitor/OUT) (gain)",
           "trace_type": 521
         }
       ]
