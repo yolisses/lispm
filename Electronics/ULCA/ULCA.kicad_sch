@@ -8,7 +8,7 @@
 	(sheet
 		(at 127 88.9)
 		(size 12.7 12.7)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -47,6 +47,52 @@
 			(project "ULCA"
 				(path "/ad97f578-e6f0-4b7f-b1a4-b9871390a9f6"
 					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 127 114.3)
+		(size 12.7 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "b6d832f2-7fb3-43d2-8c1f-3bf7ee2a5b20")
+		(property "Sheetname" "Parasitic capacitance"
+			(at 127 113.5884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Parasitic capacitance.kicad_sch"
+			(at 127 127.5846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "ULCA"
+				(path "/ad97f578-e6f0-4b7f-b1a4-b9871390a9f6"
+					(page "3")
 				)
 			)
 		)
