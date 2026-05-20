@@ -409,7 +409,7 @@
       "meta": {
         "version": 0
       },
-      "model_mode": 4,
+      "model_mode": 2,
       "workbook_filename": "ULCA.wbk"
     },
     "page_layout_descr_file": "",
@@ -424,7 +424,7 @@
         "uuid": "ad97f578-e6f0-4b7f-b1a4-b9871390a9f6"
       }
     ],
-    "used_designators": "MES1,V3-6,U3-6,R4-9,C1-8,I2-3,#PWR11-33,#GND2-3",
+    "used_designators": "V5-6,R7-9,I3,C5-8,#PWR22-32,#GND3,U5-7",
     "variants": []
   },
   "sheets": [
