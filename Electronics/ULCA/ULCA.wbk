@@ -5,7 +5,7 @@
     {
       "analysis": "AC",
       "commands": [
-        ".ac dec 100 100 100G",
+        ".ac dec 1000 100 100G",
         ".kicad adjustpaths",
         ".save all",
         ".probe alli",
@@ -22,13 +22,13 @@
       "showGrid": true,
       "traces": [
         {
-          "color": "rgb(0, 228, 220)",
-          "signal": "V(/Voltage_output/VOUT) (phase)",
+          "color": "rgb(0, 206, 228)",
+          "signal": "V(/Parasitic_capacitance/VOUT) (phase)",
           "trace_type": 517
         },
         {
-          "color": "rgb(4, 228, 0)",
-          "signal": "V(/Voltage_output/VOUT) (gain)",
+          "color": "rgb(11, 228, 0)",
+          "signal": "V(/Parasitic_capacitance/VOUT) (gain)",
           "trace_type": 521
         }
       ]

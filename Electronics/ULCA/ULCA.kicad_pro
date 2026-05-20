@@ -424,7 +424,7 @@
         "uuid": "ad97f578-e6f0-4b7f-b1a4-b9871390a9f6"
       }
     ],
-    "used_designators": "#GND1,V1-2,R1-3,I1,#PWR1-10,U1-2",
+    "used_designators": "V3-4,U3-4,R4-6,C1-4,I2,#PWR11-21,#GND2",
     "variants": []
   },
   "sheets": [
@@ -435,6 +435,10 @@
     [
       "52fd40e7-7351-47e5-832d-2a11ae3c0af6",
       "Voltage output"
+    ],
+    [
+      "b6d832f2-7fb3-43d2-8c1f-3bf7ee2a5b20",
+      "Parasitic capacitance"
     ]
   ],
   "text_variables": {},
