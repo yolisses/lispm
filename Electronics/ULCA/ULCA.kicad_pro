@@ -424,7 +424,7 @@
         "uuid": "ad97f578-e6f0-4b7f-b1a4-b9871390a9f6"
       }
     ],
-    "used_designators": "V3-4,U3-4,R4-6,C1-4,I2,#PWR11-21,#GND2",
+    "used_designators": "MES1,V3-6,U3-6,R4-9,C1-8,I2-3,#PWR11-33,#GND2-3",
     "variants": []
   },
   "sheets": [
@@ -439,6 +439,10 @@
     [
       "b6d832f2-7fb3-43d2-8c1f-3bf7ee2a5b20",
       "Parasitic capacitance"
+    ],
+    [
+      "0a182779-1552-4f81-91a1-33ce46ffed49",
+      "Tunning"
     ]
   ],
   "text_variables": {},
