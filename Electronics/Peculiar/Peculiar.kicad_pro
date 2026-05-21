@@ -410,7 +410,7 @@
         "version": 0
       },
       "model_mode": 2,
-      "workbook_filename": ""
+      "workbook_filename": "Peculiar.wbk"
     },
     "page_layout_descr_file": "",
     "plot_directory": "",
@@ -424,13 +424,25 @@
         "uuid": "db27cf5d-1015-467f-a739-ab2eb7f0a1b5"
       }
     ],
-    "used_designators": "#GND1,V1-2,I1,C1-4,R1-3,#PWR1-14,U1-2",
+    "used_designators": "V1-6,U1-14,R1-14,I1-3,C1-14,#PWR1-52,#GND1-3",
     "variants": []
   },
   "sheets": [
     [
       "db27cf5d-1015-467f-a739-ab2eb7f0a1b5",
       "Root"
+    ],
+    [
+      "f65afffd-781c-46f2-8110-180385d01b58",
+      "From OPA380"
+    ],
+    [
+      "e0f4a773-c283-421c-842f-cbf127c6230d",
+      "Nested"
+    ],
+    [
+      "a77c6182-4376-457a-a9e3-921f40aca512",
+      "Nested simple"
     ]
   ],
   "text_variables": {},
