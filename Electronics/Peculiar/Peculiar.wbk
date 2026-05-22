@@ -22,9 +22,9 @@
       "showGrid": true,
       "traces": [
         {
-          "color": "rgb(228, 26, 28)",
+          "color": "rgb(0, 184, 179)",
           "cursor1": {
-            "position": 497461252.80851436,
+            "position": 761386335.1632417,
             "x_format": "3~Hz",
             "y_format": "3~dB"
           },
@@ -32,11 +32,11 @@
             "x_format": "3~Hz",
             "y_format": "3~dB"
           },
-          "signal": "V(/Nested_simple/VOUT) (phase)",
+          "signal": "V(/OPA858/VOUT) (phase)",
           "trace_type": 517
         },
         {
-          "color": "rgb(35, 228, 0)",
+          "color": "rgb(55, 126, 184)",
           "cursor2": {
             "position": 768000.0,
             "x_format": "3~Hz",
@@ -46,7 +46,7 @@
             "x_format": "3~Hz",
             "y_format": "3~dB"
           },
-          "signal": "V(/Nested_simple/VOUT) (gain)",
+          "signal": "V(/OPA858/VOUT) (gain)",
           "trace_type": 521
         }
       ]

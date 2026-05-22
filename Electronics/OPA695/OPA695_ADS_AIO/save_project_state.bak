@@ -1,0 +1,23 @@
+{
+    decl winInstP, dsnPtr;
+    de_load_design ("TRAN_TB", 0);
+    de_load_design ("opa695", 0);
+    winInstP = de_create_window(SCHEMATIC_WINDOW, NULL, 30, 30, 846, 500);
+    dsnPtr = de_load_design("TRAN_TB", 0);
+    if (dsnPtr != NULL && winInstP != NULL)
+    {
+        deutil_file_open_update_window(winInstP, dsnPtr, "TRAN_TB");
+    }
+    winInstP = de_create_window(SCHEMATIC_WINDOW, NULL, 1760, 294, 846, 500);
+    dsnPtr = de_load_design("opa695", 0);
+    if (dsnPtr != NULL && winInstP != NULL)
+    {
+        deutil_file_open_update_window(winInstP, dsnPtr, "opa695");
+    }
+    winInstP = de_create_window(SCHEMATIC_WINDOW, NULL, 1780, 314, 846, 500);
+    dsnPtr = de_load_design("opa695", 0);
+    if (dsnPtr != NULL && winInstP != NULL)
+    {
+        deutil_file_open_update_window(winInstP, dsnPtr, "opa695");
+    }
+}

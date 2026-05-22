@@ -1,0 +1,164 @@
+; Translated with ADS Netlist Translator (*) 351.200 Oct 10 2009
+;*******************************************************************************
+
+; Disclaimer
+;
+; This model is designed as an aid for customers of Texas Instruments.
+; TI and its licensors and suppliers make no warranties, either expressed
+; or implied, with respect to this  model, including the warranties of
+; merchantability or fitness for a particular purpose. The model is
+; provided solely on an "as is" basis. The entire risk as to its quality
+; and performance is with the customer.
+;*******************************************************************************
+; Copyright
+;
+; (C) Copyright 2009 Texas Instruments Incorporated. All rights reserved.
+;*******************************************************************************
+; Released by: Analog eLab Design Center, Texas Instruments Inc.
+; Part: OPA695
+; Date: 05/21/2009
+; Model Type: PSPICE
+; Simulator: PSpice 16.0.0.p001
+; Datasheet: SBOS293G
+;*******************************************************************************
+; Release Notes:
+; 1.0 Original Version
+; 2.0 Improving some of the DC performance
+; 2.1 Improving Slew Rate accuracy
+;     This model provides good typical values for the following parameters:
+;     small signal closed loop bandwidth for high gain(i.e G=8), input noise,
+;     slew rate (in particular non-inverting configuration), current consumption,
+;     input voltage range, input voltage offset and output voltage range.
+;
+; Modified model for use in Agilent ADS
+;
+;*******************************************************************************
+define opa695 ( inp inn vcc vee out)
+opa695_model:x1 inp inn disa out vcc vee
+V_Source:vdis disa 0 Vdc=5
+end opa695
+
+define opa695_model ( inp inn dis out vcc vee)
+
+ x1=1/8
+ x2=x1*2
+ x3=x1*3
+ x5=x1*5
+ x12=x1*12
+ x16=x1*16
+ x60=x1*60
+
+C:c_c1 vmid dis C=2p
+;****
+;X_S1    $N_0001 0 $N_0002 $N_0003 OPA695_model_S1
+R:r_s1_in "_n_0001" 0 R=1e9
+R:r_s1_out "_n_0002" "_n_0003" R=0.001
+;****
+R:r_r11 vmid dis R=100M
+R:r_r8 vmid "_n_0004" R=10k
+pnp8:q_q1 "_n_0006" "_n_0005" "_n_0007" Area=x1 Mode=1
+npn8:q_q4 "_n_0008" "_n_0008" "_n_0005" Area=x1 Mode=1
+pnp8:q_q5 "_n_0009" "_n_0005" "_n_0010" Area=x2 Mode=1
+pnp8:q_q12 "_n_0011" "_n_0005" "_n_0012" Area=x2 Mode=1
+pnp8:q_q9 "_n_0013" "_n_0005" "_n_0014" Area=x2 Mode=1
+npn8:q_q7 "_n_0015" "_n_0015" "_n_0016" Area=x2 Mode=1
+pnp8:q_q6 "_n_0015" "_n_0017" "_n_0009" Area=x16 Mode=1
+npn8:q_q14 "_n_0011" "_n_0017" "_n_0018" Area=x1 Mode=1
+npn8:q_q16 "_n_0017" "_n_0018" "_n_0019" Area=x1 Mode=1
+npn8:q_q15 "_n_0018" "_n_0018" "_n_0020" Area=x1 Mode=1
+npn8:q_q10 "_n_0011" "_n_0011" "_n_0021" Area=x16 Mode=1
+npn8:q_q8 "_n_0013" "_n_0015" "_n_0022" Area=x2 Mode=1
+dx:d_d3 "_n_0023" "_n_0021" Area=1 Mode=1
+dx:d_d1 "_n_0021" "_n_0024" Area=1 Mode=1
+dx:d_d2 "_n_0024" "_n_0025" Area=1 Mode=1
+pnp8:q_q18 "_n_0026" "_n_0026" "_n_0021" Area=x16 Mode=1
+npn8:q_q17 "_n_0026" "_n_0015" "_n_0027" Area=x2 Mode=1
+R:r_r24 vee "_n_0028" R=250
+opa695_model_f1:x_f1 "_n_0002" "_n_0029" "_n_0006" vee
+pnp8:q_q2 vee "_n_0006" "_n_0005" Area=x1 Mode=1
+R:r_r18 vee "_n_0015" R=50k
+R:r_r20 vee "_n_0022" R=500
+R:r_r19 vee "_n_0016" R=500
+R:r_r21 vee "_n_0019" R=2k
+R:r_r22 vee "_n_0020" R=2k
+R:r_r23 vee "_n_0027" R=500
+dx:d_d5 "_n_0028" vee Area=1 Mode=1
+npn8:q_q20 "_n_0030" "_n_0030" "_n_0028" Area=x3 Mode=1
+pnp8:q_q19 "_n_0030" "_n_0026" "_n_0025" Area=x16 Mode=1
+npn8:q_q25 "_n_0031" "_n_0030" "_n_0032" Area=x12 Mode=1
+pnp8:q_q24 "_n_0034" "_n_0033" "_n_0035" Area=x12 Mode=1
+R:r_r10 vcc vee R=123.609k
+SDD:e_e1 vcc vee "_n_0004" vee I[1,0]=0 F[2,0]=(0.5*_v1)-_v2
+SDD:e_abm21 __n_0001_ 0 dis 0 vcc 0 F[1,0]=((_v2/(_v3+1e-6))*5.0)-_v1 I[2,0]=0 I[3,0]=0
+R:r_r9 dis vcc R=41k
+R:r_r12 "_n_0008" vcc R=8k
+R:r_r14 "_n_0010" vcc R=500
+R:r_r15 "_n_0014" vcc R=500
+R:r_r16 "_n_0012" vcc R=500
+R:r_r17 "_n_0006" vcc R=72k
+R:r_r13 "_n_0007" vcc R=1987
+npn8:q_q21 "_n_0036" "_n_0030" "_n_0037" Area=x5 Mode=1
+R:r_r7 "_n_0029" vmid R=10k
+R:r_r25 vee "_n_0037" R=150
+dx:d_d7 vcc "_n_0038" Area=1 Mode=1
+R:r_r26 "_n_0038" vcc R=250
+pnp8:q_q22 "_n_0033" "_n_0033" "_n_0038" Area=x3 Mode=1
+R:r_r27 "_n_0039" vcc R=150
+pnp8:q_q23 "_n_0036" "_n_0033" "_n_0039" Area=x5 Mode=1
+dx:d_d8 "_n_0039" vcc Area=1 Mode=1
+pnp8:q_q13 "_n_0017" "_n_0006" "_n_0013" Area=x1 Mode=1
+npn8:q_q30 "_n_0041" "_n_0040" "_n_0036" Area=x1 Mode=1
+pnp8:q_q31 "_n_0042" "_n_0040" "_n_0036" Area=x1 Mode=1
+V_Source:v_v1 "_n_0003" vmid Vdc=2.04
+L:l_l1 inp "_n_0021" L=1.3n
+npn8:q_q11 "_n_0033" "_n_0011" "_n_0025" Area=x16 Mode=1
+dx:d_d4 "_n_0025" "_n_0023" Area=1 Mode=1
+L:l_l3 "_n_0040" out L=1.3n
+L:l_l2 "_n_0025" "_n_0043" L=1.3n
+C:c_c2 "_n_0036" vcc C=0.2p
+R:r_r31 "_n_0043" inn R=65
+pnp8:q_q32 "_n_0044" "_n_0044" "_n_0041" Area=x60 Mode=1
+pnp8:q_q33 "_n_0040" "_n_0044" "_n_0041" Area=x60 Mode=1
+npn8:q_q28 "_n_0045" "_n_0045" "_n_0042" Area=x60 Mode=1
+npn8:q_q29 "_n_0040" "_n_0045" "_n_0042" Area=x60 Mode=1
+pnp8:q_q35 "_n_0045" "_n_0031" "_n_0040" Area=x60 Mode=1
+npn8:q_q34 "_n_0044" "_n_0034" "_n_0040" Area=x60 Mode=1
+pnp8:q_q27 "_n_0042" "_n_0036" "_n_0034" Area=x60 Mode=1
+npn8:q_q26 "_n_0041" "_n_0036" "_n_0031" Area=x60 Mode=1
+R:r_r28 "_n_0035" vcc R=62.5
+dx:d_d6 "_n_0037" vee Area=1 Mode=1
+R:r_r29 vee "_n_0032" R=62.5
+V_Source:v_v3 vee "_n_0042" Vdc=0.2
+V_Source:v_v2 "_n_0041" vcc Vdc=0.2
+
+model npn8 BJT Is=7.604e-18 Bf=1.570e+02 Nf=1.000e+00 Vaf=7.871e+01 Ikf=3.975e-02 Ise=3.219e-14 \
+      Ne=2.000e+00 Br=7.614e-01 Nr=1.000e+00 Var=1.452e+00 Ikr=8.172e-02 Isc=7.618e-21 Nc=1.847e+00 \
+      Rb=1.060e+02 Irb=0.000e+00 Rbm=2.400e+00 Re=2.520e+00 Rc=1.270e+02 Cje=1.120e-13 Vje=7.591e-01 \
+      Mje=5.406e-01 Tf=1.213e-11 Xtf=2.049e+00 Vtf=1.813e+00 Itf=4.293e-02 Ptf=0.000e+00 \
+      Cjc=8.208e-15 Vjc=6.666e-01 Mjc=4.509e-01 Xcjc=8.450e-02 Tr=4.000e-11 Cjs=1.160e-13 \
+      Vjs=5.286e-01 Mjs=4.389e-01 Xtb=1.022e+00 Eg=1.120e+00 Xti=1.780e+00 Kf=3.500e-16 \
+      Af=1.000e+00 Fc=8.273e-01 NPN=1 PNP=0 RbModel=1 Tnom=27 Tlev=0 Tlevc=0
+
+model pnp8 BJT Is=7.999e-18 Bf=1.418e+02 Nf=1.000e+00 Vaf=4.158e+01 Ikf=1.085e-01 Ise=2.233e-15 \
+      Ne=1.505e+00 Br=3.252e+01 Nr=1.050e+00 Var=1.093e+00 Ikr=5.000e-05 Isc=6.621e-16 Nc=1.150e+00 \
+      Rb=6.246e+01 Irb=0.000e+00 Rbm=2.240e+00 Re=2.537e+00 Rc=1.260e+02 Cje=9.502e-14 Vje=7.320e-01 \
+      Mje=4.930e-01 Tf=1.303e-11 Xtf=3.500e+01 Vtf=3.259e+00 Itf=2.639e-01 Ptf=0.000e+00 \
+      Cjc=1.080e-13 Vjc=7.743e-01 Mjc=5.000e-01 Xcjc=8.504e-02 Tr=1.500e-10 Cjs=1.290e-13 \
+      Vjs=9.058e-01 Mjs=4.931e-01 Xtb=1.732e+00 Eg=1.120e+00 Xti=2.000e+00 Kf=3.500e-16 \
+      Af=1.000e+00 Fc=8.500e-01 PNP=1 NPN=0 RbModel=1 Tnom=27 Tlev=0 Tlevc=0
+
+model dx Diode Is=1.0000e-15 Ibv=1e-10 Tnom=27 IkModel=1
+
+end opa695_model
+
+
+;.subckt OPA695_model_S1 1 2 3 4
+;S_S1         3 4 1 2 _S1
+;RS_S1         1 2 1G
+;.MODEL         _S1 VSWITCH Roff=1e12 Ron=0.001 Voff=3.0 Von=4.5
+;.MODEL         _S1 SwitchV R1=1e12 V1=3.0 R2=0.001 V2=4.5
+;.ends OPA695_model_S1
+define opa695_model_f1 ( _node1 _node2 _node3 _node4)
+SDD:f_f1 _node3 _node4 I[1,0]=1*_c1 C[1]="vf_f1"
+V_Source:vf_f1 _node1 _node2 Vdc=0
+end opa695_model_f1
