@@ -1388,7 +1388,7 @@
 		)
 		(uuid "44ba2bce-2cf8-4721-9c86-5c84e2af75db")
 	)
-	(text "900 to 5k\n10k for extreme feedback capacitance and error"
+	(text "800 to 5k\n10k for extreme feedback capacitance and error"
 		(exclude_from_sim no)
 		(at 178.054 85.09 0)
 		(effects
@@ -3419,7 +3419,7 @@
 		(at 152.4 82.55 180)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -4951,7 +4951,7 @@
 				)
 			)
 		)
-		(property "Value" "900"
+		(property "Value" "1k"
 			(at 171.45 85.09 90)
 			(show_name no)
 			(do_not_autoplace no)

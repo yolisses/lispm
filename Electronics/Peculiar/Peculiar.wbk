@@ -5,7 +5,7 @@
     {
       "analysis": "AC",
       "commands": [
-        ".ac dec 1000 1 10T",
+        ".ac dec 100 1 10T",
         ".kicad adjustpaths",
         ".save all",
         ".probe alli",
@@ -24,7 +24,7 @@
         {
           "color": "rgb(0, 224, 228)",
           "cursor1": {
-            "position": 1553202461.6253147,
+            "position": 1326804749.7140732,
             "x_format": "3~Hz",
             "y_format": "3~dB"
           },
@@ -37,6 +37,15 @@
         },
         {
           "color": "rgb(15, 228, 2)",
+          "cursor2": {
+            "position": 1000000.0,
+            "x_format": "3~s",
+            "y_format": "3~V"
+          },
+          "cursorD": {
+            "x_format": "3~s",
+            "y_format": "3~V"
+          },
           "signal": "V(/OPA858_and_OPA162/VOUT) (gain)",
           "trace_type": 521
         }
