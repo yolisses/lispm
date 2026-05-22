@@ -424,7 +424,7 @@
         "uuid": "db27cf5d-1015-467f-a739-ab2eb7f0a1b5"
       }
     ],
-    "used_designators": "",
+    "used_designators": "V9-10,U16-17,R12,R15,CP18-21,I5,C16,#PWR58-71,#GND5",
     "variants": []
   },
   "sheets": [
@@ -447,6 +447,10 @@
     [
       "2ecdb336-5f6a-4564-8c66-270272a719da",
       "OPA858"
+    ],
+    [
+      "7635d485-3c10-4c21-b915-82aca00c633b",
+      "LMC606"
     ]
   ],
   "text_variables": {},
