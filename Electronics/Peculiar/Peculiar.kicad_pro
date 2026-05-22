@@ -424,7 +424,7 @@
         "uuid": "db27cf5d-1015-467f-a739-ab2eb7f0a1b5"
       }
     ],
-    "used_designators": "V9-10,U16-17,R12,R15,CP18-21,I5,C16,#PWR58-71,#GND5",
+    "used_designators": "U15,U18",
     "variants": []
   },
   "sheets": [
@@ -451,6 +451,10 @@
     [
       "7635d485-3c10-4c21-b915-82aca00c633b",
       "LMC606"
+    ],
+    [
+      "0788dddd-8d37-498b-8246-0dd9db015290",
+      "Three Op Amps"
     ]
   ],
   "text_variables": {},
