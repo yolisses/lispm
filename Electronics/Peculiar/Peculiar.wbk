@@ -22,9 +22,9 @@
       "showGrid": true,
       "traces": [
         {
-          "color": "rgb(55, 126, 184)",
+          "color": "rgb(0, 224, 228)",
           "cursor1": {
-            "position": 628317360.0355802,
+            "position": 1553202461.6253147,
             "x_format": "3~Hz",
             "y_format": "3~dB"
           },
@@ -32,21 +32,12 @@
             "x_format": "3~s",
             "y_format": "3~V"
           },
-          "signal": "V(/OPA858/VOUT) (phase)",
+          "signal": "V(/OPA858_and_OPA162/VOUT) (phase)",
           "trace_type": 517
         },
         {
-          "color": "rgb(55, 126, 184)",
-          "cursor2": {
-            "position": 948938.8773971167,
-            "x_format": "3~s",
-            "y_format": "3~V"
-          },
-          "cursorD": {
-            "x_format": "3~s",
-            "y_format": "3~V"
-          },
-          "signal": "V(/OPA858/VOUT) (gain)",
+          "color": "rgb(15, 228, 2)",
+          "signal": "V(/OPA858_and_OPA162/VOUT) (gain)",
           "trace_type": 521
         }
       ]

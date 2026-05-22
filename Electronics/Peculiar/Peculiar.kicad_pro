@@ -640,7 +640,7 @@
         "uuid": "db27cf5d-1015-467f-a739-ab2eb7f0a1b5"
       }
     ],
-    "used_designators": "V11-12,U20-22,R17-19,CP22-25,I6,C17,#PWR46,#PWR76-91,#GND6",
+    "used_designators": "V1-14,U1-17,RP1,R1-17,I1-7,C1-10,#GND1-7,CP1-23,CP30-32,#PWR1-110",
     "variants": []
   },
   "sheets": [
@@ -667,6 +667,10 @@
     [
       "7635d485-3c10-4c21-b915-82aca00c633b",
       "LMC606"
+    ],
+    [
+      "b9d7f6b0-e7f1-4488-a6cd-d6663fc4ada1",
+      "OPA858 and OPA162"
     ],
     [
       "0788dddd-8d37-498b-8246-0dd9db015290",
