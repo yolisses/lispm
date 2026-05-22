@@ -22,13 +22,13 @@
       "showGrid": true,
       "traces": [
         {
-          "color": "rgb(16, 228, 15)",
-          "signal": "V(/LMC606/VOUT) (phase)",
+          "color": "rgb(55, 126, 184)",
+          "signal": "V(/OPA858/VOUT) (phase)",
           "trace_type": 517
         },
         {
-          "color": "rgb(0, 228, 228)",
-          "signal": "V(/LMC606/VOUT) (gain)",
+          "color": "rgb(55, 126, 184)",
+          "signal": "V(/OPA858/VOUT) (gain)",
           "trace_type": 521
         }
       ]

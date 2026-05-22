@@ -6,9 +6,55 @@
 	(paper "A4")
 	(lib_symbols)
 	(sheet
+		(at 166.37 143.51)
+		(size 22.86 11.43)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "0788dddd-8d37-498b-8246-0dd9db015290")
+		(property "Sheetname" "Three Op Amps"
+			(at 166.37 142.7984 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Three Op Amps.kicad_sch"
+			(at 166.37 155.5246 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Peculiar"
+				(path "/db27cf5d-1015-467f-a739-ab2eb7f0a1b5"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 127 111.76)
 		(size 29.21 21.59)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -54,7 +100,7 @@
 	(sheet
 		(at 83.82 148.59)
 		(size 30.48 12.7)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
