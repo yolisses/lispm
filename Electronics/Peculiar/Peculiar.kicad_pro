@@ -424,7 +424,7 @@
         "uuid": "db27cf5d-1015-467f-a739-ab2eb7f0a1b5"
       }
     ],
-    "used_designators": "V1-6,U1-14,R1-14,I1-3,C1-14,#PWR1-52,#GND1-3",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
@@ -443,6 +443,10 @@
     [
       "a77c6182-4376-457a-a9e3-921f40aca512",
       "Nested simple"
+    ],
+    [
+      "2ecdb336-5f6a-4564-8c66-270272a719da",
+      "OPA858"
     ]
   ],
   "text_variables": {},
