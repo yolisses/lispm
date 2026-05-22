@@ -23,11 +23,29 @@
       "traces": [
         {
           "color": "rgb(55, 126, 184)",
+          "cursor1": {
+            "position": 628317360.0355802,
+            "x_format": "3~Hz",
+            "y_format": "3~dB"
+          },
+          "cursorD": {
+            "x_format": "3~s",
+            "y_format": "3~V"
+          },
           "signal": "V(/OPA858/VOUT) (phase)",
           "trace_type": 517
         },
         {
           "color": "rgb(55, 126, 184)",
+          "cursor2": {
+            "position": 948938.8773971167,
+            "x_format": "3~s",
+            "y_format": "3~V"
+          },
+          "cursorD": {
+            "x_format": "3~s",
+            "y_format": "3~V"
+          },
           "signal": "V(/OPA858/VOUT) (gain)",
           "trace_type": 521
         }
