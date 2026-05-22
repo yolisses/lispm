@@ -8,7 +8,7 @@
 	(sheet
 		(at 127 111.76)
 		(size 29.21 21.59)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -47,6 +47,52 @@
 			(project "Peculiar"
 				(path "/db27cf5d-1015-467f-a739-ab2eb7f0a1b5"
 					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 83.82 148.59)
+		(size 30.48 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "7635d485-3c10-4c21-b915-82aca00c633b")
+		(property "Sheetname" "LMC606"
+			(at 83.82 147.8784 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "LMC606.kicad_sch"
+			(at 83.82 161.8746 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Peculiar"
+				(path "/db27cf5d-1015-467f-a739-ab2eb7f0a1b5"
+					(page "6")
 				)
 			)
 		)

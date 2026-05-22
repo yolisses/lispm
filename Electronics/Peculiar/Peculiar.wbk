@@ -22,31 +22,13 @@
       "showGrid": true,
       "traces": [
         {
-          "color": "rgb(0, 184, 179)",
-          "cursor1": {
-            "position": 761386335.1632417,
-            "x_format": "3~Hz",
-            "y_format": "3~dB"
-          },
-          "cursorD": {
-            "x_format": "3~Hz",
-            "y_format": "3~dB"
-          },
-          "signal": "V(/OPA858/VOUT) (phase)",
+          "color": "rgb(16, 228, 15)",
+          "signal": "V(/LMC606/VOUT) (phase)",
           "trace_type": 517
         },
         {
-          "color": "rgb(55, 126, 184)",
-          "cursor2": {
-            "position": 768000.0,
-            "x_format": "3~Hz",
-            "y_format": "3~dB"
-          },
-          "cursorD": {
-            "x_format": "3~Hz",
-            "y_format": "3~dB"
-          },
-          "signal": "V(/OPA858/VOUT) (gain)",
+          "color": "rgb(0, 228, 228)",
+          "signal": "V(/LMC606/VOUT) (gain)",
           "trace_type": 521
         }
       ]
