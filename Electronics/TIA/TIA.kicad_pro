@@ -1,29 +1,26 @@
 {
   "board": {
     "3dviewports": [],
+    "design_settings": {
+      "defaults": {},
+      "diff_pair_dimensions": [],
+      "drc_exclusions": [],
+      "rules": {},
+      "track_widths": [],
+      "via_dimensions": []
+    },
     "ipc2581": {
-      "bom_rev": "",
       "dist": "",
       "distpn": "",
       "internal_id": "",
       "mfg": "",
-      "mpn": "",
-      "sch_revision": ""
+      "mpn": ""
     },
     "layer_pairs": [],
     "layer_presets": [],
     "viewports": []
   },
   "boards": [],
-  "component_class_settings": {
-    "assignments": [],
-    "meta": {
-      "version": 0
-    },
-    "sheet_component_classes": {
-      "enabled": false
-    }
-  },
   "cvpcb": {
     "equivalence_files": []
   },
@@ -213,13 +210,11 @@
       "duplicate_sheet_names": "error",
       "endpoint_off_grid": "warning",
       "extra_units": "error",
-      "field_name_whitespace": "warning",
       "footprint_filter": "ignore",
       "footprint_link_issues": "warning",
       "four_way_junction": "ignore",
-      "ground_pin_not_ground": "warning",
+      "global_label_dangling": "warning",
       "hier_label_mismatch": "error",
-      "isolated_pin_label": "warning",
       "label_dangling": "error",
       "label_multiple_wires": "warning",
       "lib_symbol_issues": "warning",
@@ -242,7 +237,6 @@
       "similar_power": "warning",
       "simulation_model_issue": "ignore",
       "single_global_label": "ignore",
-      "stacked_pin_name": "warning",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
       "undefined_netclass": "error",
@@ -253,9 +247,7 @@
   },
   "libraries": {
     "pinned_footprint_libs": [],
-    "pinned_symbol_libs": [
-      "Device"
-    ]
+    "pinned_symbol_libs": []
   },
   "meta": {
     "filename": "TIA.kicad_pro",
@@ -277,14 +269,13 @@
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
-        "tuning_profile": "",
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
       }
     ],
     "meta": {
-      "version": 5
+      "version": 4
     },
     "net_colors": null,
     "netclass_assignments": null,
@@ -292,20 +283,20 @@
   },
   "pcbnew": {
     "last_paths": {
+      "gencad": "",
       "idf": "",
       "netlist": "",
       "plot": "",
+      "pos_files": "",
       "specctra_dsn": "",
+      "step": "",
+      "svg": "",
       "vrml": ""
     },
     "page_layout_descr_file": ""
   },
   "schematic": {
     "annotate_start_num": 0,
-    "annotation": {
-      "method": 0,
-      "sort_order": 0
-    },
     "bom_export_filename": "${PROJECTNAME}.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
@@ -377,7 +368,6 @@
       "sort_asc": true,
       "sort_field": "Reference"
     },
-    "bus_aliases": {},
     "connection_grid_size": 50.0,
     "drawing": {
       "dashed_lines_dash_length_ratio": 12.0,
@@ -385,7 +375,6 @@
       "default_line_thickness": 6.0,
       "default_text_size": 50.0,
       "field_names": [],
-      "hop_over_size_choice": 0,
       "intersheets_ref_own_page": false,
       "intersheets_ref_prefix": "",
       "intersheets_ref_short": false,
@@ -406,6 +395,7 @@
     "meta": {
       "version": 1
     },
+    "net_format_name": "",
     "ngspice": {
       "fix_include_paths": true,
       "meta": {
@@ -416,54 +406,41 @@
     },
     "page_layout_descr_file": "",
     "plot_directory": "",
-    "reuse_designators": true,
+    "space_save_all_events": true,
+    "spice_current_sheet_as_root": false,
+    "spice_external_command": "spice \"%I\"",
+    "spice_model_current_sheet_as_root": true,
+    "spice_save_all_currents": false,
+    "spice_save_all_dissipations": false,
+    "spice_save_all_voltages": false,
     "subpart_first_id": 65,
-    "subpart_id_separator": 0,
-    "top_level_sheets": [
-      {
-        "filename": "TIA.kicad_sch",
-        "name": "TIA",
-        "uuid": "54290178-5b03-4b9d-bd2e-fef7d018d5b4"
-      }
-    ],
-    "used_designators": "RP5-8,R6,R21-30,CP11-22,U4,U7,I2,C9-13",
-    "variants": []
+    "subpart_id_separator": 0
   },
   "sheets": [
     [
-      "54290178-5b03-4b9d-bd2e-fef7d018d5b4",
-      "TIA"
+      "71573f97-d585-4d55-ac00-8cb3ed311569",
+      "Root"
     ],
     [
-      "5df078fc-cfb3-4595-a36d-c999085cd816",
-      "Single Amplifier"
+      "f30b38ba-aa0a-4e2b-b27f-8697d0e35abc",
+      "TLV906"
     ],
     [
-      "06543960-6df5-427c-bcfd-4b08397f7203",
-      "Two Amplifiers"
-    ],
-    [
-      "df7fde62-ac01-4c02-b668-caf82c81ee74",
+      "7393f255-b863-4c1d-9342-5a39256b0530",
       "OPA858"
     ],
     [
-      "e80855d3-fd1b-486b-9760-6d9a69fd0b65",
-      "OPA859"
+      "3ecb7f7a-1c03-4eaf-a122-686264238360",
+      "OPA858 Stage1"
     ],
     [
-      "9aa46cdb-e23c-4f77-9dc0-c132692a82fc",
-      "OPA859 1G"
+      "7522ab81-de0c-4e4a-866e-c0efc6c9785b",
+      "OPA858 Stage2"
     ],
     [
-      "f116f47b-3638-4010-9ce2-d75928f10e59",
-      "OPA858 Complex"
+      "a6d32514-4da2-4918-8e0e-712121b4b2e2",
+      "OPA858 Stage3"
     ]
   ],
-  "text_variables": {},
-  "tuning_profiles": {
-    "meta": {
-      "version": 0
-    },
-    "tuning_profiles_impedance_geometric": []
-  }
+  "text_variables": {}
 }

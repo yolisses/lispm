@@ -1,21 +1,16 @@
 {
-  "custom_cursors": 2,
   "last_sch_text_sim_command": "",
   "tabs": [
     {
       "analysis": "AC",
       "commands": [
-        ".ac dec 100 100 10G",
+        ".ac dec 100 100 1T",
         ".kicad adjustpaths",
         ".save all",
         ".probe alli",
         ".probe allp"
       ],
       "dottedSecondary": true,
-      "fixedY2scale": {
-        "max": 180.0,
-        "min": -180.0
-      },
       "margins": {
         "bottom": 45,
         "left": 70,
@@ -26,78 +21,36 @@
       "showGrid": true,
       "traces": [
         {
-          "color": "rgb(5, 228, 200)",
-          "signal": "V(/OUT3) (phase)",
+          "color": "rgb(3, 228, 228)",
+          "cursor2": {
+            "position": 415628228.32374024,
+            "x_format": "3~Hz",
+            "y_format": "3~°"
+          },
+          "cursorD": {
+            "x_format": "3~s",
+            "y_format": "3~V"
+          },
+          "signal": "V(/OPA858/OUT) (phase)",
           "trace_type": 517
         },
         {
-          "color": "rgb(1, 228, 0)",
+          "color": "rgb(22, 228, 68)",
           "cursor1": {
             "position": 768000.0,
             "x_format": "3~Hz",
             "y_format": "3~dB"
           },
-          "cursor2": {
-            "position": 100.0,
-            "x_format": "3~Hz",
-            "y_format": "3~dB"
-          },
           "cursorD": {
-            "x_format": "3~Hz",
-            "y_format": "3~dB"
+            "x_format": "3~s",
+            "y_format": "3~V"
           },
-          "signal": "V(/OUT3) (gain)",
+          "signal": "V(/OPA858/OUT) (gain)",
           "trace_type": 521
         }
       ]
-    },
-    {
-      "analysis": "DC",
-      "commands": [
-        ".dc I1 0 100n 10p",
-        ".kicad adjustpaths",
-        ".save all",
-        ".probe alli",
-        ".probe allp"
-      ],
-      "dottedSecondary": true,
-      "margins": {
-        "bottom": 45,
-        "left": 70,
-        "right": 70,
-        "top": 30
-      },
-      "measurements": [],
-      "showGrid": true,
-      "traces": [
-        {
-          "color": "rgb(228, 26, 28)",
-          "signal": "V(/OUT4)",
-          "trace_type": 2049
-        }
-      ]
-    },
-    {
-      "analysis": "TRAN",
-      "commands": [
-        ".tran 10n 1m 0",
-        ".kicad adjustpaths",
-        ".save all",
-        ".probe alli",
-        ".probe allp"
-      ],
-      "dottedSecondary": true,
-      "margins": {
-        "bottom": 45,
-        "left": 70,
-        "right": 70,
-        "top": 30
-      },
-      "measurements": [],
-      "showGrid": true,
-      "traces": []
     }
   ],
   "user_defined_signals": [],
-  "version": 7
+  "version": 6
 }
