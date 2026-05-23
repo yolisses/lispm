@@ -1,0 +1,147 @@
+
+**** 02/05/21 13:52:24 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AC_Sweep"  [ C:\Users\a0232073\Desktop\GWL_Models\OPA855\OPA858-PSpiceFiles\SCHEMATIC1\AC_Sweep.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "AC_Sweep.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+.INC "C:\Users\a0232073\Desktop\GWL_Models\OPA855\OPA858-PSpiceFiles\SCHEMATIC1\AC_Sweep\AC_Sweep_profile.inc" 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpiceTIPSpice_Install\17.4.0\PSpice.ini file:
+
+**** INCLUDING AC_Sweep_profile.inc ****
+.LIB    ".\OPA858.lib" 
+
+**** RESUMING AC_Sweep.cir ****
+.lib "nom_pspti.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 40 100k 10e9
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source OPA858
+X_U1         IN+ N00412 VS+ VS- OUT OPA858
+R_R1         0 OUT  200 TC=0,0 
+R_R2         N00412 OUT  453 TC=0,0 
+R_R3         0 N00412  75 TC=0,0 
+V_V1         VS+ 0 2.5Vdc
+V_V2         VS- 0 -2.4Vdc
+V_V3         IN+ 0 DC 0Vdc AC 1Vac 
+
+**** RESUMING AC_Sweep.cir ****
+.END
+
+INFO(ORPSIM-16573): AC analysis does not support expression evaluation at each frequency. ABM devices with non-linear operations will be evaluated only at bias point.
+
+**** 02/05/21 13:52:24 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AC_Sweep"  [ C:\Users\a0232073\Desktop\GWL_Models\OPA855\OPA858-PSpiceFiles\SCHEMATIC1\AC_Sweep.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.XI0.XI18.X1.DVNF 
+          IS  100.000000E-18 
+          KF  100.000000E-15 
+
+
+               X_U1.XI0.XI63.X1.DVNF 
+          IS  100.000000E-18 
+          KF  100.000000E-15 
+
+
+               X_U1.XI0.XI17.X1.DVN 
+          IS  100.000000E-18 
+          KF  100.000000E-15 
+
+
+ERROR(ORPSIM-16583): Detected an imported model containing transistors or diodes. For such models, PSpice for TI supports a minimum of one and maximum of three traces. Reduce the number of traces and simulate again.
+
+
+ABORTING SIMULATION
+**** 02/05/21 13:52:24 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-AC_Sweep"  [ C:\Users\a0232073\Desktop\GWL_Models\OPA855\OPA858-PSpiceFiles\SCHEMATIC1\AC_Sweep.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+Node counts:
+  Top level (NUNODS)                =           6
+  External (NCNODS)                 =         108
+  Total (NUMNOD)                    =         108
+
+Total device count (NUMEL)          =         205
+  Capacitors (C)                    =          27
+  Diodes (D)                        =           6
+  VCVS (E)                          =          36
+  VCCS (G)                          =          25
+  CCVS (H)                          =           2
+  Current Sources (I)               =           6
+  Inductors (L)                     =           6
+  Resistors (R)                     =          67
+  Voltage Sources (V)               =          24
+
+Number of subcircuits (X)           =          41
+
+Matrix statistics:
+  Matrix size (NSTOP)               =         176
+  Initial no. elements (NTTAR)      =         485
+  No. elements w/ fillin (NTTBR)    =         485
+  No. fillins (IFILL)               =           0
+  No. overflows (NTTOV)             =           0
+  No. LU operations (IOPS)          =           0
+  Percent sparsity (PERSPA)         =      98.434
+
+Analysis statistics:
+  No. total time points (NUMTTP)    =           0
+  No. rejected time points (NUMRTP) =           0
+  No. iterations (NUMNIT)           =           0
+
+Load Threads                        =           1
+
+Runtime statistics:                       Seconds      Iterations
+  Matrix load                       =        0.00
+  Matrix solution                   =        0.00               1
+  Readin                            =        2.25
+  General setup                     =         .02
+  CMI setup                     =        0.00
+  Setup                             =        0.00
+  DC sweep                          =        0.00               0
+  Bias point                        =        0.00               0
+  AC and noise                      =        0.00               0
+  Total transient analysis          =        0.00
+  Output                            =        0.00
+  Overhead                          =         .16
+  License check-out time            =        7.00
+  Total job time (using Solver 1)   =        2.27
+
