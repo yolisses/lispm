@@ -1035,10 +1035,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "03c0bc28-a91b-4eff-a468-ce2b0630101d")
+			(uuid "5946db77-6a86-43e4-9e89-5c7dfa86767c")
 		)
 		(pin "1"
-			(uuid "94d6bac9-8421-4414-ab9f-83809a65b669")
+			(uuid "52babe25-0e27-4f79-8537-0768ac4cd9ec")
 		)
 		(instances
 			(project "TIA"
@@ -1046,12 +1046,12 @@
 					(reference "LP3")
 					(unit 1)
 				)
-				(path "/71573f97-d585-4d55-ac00-8cb3ed311569/7393f255-b863-4c1d-9342-5a39256b0530/7522ab81-de0c-4e4a-866e-c0efc6c9785b"
-					(reference "LP4")
+				(path "/71573f97-d585-4d55-ac00-8cb3ed311569/7393f255-b863-4c1d-9342-5a39256b0530/6574afd4-ee93-4d54-b19b-de84322b8512"
+					(reference "LP5")
 					(unit 1)
 				)
-				(path "/71573f97-d585-4d55-ac00-8cb3ed311569/7393f255-b863-4c1d-9342-5a39256b0530/a6d32514-4da2-4918-8e0e-712121b4b2e2"
-					(reference "LP5")
+				(path "/71573f97-d585-4d55-ac00-8cb3ed311569/7393f255-b863-4c1d-9342-5a39256b0530/7522ab81-de0c-4e4a-866e-c0efc6c9785b"
+					(reference "LP4")
 					(unit 1)
 				)
 			)
@@ -1067,7 +1067,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0cadf788-42a5-4c04-a949-7a5029865541")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR037"
 			(at 127 82.55 0)
 			(effects
 				(font
@@ -1112,20 +1112,20 @@
 			)
 		)
 		(pin "1"
-			(uuid "dc729d47-522a-4fbe-ae01-00037d2e8559")
+			(uuid "8464974a-efb5-46d0-a3e6-d159a154879e")
 		)
 		(instances
 			(project "TIA"
 				(path "/71573f97-d585-4d55-ac00-8cb3ed311569/7393f255-b863-4c1d-9342-5a39256b0530/3ecb7f7a-1c03-4eaf-a122-686264238360"
-					(reference "#PWR032")
+					(reference "#PWR037")
+					(unit 1)
+				)
+				(path "/71573f97-d585-4d55-ac00-8cb3ed311569/7393f255-b863-4c1d-9342-5a39256b0530/6574afd4-ee93-4d54-b19b-de84322b8512"
+					(reference "#PWR027")
 					(unit 1)
 				)
 				(path "/71573f97-d585-4d55-ac00-8cb3ed311569/7393f255-b863-4c1d-9342-5a39256b0530/7522ab81-de0c-4e4a-866e-c0efc6c9785b"
-					(reference "#PWR036")
-					(unit 1)
-				)
-				(path "/71573f97-d585-4d55-ac00-8cb3ed311569/7393f255-b863-4c1d-9342-5a39256b0530/a6d32514-4da2-4918-8e0e-712121b4b2e2"
-					(reference "#PWR040")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -1222,19 +1222,19 @@
 			)
 		)
 		(pin "5"
-			(uuid "a90106a5-16fc-42af-943d-3498e233a82e")
+			(uuid "2a568304-8498-4c5b-a177-8ed88bb2e8ed")
 		)
 		(pin "4"
-			(uuid "a5bca10b-1c86-4fc4-8e18-f3806d2491ac")
+			(uuid "92ec6709-e79d-45eb-a385-bbd6dabe54dc")
 		)
 		(pin "3"
-			(uuid "76a359fb-00f4-470a-861a-f8db7f48311d")
+			(uuid "2a42c380-e17f-4eb4-9889-a3c772cfd753")
 		)
 		(pin "2"
-			(uuid "7347219e-4841-418e-a140-fe9be9fd2d80")
+			(uuid "e33c3654-190b-400b-ac7e-6c346e5cff50")
 		)
 		(pin "1"
-			(uuid "ba776bc3-7eb6-449a-97e8-db287972d2bb")
+			(uuid "00e1e367-335f-4b98-bd61-52506b454abd")
 		)
 		(instances
 			(project "TIA"
@@ -1242,12 +1242,12 @@
 					(reference "U5")
 					(unit 1)
 				)
-				(path "/71573f97-d585-4d55-ac00-8cb3ed311569/7393f255-b863-4c1d-9342-5a39256b0530/7522ab81-de0c-4e4a-866e-c0efc6c9785b"
-					(reference "U6")
+				(path "/71573f97-d585-4d55-ac00-8cb3ed311569/7393f255-b863-4c1d-9342-5a39256b0530/6574afd4-ee93-4d54-b19b-de84322b8512"
+					(reference "U7")
 					(unit 1)
 				)
-				(path "/71573f97-d585-4d55-ac00-8cb3ed311569/7393f255-b863-4c1d-9342-5a39256b0530/a6d32514-4da2-4918-8e0e-712121b4b2e2"
-					(reference "U7")
+				(path "/71573f97-d585-4d55-ac00-8cb3ed311569/7393f255-b863-4c1d-9342-5a39256b0530/7522ab81-de0c-4e4a-866e-c0efc6c9785b"
+					(reference "U6")
 					(unit 1)
 				)
 			)
@@ -1263,7 +1263,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "62677997-e5db-4cf7-9089-7cd607a8397b")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR036"
 			(at 127 74.93 0)
 			(effects
 				(font
@@ -1308,20 +1308,20 @@
 			)
 		)
 		(pin "1"
-			(uuid "3026f39f-4f06-4d52-9ce4-4244aa388693")
+			(uuid "b72cea69-14f4-4d66-8b04-d2e14c7fd08f")
 		)
 		(instances
 			(project "TIA"
 				(path "/71573f97-d585-4d55-ac00-8cb3ed311569/7393f255-b863-4c1d-9342-5a39256b0530/3ecb7f7a-1c03-4eaf-a122-686264238360"
-					(reference "#PWR031")
+					(reference "#PWR036")
+					(unit 1)
+				)
+				(path "/71573f97-d585-4d55-ac00-8cb3ed311569/7393f255-b863-4c1d-9342-5a39256b0530/6574afd4-ee93-4d54-b19b-de84322b8512"
+					(reference "#PWR024")
 					(unit 1)
 				)
 				(path "/71573f97-d585-4d55-ac00-8cb3ed311569/7393f255-b863-4c1d-9342-5a39256b0530/7522ab81-de0c-4e4a-866e-c0efc6c9785b"
-					(reference "#PWR035")
-					(unit 1)
-				)
-				(path "/71573f97-d585-4d55-ac00-8cb3ed311569/7393f255-b863-4c1d-9342-5a39256b0530/a6d32514-4da2-4918-8e0e-712121b4b2e2"
-					(reference "#PWR039")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -1337,7 +1337,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "81270b00-78d3-4c36-b94c-f4a9b5b84553")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR035"
 			(at 115.57 81.28 0)
 			(effects
 				(font
@@ -1383,20 +1383,20 @@
 			)
 		)
 		(pin "1"
-			(uuid "f9fbdd6a-8a55-46c7-949a-bc47c6775a48")
+			(uuid "7d5682a2-2574-46fe-b699-a38136b58f88")
 		)
 		(instances
 			(project "TIA"
 				(path "/71573f97-d585-4d55-ac00-8cb3ed311569/7393f255-b863-4c1d-9342-5a39256b0530/3ecb7f7a-1c03-4eaf-a122-686264238360"
-					(reference "#PWR030")
+					(reference "#PWR035")
+					(unit 1)
+				)
+				(path "/71573f97-d585-4d55-ac00-8cb3ed311569/7393f255-b863-4c1d-9342-5a39256b0530/6574afd4-ee93-4d54-b19b-de84322b8512"
+					(reference "#PWR023")
 					(unit 1)
 				)
 				(path "/71573f97-d585-4d55-ac00-8cb3ed311569/7393f255-b863-4c1d-9342-5a39256b0530/7522ab81-de0c-4e4a-866e-c0efc6c9785b"
-					(reference "#PWR034")
-					(unit 1)
-				)
-				(path "/71573f97-d585-4d55-ac00-8cb3ed311569/7393f255-b863-4c1d-9342-5a39256b0530/a6d32514-4da2-4918-8e0e-712121b4b2e2"
-					(reference "#PWR038")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -1412,7 +1412,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b96c775b-781f-441f-8e73-5f92b6862a86")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR038"
 			(at 177.8 93.98 0)
 			(effects
 				(font
@@ -1457,20 +1457,20 @@
 			)
 		)
 		(pin "1"
-			(uuid "c5e80470-0960-4c3d-9801-f1a757275f77")
+			(uuid "00f1a099-2eb0-4813-9c8e-d0b89cf64558")
 		)
 		(instances
 			(project "TIA"
 				(path "/71573f97-d585-4d55-ac00-8cb3ed311569/7393f255-b863-4c1d-9342-5a39256b0530/3ecb7f7a-1c03-4eaf-a122-686264238360"
-					(reference "#PWR033")
+					(reference "#PWR038")
+					(unit 1)
+				)
+				(path "/71573f97-d585-4d55-ac00-8cb3ed311569/7393f255-b863-4c1d-9342-5a39256b0530/6574afd4-ee93-4d54-b19b-de84322b8512"
+					(reference "#PWR028")
 					(unit 1)
 				)
 				(path "/71573f97-d585-4d55-ac00-8cb3ed311569/7393f255-b863-4c1d-9342-5a39256b0530/7522ab81-de0c-4e4a-866e-c0efc6c9785b"
-					(reference "#PWR037")
-					(unit 1)
-				)
-				(path "/71573f97-d585-4d55-ac00-8cb3ed311569/7393f255-b863-4c1d-9342-5a39256b0530/a6d32514-4da2-4918-8e0e-712121b4b2e2"
-					(reference "#PWR041")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -1530,10 +1530,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "5472e2e0-23da-4567-90b3-724ff7ceb59c")
+			(uuid "05d1d3cd-e472-436f-a298-cc39860f6cde")
 		)
 		(pin "1"
-			(uuid "06c4d07f-135d-4917-a03d-52e4112030b6")
+			(uuid "303a96f5-5b22-4ee7-b61b-6391fa1d2bab")
 		)
 		(instances
 			(project "TIA"
@@ -1541,12 +1541,12 @@
 					(reference "RP2")
 					(unit 1)
 				)
-				(path "/71573f97-d585-4d55-ac00-8cb3ed311569/7393f255-b863-4c1d-9342-5a39256b0530/7522ab81-de0c-4e4a-866e-c0efc6c9785b"
-					(reference "RP3")
+				(path "/71573f97-d585-4d55-ac00-8cb3ed311569/7393f255-b863-4c1d-9342-5a39256b0530/6574afd4-ee93-4d54-b19b-de84322b8512"
+					(reference "RP4")
 					(unit 1)
 				)
-				(path "/71573f97-d585-4d55-ac00-8cb3ed311569/7393f255-b863-4c1d-9342-5a39256b0530/a6d32514-4da2-4918-8e0e-712121b4b2e2"
-					(reference "RP4")
+				(path "/71573f97-d585-4d55-ac00-8cb3ed311569/7393f255-b863-4c1d-9342-5a39256b0530/7522ab81-de0c-4e4a-866e-c0efc6c9785b"
+					(reference "RP3")
 					(unit 1)
 				)
 			)
@@ -1562,7 +1562,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ea01358d-7d84-4b72-a5a1-e0dd73b9e985")
-		(property "Reference" "R11"
+		(property "Reference" "R15"
 			(at 146.05 69.85 90)
 			(effects
 				(font
@@ -1570,7 +1570,7 @@
 				)
 			)
 		)
-		(property "Value" "47"
+		(property "Value" "10"
 			(at 146.05 72.39 90)
 			(effects
 				(font
@@ -1606,23 +1606,23 @@
 			)
 		)
 		(pin "2"
-			(uuid "fcefad34-9d2f-4a92-af16-797831c4cb22")
+			(uuid "65213d8f-f39f-400d-bd66-659b4fd547cd")
 		)
 		(pin "1"
-			(uuid "03f2a989-92f9-426d-88e5-d5ce17dfd8a3")
+			(uuid "3f8942cc-fafc-4d7b-aa78-c4ba23927abc")
 		)
 		(instances
 			(project "TIA"
 				(path "/71573f97-d585-4d55-ac00-8cb3ed311569/7393f255-b863-4c1d-9342-5a39256b0530/3ecb7f7a-1c03-4eaf-a122-686264238360"
-					(reference "R11")
+					(reference "R15")
+					(unit 1)
+				)
+				(path "/71573f97-d585-4d55-ac00-8cb3ed311569/7393f255-b863-4c1d-9342-5a39256b0530/6574afd4-ee93-4d54-b19b-de84322b8512"
+					(reference "R8")
 					(unit 1)
 				)
 				(path "/71573f97-d585-4d55-ac00-8cb3ed311569/7393f255-b863-4c1d-9342-5a39256b0530/7522ab81-de0c-4e4a-866e-c0efc6c9785b"
-					(reference "R12")
-					(unit 1)
-				)
-				(path "/71573f97-d585-4d55-ac00-8cb3ed311569/7393f255-b863-4c1d-9342-5a39256b0530/a6d32514-4da2-4918-8e0e-712121b4b2e2"
-					(reference "R13")
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -1684,10 +1684,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "4888d203-66c3-4314-8c71-b82142e03d2b")
+			(uuid "7ea636fc-690f-445b-89c3-f4c83c8ecb29")
 		)
 		(pin "1"
-			(uuid "2bfeab91-4778-4982-8a3e-d444e2c080eb")
+			(uuid "b84724ac-304b-4792-891e-7598de7f2c02")
 		)
 		(instances
 			(project "TIA"
@@ -1695,12 +1695,12 @@
 					(reference "CP3")
 					(unit 1)
 				)
-				(path "/71573f97-d585-4d55-ac00-8cb3ed311569/7393f255-b863-4c1d-9342-5a39256b0530/7522ab81-de0c-4e4a-866e-c0efc6c9785b"
-					(reference "CP4")
+				(path "/71573f97-d585-4d55-ac00-8cb3ed311569/7393f255-b863-4c1d-9342-5a39256b0530/6574afd4-ee93-4d54-b19b-de84322b8512"
+					(reference "CP5")
 					(unit 1)
 				)
-				(path "/71573f97-d585-4d55-ac00-8cb3ed311569/7393f255-b863-4c1d-9342-5a39256b0530/a6d32514-4da2-4918-8e0e-712121b4b2e2"
-					(reference "CP5")
+				(path "/71573f97-d585-4d55-ac00-8cb3ed311569/7393f255-b863-4c1d-9342-5a39256b0530/7522ab81-de0c-4e4a-866e-c0efc6c9785b"
+					(reference "CP4")
 					(unit 1)
 				)
 			)

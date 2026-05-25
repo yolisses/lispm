@@ -1,8 +1,0 @@
-* source OPA858
-X_U1         IN+ N00412 VS+ VS- OUT OPA858
-R_R1         0 OUT  200 TC=0,0 
-R_R2         N00412 OUT  453 TC=0,0 
-R_R3         0 N00412  75 TC=0,0 
-V_V1         VS+ 0 2.5Vdc
-V_V2         VS- 0 -2.4Vdc
-V_V3         IN+ 0 DC 0Vdc AC 1Vac 

@@ -21,32 +21,9 @@
       "showGrid": true,
       "traces": [
         {
-          "color": "rgb(3, 228, 228)",
-          "cursor2": {
-            "position": 415628228.32374024,
-            "x_format": "3~Hz",
-            "y_format": "3~°"
-          },
-          "cursorD": {
-            "x_format": "3~s",
-            "y_format": "3~V"
-          },
+          "color": "rgb(22, 228, 68)",
           "signal": "V(/OPA858/OUT) (phase)",
           "trace_type": 517
-        },
-        {
-          "color": "rgb(22, 228, 68)",
-          "cursor1": {
-            "position": 768000.0,
-            "x_format": "3~Hz",
-            "y_format": "3~dB"
-          },
-          "cursorD": {
-            "x_format": "3~s",
-            "y_format": "3~V"
-          },
-          "signal": "V(/OPA858/OUT) (gain)",
-          "trace_type": 521
         }
       ]
     }
