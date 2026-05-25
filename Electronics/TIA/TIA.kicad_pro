@@ -438,8 +438,28 @@
       "OPA858 Stage2"
     ],
     [
-      "6574afd4-ee93-4d54-b19b-de84322b8512",
+      "6f9c9bcd-05c9-4f63-a744-247a5da53327",
       "OPA858 Stage3"
+    ],
+    [
+      "447ab444-b820-479d-9c03-ff04d3523599",
+      "RS8751"
+    ],
+    [
+      "9cfb1907-c9bf-45a4-a9f3-45057488697b",
+      "RS8751 Stage1"
+    ],
+    [
+      "7194f08e-538c-499e-9ec2-6f0f052d5d8a",
+      "RS8751 Stage2 (page 9)"
+    ],
+    [
+      "febe3e09-ab2e-4dc5-be0a-436807e94330",
+      "RS8751 Stage3 (page 10)"
+    ],
+    [
+      "d2052d16-344f-44c5-b2be-9d6bddc7362d",
+      "RS8751 Stage3 (page 10)1"
     ]
   ],
   "text_variables": {}
