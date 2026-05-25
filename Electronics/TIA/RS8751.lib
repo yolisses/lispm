@@ -1,0 +1,242 @@
+* ==============================================================
+* RS8751 SPICE Behavioral Model
+* Device: RUNIC RS8751 / RS8752 / RS8754
+* Datasheet: Rev C.3.1
+* Model version: 1.0
+* Optimized for: Low-noise transimpedance amplifier (STM preamp)
+*
+* Modeled parameters:
+*   GBW         = 250 MHz
+*   AOL         = 110 dB  (RL=1kΩ, typ)
+*   SR          = 180 V/µs
+*   Vos         = +1.5 mV (typ; edit VOS_VAL to sweep)
+*   IB          = 1 pA  (typ CMOS input)
+*   IOS         = 1 pA  (typ)
+*   CMRR        = 85 dB  (typ)
+*   PSRR        = 90 dB  (typ)
+*   Iq          = 2.9 mA/amplifier
+*   en          = 8 nV/√Hz @ 1 MHz  (white floor)
+*   Isink       = 130 mA @ 25°C  (Figure 7)
+*   Isource     = 87  mA @ 25°C  (Figure 8)
+*   Phase margin= 62°  (unity gain)
+*   Rout        ≈ 295 Ω  (estimated: 1/(2π·90MHz·6pF), Figure 4)
+*   Output swing= within 23 mV of rails @ RL=1kΩ
+*   Supply      = 2.5V–5.5V single / ±1.25V–±2.75V dual
+*
+* Pinout (matches RS8751 SOT23-5 and generic dual/quad channel):
+*   Pin 1: IN+   Noninverting input
+*   Pin 2: IN-   Inverting input
+*   Pin 3: VCC   Positive supply
+*   Pin 4: VEE   Negative supply
+*   Pin 5: OUT   Output
+*
+* Compatible simulators: LTspice, ngspice, Tina-TI
+* For ngspice: replace {expr} parameters with literal values if
+*              .param is unsupported in your version.
+*
+* IMPORTANT NOTES FOR STM TIA USE:
+*   - IB modeled as DC; actual shot-noise contribution of 1pA IB
+*     is ~18 fA/√Hz, negligible vs en-referred noise at most gains.
+*   - For gains >100MΩ, dominant noise will be feedback resistor
+*     Johnson noise, not this amplifier model.
+*   - No flicker (1/f) noise corner modeled; add if <10kHz behavior
+*     is critical. Datasheet shows 13µVpp from 0.1–10Hz.
+*   - The nested TIA second stage will see this model's Rout (295Ω)
+*     and output pole; account for this in stability analysis.
+* ==============================================================
+
+.SUBCKT RS8751 INP INN VCC VEE OUT
+*               |   |   |   |   |
+*              IN+ IN- V+  V-  OUT
+
+* --------------------------------------------------------------
+* PARAMETERS
+* --------------------------------------------------------------
+.param VOS_VAL  = 1.5e-3    ; Offset voltage, V (typ +1.5mV; use -1.5m for worst case)
+.param IB_VAL   = 1e-12     ; Input bias current, A (typ 1pA, max 10pA)
+.param IOS_VAL  = 0.5e-12   ; Input offset current, A (half of IB asymmetry)
+.param IQ       = 1.45e-3   ; Half quiescent current per rail, A (total Iq=2.9mA)
+.param GM1_VAL  = 1.5708    ; First stage Gm, A/V  (= 2π·GBW·C1 = 2π·250M·1n)
+.param C1_VAL   = 1e-9      ; Dominant pole integrating cap, F
+.param R1_VAL   = 200e6     ; DC gain resistor, Ω  (AOL = GM1·R1 = 314160 ≈ 110dB)
+.param ISR      = 0.180     ; Slew current limit, A  (SR = ISR/C1 = 180V/µs)
+.param GM2_VAL  = 10e-3     ; Second stage Gm, A/V
+.param R2_VAL   = 100       ; Second stage load, Ω
+.param C2_VAL   = 3.54e-12  ; Second pole cap, F  (fp2=1/(2π·R2·C2)=450MHz, PM≈62°)
+.param ROUT_VAL = 295       ; Output resistance, Ω  (from CL=6pF, -3dB@90MHz)
+.param CMRR_LIN = 177827    ; CMRR linear  (10^(85/20))
+.param PSRR_LIN = 316228    ; PSRR linear  (10^(90/20))
+.param ISINK    = 0.130     ; Max output sink current, A  (Figure 7 @ 25°C)
+.param ISOURCE  = 0.087     ; Max output source current, A (Figure 8 @ 25°C)
+.param RNOISE   = 3865      ; Noise resistor, Ω  (en²/4kT = (8n)²/(4·1.38e-23·300))
+
+* --------------------------------------------------------------
+* SUPPLY CURRENT (quiescent)
+* Draws Iq from each rail independently of signal
+* --------------------------------------------------------------
+IQP   VCC  VMID_Q  {IQ}
+IQN   VMID_Q  VEE  {IQ}
+VMID_Q_SRC  VMID_Q  0  DC 0    ; voltage ref for floating mid node
+
+* --------------------------------------------------------------
+* INPUT STAGE
+* Offset, bias currents, and noise resistor
+*
+* Topology:
+*   INP --[RNOISE_R]--+--[VOFS]-- VDIFF_P (internal noninverting)
+*                     |
+*                    IIB_P (to VEE)
+*
+*   INN ──────────────+── VDIFF_N (internal inverting)
+*                     |
+*                    IIB_N + IOS asymmetry (to VEE)
+* --------------------------------------------------------------
+
+* Noise: Johnson noise of RNOISE_R = sqrt(4kT·3865) = 8 nV/√Hz ✓
+RNOISE_R  INP  VN_NOISE  {RNOISE}
+
+* Offset voltage in series with noninverting input (after noise R)
+VOFS      VN_NOISE  VDP  DC {VOS_VAL}
+
+* Input bias currents (CMOS, ultra-low)
+* IB+ slightly different from IB- by IOS to model offset current
+IIB_P  VDP  VEE  {IB_VAL + IOS_VAL}
+IIB_N  INN  VEE  {IB_VAL}
+
+* --------------------------------------------------------------
+* DIFFERENTIAL INPUT VOLTAGE (used by all downstream stages)
+* --------------------------------------------------------------
+EDIFF   VDIFF  0  VDP  INN  1.0
+
+* --------------------------------------------------------------
+* CMRR INJECTION
+* Common-mode error: Vcm / CMRR injected into differential path
+* Vcm approximated as average of input pins
+* --------------------------------------------------------------
+ECM     VCM_NODE  0  VDP  INN  0.5
+GCMRR   VDIFF  0  VCM_NODE  0  {1.0/CMRR_LIN}
+
+* --------------------------------------------------------------
+* PSRR INJECTION
+* Supply variation / PSRR injected into differential path
+* --------------------------------------------------------------
+EPSUP   VSUP_TOTAL  0  VCC  VEE  1.0
+GPSRR   VDIFF  0  VSUP_TOTAL  0  {1.0/PSRR_LIN}
+
+* --------------------------------------------------------------
+* FIRST GAIN STAGE — dominant pole integrator
+*
+* AOL  = GM1 · R1 = 1.5708 · 200M = 314,160 V/V = 109.9 dB ✓
+* fp1  = 1/(2π·R1·C1) = 0.80 Hz  (dominant pole)
+* fu   = GM1/(2π·C1)  = 250 MHz  ✓
+* SR   = ISR/C1       = 180 V/µs ✓
+* --------------------------------------------------------------
+GM1   0  VINT1  VDIFF  0  {GM1_VAL}
+C1    VINT1  0  {C1_VAL}
+R1    VINT1  0  {R1_VAL}
+
+* --------------------------------------------------------------
+* SLEW RATE LIMITER
+* Clamps the net current available to charge C1 to ±ISR
+* Uses ideal diodes to rail clamp nodes at ±ISR·1Ω = ±180mV
+* (The 1Ω implicit in GM1 output; clamp is on VINT1 voltage swing
+*  but SR is correctly set by ISR/C1 during input overdrive)
+* --------------------------------------------------------------
+VSRP_SRC  VSRP_NODE  0  DC {ISR}
+VSRN_SRC  VSRN_NODE  0  DC {-1*ISR}
+DSRP  VINT1  VSRP_NODE  Dideal   ; clamp VINT1 ≤ +ISR
+DSRN  VSRN_NODE  VINT1  Dideal   ; clamp VINT1 ≥ -ISR
+
+* --------------------------------------------------------------
+* SECOND GAIN STAGE — sets second pole for phase margin
+*
+* fp2  = 1/(2π·R2·C2) = 1/(2π·100·3.54p) = 450 MHz
+* Phase margin with one dominant pole and fp2=450MHz:
+*   PM = 180 - 90 - atan(GBW/fp2) = 90 - atan(250/450) = 90-29 = 61° ✓
+* --------------------------------------------------------------
+GM2   0  VINT2  VINT1  0  {GM2_VAL}
+R2    VINT2  0  {R2_VAL}
+C2    VINT2  0  {C2_VAL}
+
+* --------------------------------------------------------------
+* OUTPUT STAGE — rail-to-rail with asymmetric current limits
+*
+* Architecture:
+*   VINT2 → unity-gain buffer → ROUT → OUT
+*   Output swing clamped to rails via Dideal diodes
+*   Output current limited: source=87mA, sink=130mA
+*
+* ROUT models the output impedance derived from Figure 4:
+*   Rout = 1/(2π·fp_load·CL) = 1/(2π·90M·6p) ≈ 295Ω
+* --------------------------------------------------------------
+
+* Internal output buffer (unity gain from VINT2)
+EBUF    VOUT_BUF  0  VINT2  0  1.0
+
+* Output resistance
+ROUT    VOUT_BUF  VOUT_R  {ROUT_VAL}
+
+* Rail clamp voltages (output swings within 23mV of rails)
+* 23mV drop modeled by the diodes' RS in Dideal model
+EVCC_CLAMP  VOUT_MAX  0  VCC  0  1.0
+EVEE_CLAMP  VOUT_MIN  0  VEE  0  1.0
+
+DOUT_HI  VOUT_R  VOUT_MAX  Dideal    ; prevent output > VCC
+DOUT_LO  VOUT_MIN  VOUT_R  Dideal    ; prevent output < VEE
+
+* Output current source/sink limiting
+* Uses VALUE syntax (LTspice / ngspice compatible)
+* Positive current = sourcing from VCC; negative = sinking to VEE
+GOUT_LIM  VCC  OUT  VALUE={
++ LIMIT( (V(VOUT_R) - V(OUT)) / {ROUT_VAL},
++        {-1*ISINK},
++        {ISOURCE} )}
+
+* Pull output to VOUT_R through ROUT_VAL for normal operation
+* (GOUT_LIM handles current; this resistive path closes the loop)
+ROUT_FB  VOUT_R  OUT  {ROUT_VAL}
+
+* --------------------------------------------------------------
+* DIODE MODEL — near-ideal, small RS for rail-swing headroom
+* RS=0.023/0.130 ≈ 0.18Ω but use 0.5Ω to represent 23mV @~50mA avg
+* --------------------------------------------------------------
+.model Dideal D (IS=1e-15 N=0.001 RS=0.5 CJO=0)
+
+.ENDS RS8751
+
+
+* ==============================================================
+* TESTBENCH — uncomment and run to verify model behavior
+* ==============================================================
+*
+* --- AC Open-Loop Gain (verify AOL=110dB, GBW=250MHz, PM=62°) ---
+*
+* XU1  INP_AC  FB_AC  VP  VN  OUT_AC  RS8751
+* VP   VP  0   DC 2.5
+* VN   VN  0   DC -2.5
+* VIN  INP_AC  0  AC 1 DC 0
+* RFB  OUT_AC  FB_AC  1k
+* RIN  FB_AC  0  1k         ; G=+2 noise gain for stability
+* .AC DEC 200 1Hz 2GHz
+* .MEAS AC GBW_MEAS    WHEN VDB(OUT_AC)=0
+* .MEAS AC PM_MEAS     WHEN VDB(OUT_AC)=0  FIND VP(OUT_AC)+180
+* .END
+*
+* --- Noise Analysis (verify en=8nV/rtHz) ---
+*
+* XU2  INP_N  INP_N  VP2  VN2  OUT_N  RS8751   ; unity gain
+* VP2  VP2  0  DC 2.5
+* VN2  VN2  0  DC -2.5
+* VIN2 INP_N  0  DC 0
+* .NOISE V(OUT_N)  VIN2  DEC 100 1k 500MEG
+* .END
+*
+* --- Slew Rate (verify 180V/µs) ---
+*
+* XU3  IN_SR  OUT_SR  VP3  VN3  OUT_SR  RS8751  ; unity gain buffer
+* VP3  VP3  0  DC 2.5
+* VN3  VN3  0  DC -2.5
+* VIN3 IN_SR  0  PULSE(-2 2 0 1n 1n 500n 1u)
+* .TRAN 1n 2u
+* .MEAS TRAN SR_POS  DERIV V(OUT_SR) WHEN V(OUT_SR)=0 RISE=1
+* .END

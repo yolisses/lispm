@@ -6,9 +6,51 @@
 	(paper "A4")
 	(lib_symbols)
 	(sheet
+		(at 114.3 88.9)
+		(size 12.7 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "447ab444-b820-479d-9c03-ff04d3523599")
+		(property "Sheetname" "RS8751"
+			(at 114.3 88.1884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "RS8751.kicad_sch"
+			(at 114.3 102.1846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "TIA"
+				(path "/71573f97-d585-4d55-ac00-8cb3ed311569"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 76.2 88.9)
 		(size 12.7 13.97)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
