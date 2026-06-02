@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "LMR16030SDDA")(type "KiCad")(uri "${KIPRJMOD}/LMR16030SDDA/LMR16030SDDA.kicad_sym")(options "")(descr ""))
+)
