@@ -4,7 +4,7 @@
     {
       "analysis": "AC",
       "commands": [
-        ".ac dec 10 1 100G",
+        ".ac dec 100 1 100G",
         ".kicad adjustpaths",
         ".save all",
         ".kicad esavenone"
@@ -28,6 +28,11 @@
           "color": "rgb(55, 126, 184)",
           "signal": "V(/OUT2) (gain)",
           "trace_type": 9
+        },
+        {
+          "color": "rgb(77, 175, 74)",
+          "signal": "V(/OUT3) (gain)",
+          "trace_type": 521
         },
         {
           "color": "rgb(152, 78, 163)",
