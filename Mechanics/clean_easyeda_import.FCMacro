@@ -1,0 +1,45 @@
+# clean_easyeda_import.FCMacro
+#
+# Cleans up EasyEDA Pro STEP imports in FreeCAD:
+#   1. Removes small/decorative objects by label pattern (resistors, capacitors, diodes, etc.)
+#   2. Optionally add more patterns to DELETE_PATTERNS below
+#
+# Usage: Macro -> Macros... -> select this file -> Execute
+#        Output appears in the Python Console panel.
+
+import FreeCAD, re
+
+doc = FreeCAD.ActiveDocument
+
+# ── What to delete (regex matched against object Label) ──────────────────────
+DELETE_PATTERNS = [
+    r'^C0402',          # SMD capacitors
+    r'^C0603',
+    r'^C0805',
+    r'^R0402',          # SMD resistors
+    r'^R0603',
+    r'^LED0603',        # small LEDs
+    r'^SOT-23-5',       # small ICs / transistors
+    r'^SOD-123FL',      # small diodes
+    r'^HDR-TH_4P',      # pin headers (add/remove as needed)
+    r'^HDR-TH_5P',
+    r'^HDR-TH_12P',
+    r'^IND-SMD',        # SMD inductors
+    r'^TopCopper',      # copper/silkscreen layers
+    r'^TopSilkscreen',
+    r'^BottomCopper',
+    r'^COMPOUND',       # EasyEDA pad/via compounds
+]
+# ─────────────────────────────────────────────────────────────────────────────
+
+to_delete = [o for o in doc.Objects if any(re.match(p, o.Label) for p in DELETE_PATTERNS)]
+
+if not to_delete:
+    print("Nothing to delete — patterns matched no objects.")
+else:
+    print(f"Deleting {len(to_delete)} objects...")
+    for o in to_delete:
+        print(f"  - {o.Label}")
+        doc.removeObject(o.Name)
+    doc.recompute()
+    print("Done!")
