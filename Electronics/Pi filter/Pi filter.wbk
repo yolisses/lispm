@@ -21,17 +21,13 @@
       "showGrid": true,
       "traces": [
         {
-          "color": "rgb(228, 26, 28)",
-          "cursor1": {
-            "position": 60.0,
-            "x_format": "3~Hz",
-            "y_format": "3~dB"
-          },
-          "cursorD": {
-            "x_format": "3~s",
-            "y_format": "3~V"
-          },
-          "signal": "V(/OUT) (gain)",
+          "color": "rgb(55, 126, 184)",
+          "signal": "V(/OUT1) (gain)",
+          "trace_type": 521
+        },
+        {
+          "color": "rgb(77, 175, 74)",
+          "signal": "V(/OUT2) (gain)",
           "trace_type": 521
         }
       ]
