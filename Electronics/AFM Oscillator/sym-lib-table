@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "74HCU04D_653")(type "KiCad")(uri "${KIPRJMOD}/74HCU04D_653/74HCU04D_653.kicad_sym")(options "")(descr ""))
+)
