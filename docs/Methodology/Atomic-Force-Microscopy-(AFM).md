@@ -13,7 +13,7 @@ The atomic forces are:
 
 Here’s graph showing the characteristics of the attractive force (in green), repulsive force (in red) and combination of both (in blue):
 
-[![Graph of the atomic forces](atomic%20forces%20graph.svg)](https://www.desmos.com/calculator/1yqzwat0iy)
+[![Graph of the atomic forces](atomic-forces-graph.svg)](https://www.desmos.com/calculator/1yqzwat0iy)
 
 The numerical values in this example are not meaningful, though, since they depend on specific coefficients for each material. Here they are just 1, to simplify.
 
