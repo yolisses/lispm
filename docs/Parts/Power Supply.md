@@ -1,3 +1,5 @@
+# Power Supply
+
 The two most important parameters for the power supply are cost and noise.  
 Some other projects use batteries or linear power supplies. These are great options — they provide a dual-rail output and low noise — but they are bulkier, more expensive, and require designing safety features from scratch. Batteries also discharge.  
 I decided to use a standard laptop charger, since most people already have one. The downside is that it requires a switching converter to generate the negative rail, plus large capacitors to filter out switching noise. These components are cheap, though.  

@@ -1,3 +1,5 @@
+# Transimpedance Amplifier (TIA)
+
 ## Context
 
 The TIA design is somewhat more complicated than, let’s say, just plugging a DAC to the analog and digital circuits. It takes some calculations to balance bandwidth, noise and stability.  

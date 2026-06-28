@@ -1,3 +1,5 @@
+# Atomic Force Microscopy (AFM)
+
 ## Introduction
 
 Atomic force microscope (AFM) It’s a type of scanning probe microscope (SPM) which uses the forces between atoms to measure the sample.

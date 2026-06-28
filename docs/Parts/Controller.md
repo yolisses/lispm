@@ -1,3 +1,5 @@
+# Controller
+
 The controller coordinates all subsystems, maintains the feedback control loop, and outputs the scan data.  
 Most other projects use a Teensy microcontroller, which is fast and compatible with the Arduino ecosystem. The OpenSTM uses an ESP32, which is roughly three times slower. A Teensy is a reasonable choice, but there is a faster, cheaper, and more flexible alternative that also opens up new possibilities on the AFM side: a Field-Programmable Gate Array (FPGA).  
 An FPGA is essentially a large collection of programmable logic tables — similar to the truth tables used to describe AND, OR, and NOT gates — that can be wired together in any configuration. Unlike a microcontroller, which executes instructions one at a time in a CPU, an FPGA works like a custom-built circuit: multiple calculations happen simultaneously, in hardware.  

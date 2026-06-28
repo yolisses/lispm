@@ -1,3 +1,5 @@
+# Goals
+
 ## Basic Goals
 
 The microscope should be remarkably cheap, fast and simple. It may seem impossible to get the 3 at the same time, but it just means it will take more time to design, similar to the Apple I compared to the Altair 8080 in the early days of the personal computer.  

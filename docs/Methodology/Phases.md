@@ -1,3 +1,5 @@
+# Phases
+
 Philip Turner has [described the phases](https://github.com/philipturner/apm-roadmap/blob/main/Documentation/Experimental%20Development%20Pathway.md) for his goal of creating nanobots. I found it quite interesting. Probably I should do something similar, but considering I’m not using creepless LiNbO3. It will help me defer some requirements, which are not necessary right now, like scanning spectrography.
 
 ## Phase 1: Working STM

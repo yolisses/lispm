@@ -1,3 +1,5 @@
+# Fabrication
+
 The microscope should be easy to fabricate, considering the heavy lifting is done by the IC and PCB companies. Basically the only physical custom part is the piezo standoff, and maybe the linear rail if it is not cut to the right size already.
 
 ### Soldering
