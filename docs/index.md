@@ -1,7 +1,4 @@
-# index
-
 ---
-
 title: LiSPM
 layout: home
 ---
