@@ -1,1 +1,1 @@
-.LIB	".\OPA858.lib" 
+.LIB ".\OPA858.lib"
