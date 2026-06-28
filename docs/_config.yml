@@ -4,7 +4,7 @@ title: LiSPM
 description: "Open-source Scanning Probe Microscope (STM/AFM)"
 
 # Optional: assets and logo (place files under docs/assets/ if added)
-logo: /assets/images/logo.png
+logo: /assets/images/logo.svg
 
 # Navigation (adjust paths as needed)
 nav:
