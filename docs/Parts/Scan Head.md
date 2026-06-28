@@ -1,3 +1,5 @@
+# Scan Head
+
 The scan head of the LiSPM is relatively simple. All it has to do is keep the following parts in place:
 
 - Piezo disk, at a 90º to the linear slider

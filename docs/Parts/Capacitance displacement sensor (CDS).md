@@ -1,3 +1,5 @@
+# Capacitance displacement sensor (CDS)
+
 **Warning: AI was used to fix my shitty wandering writting. I will fix its mistakes later.**
 
 Capacitive displacement sensor (CDS) is a device used to measure the actual distance change in the probe. It’s used to calibrate the non ideal piezo and allow precise feature measuring.

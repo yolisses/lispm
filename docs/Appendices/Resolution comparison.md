@@ -1,3 +1,5 @@
+# Resolution comparison
+
 Here are some images to give a sense of bandwidth:
 
 TODO bring back the images from Google Docs.

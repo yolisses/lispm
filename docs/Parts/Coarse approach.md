@@ -1,3 +1,5 @@
+# Coarse approach
+
 Before fine scanning can begin, the tip must be brought close enough to be within the range of the fine piezo actuator. The most common approach is a tripod with precision screws — elegant, but the screws are expensive since they are not mass-produced. Mounting them is also quite cumbersome and typically requires custom support parts.  
 Commercial solutions, like the NanoSurf NaioSTM, appear to use a simpler stick-slip actuator instead. The OpenSTM follows the same approach, based on the paper [Low-cost, open-source XYZ nanopositioner for high-precision analytical applications](https://www.sciencedirect.com/science/article/pii/S2468067222000621). However, it still relies on precision linear guides and piezo stacks that are not mass-produced and not cheap. On the other hand, several videos show the same principle implemented with inexpensive parts:
 

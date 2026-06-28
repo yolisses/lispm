@@ -1,3 +1,5 @@
+# Piezo DAC
+
 DAC stands for digital to analog converter.  
 It outputs a voltage that can be controlled by code.
 
