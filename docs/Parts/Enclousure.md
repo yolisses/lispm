@@ -1,0 +1,4 @@
+It’s important to put the microscope in a metallic enclosure so it acts as a Faraday cage and blocks electromagnetic interference. MechRedPanda got a [nice video take](https://youtu.be/7N3OqTEq08g?si=hz3K6g661GhllOzK&t=442) showing it.  
+I decided to go full Steve Jobs and try to fit everything in a small sexy aluminium box. It should block the noise, support it on top of magnets to isolate from mechanical vibrations, make it portable and super easy to market.  
+An interesting consequence is that the WiFi support requires some connection with the exterior. I plan to simply put the ESP32 C3 outside the box. In the Apple’s case with the iPhone they put a hole, which was ironically obstructed when people try to hold the phone to do calls 🤣.  
+Maybe in future versions will be 3D printed to save time drilling holes and soldering shielding walls, but the fact that the LiSPM doesn’t use a tripod configuration reduces the need for it greatly.
