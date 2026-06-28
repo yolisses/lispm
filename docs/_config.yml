@@ -1,0 +1,15 @@
+remote_theme: pmarsceill/just-the-docs
+
+title: LiSPM
+description: "Open-source Scanning Probe Microscope (STM/AFM)"
+
+# Optional: assets and logo (place files under docs/assets/ if added)
+logo: /assets/images/logo.png
+
+# Navigation (adjust paths as needed)
+nav:
+  - Home: index.md
+  - Parts: Parts/README.md
+
+# Treat files in `docs/` as the site source when building
+permalink: /:path/
