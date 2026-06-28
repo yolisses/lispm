@@ -11,8 +11,10 @@ The atomic forces are:
 - Van der Waals force: attractive force between close atoms due to momentum polarization. At close distances the electrons from different atoms repel each other. It causes one of them to expose a little more of the positive charges of the nucleus. That way one becomes slightly more positive and the other slightly more negative (because the electrons get attracted) at the side they meet. It’s this force that some geckos use to stick to walls\! They have special feet with a lot of surface area, so atoms come close enough together.
 - Electrostatic force: Also known as Coulomb force, is the repulsive force between atoms close enough. That’s just the nuclei repealing each other. It increases very quickly. It becomes so high at close distances, it takes something like the Sun to smash atoms closer, causing a nuclear reaction. When we say something is touching something else, basically we’re saying it reached the Coulomb force domain, and as such it can’t advance further without moving or deforming the other thing.
 
-Here’s graph showing the characteristics of the attractive force (in green), repulsive force (in red) and combination of both (in blue):  
-[![][image1]](https://www.desmos.com/calculator/1yqzwat0iy)  
+Here’s graph showing the characteristics of the attractive force (in green), repulsive force (in red) and combination of both (in blue):
+
+[![Graph of the atomic forces](atomic%20forces%20graph.svg)](https://www.desmos.com/calculator/1yqzwat0iy)
+
 The numerical values in this example are not meaningful, though, since they depend on specific coefficients for each material. Here they are just 1, to simplify.
 
 ### Modes
