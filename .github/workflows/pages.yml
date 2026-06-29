@@ -41,15 +41,13 @@ jobs:
         id: pages
         uses: actions/configure-pages@v6
       - name: Build with Jekyll
-        # Output to the './docs' directory instead of './_site'
-        run: bundle exec jekyll build -d docs --baseurl "${{ steps.pages.outputs.base_path }}"
+        # Outputs to the './_site' directory by default
+        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
       - name: Upload artifact
-        # Upload the built site from the './docs' directory
+        # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v4
-        with:
-          path: docs
 
   # Deployment job
   deploy:
