@@ -1,6 +1,6 @@
 {
-  "name": "",
-  "short_name": "",
+  "name": "LiSPM",
+  "short_name": "LiSPM",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
@@ -13,7 +13,7 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
+  "theme_color": "#27262b",
+  "background_color": "#27262b",
   "display": "standalone"
 }
