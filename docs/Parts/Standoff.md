@@ -1,7 +1,6 @@
 ---
 title: Standoff
 parent: Parts
-layout: default
 ---
 
 # Standoff

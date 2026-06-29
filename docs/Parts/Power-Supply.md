@@ -1,7 +1,6 @@
 ---
 title: Power Supply
 parent: Parts
-layout: default
 ---
 
 # Power Supply

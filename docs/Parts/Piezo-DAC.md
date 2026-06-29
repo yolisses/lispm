@@ -1,7 +1,6 @@
 ---
 title: Piezo DAC
 parent: Parts
-layout: default
 ---
 
 # Piezo DAC

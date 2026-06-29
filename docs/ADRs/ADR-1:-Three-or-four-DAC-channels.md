@@ -1,7 +1,6 @@
 ---
 title: "ADR 1: Three or four DAC channels"
 parent: ADRs
-layout: default
 ---
 
 # ADR 1: Three or four DAC channels

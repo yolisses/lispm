@@ -1,7 +1,6 @@
 ---
 title: Tip
 parent: Parts
-layout: default
 ---
 
 # Tip

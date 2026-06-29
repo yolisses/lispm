@@ -1,7 +1,6 @@
 ---
 title: Piezo Support
 parent: Parts
-layout: default
 ---
 
 # Piezo Support
