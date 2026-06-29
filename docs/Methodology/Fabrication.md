@@ -1,7 +1,6 @@
 ---
 title: Fabrication
 parent: Methodology
-layout: default
 ---
 
 # Fabrication

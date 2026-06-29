@@ -1,7 +1,6 @@
 ---
 title: Resolution comparison
 parent: Appendices
-layout: default
 ---
 
 # Resolution comparison

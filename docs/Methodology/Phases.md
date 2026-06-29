@@ -1,7 +1,6 @@
 ---
 title: Phases
 parent: Methodology
-layout: default
 ---
 
 # Phases

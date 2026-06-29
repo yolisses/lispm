@@ -1,7 +1,6 @@
 ---
 title: Steps to create a module
 parent: Appendices
-layout: default
 ---
 
 # Steps to create a module

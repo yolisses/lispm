@@ -1,7 +1,6 @@
 ---
 title: Chronology
 parent: Methodology
-layout: default
 ---
 
 # Chronology

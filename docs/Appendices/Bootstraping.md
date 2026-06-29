@@ -1,7 +1,6 @@
 ---
 title: Bootstraping
 parent: Appendices
-layout: default
 ---
 
 # Bootstraping

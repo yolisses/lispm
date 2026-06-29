@@ -1,7 +1,6 @@
 ---
 title: Sample Bias DAC
 parent: Parts
-layout: default
 ---
 
 # Sample Bias DAC

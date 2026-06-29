@@ -1,6 +1,6 @@
 ---
 title: Wireless
-layout: default
+
 parent: Parts
 ---
 

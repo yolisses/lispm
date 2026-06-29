@@ -1,7 +1,6 @@
 ---
 title: Controller
 parent: Parts
-layout: default
 ---
 
 # Controller

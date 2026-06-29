@@ -1,7 +1,6 @@
 ---
 title: Enclousure
 parent: Parts
-layout: default
 ---
 
 # Enclousure

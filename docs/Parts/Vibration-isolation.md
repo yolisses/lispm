@@ -1,7 +1,6 @@
 ---
 title: Vibration isolation
 parent: Parts
-layout: default
 ---
 
 # Vibration isolation

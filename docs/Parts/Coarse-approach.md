@@ -1,7 +1,6 @@
 ---
 title: Coarse approach
 parent: Parts
-layout: default
 ---
 
 # Coarse approach

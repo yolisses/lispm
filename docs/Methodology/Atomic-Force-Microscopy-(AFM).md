@@ -1,7 +1,6 @@
 ---
 title: Atomic Force Microscopy (AFM)
 parent: Methodology
-layout: default
 ---
 
 # Atomic Force Microscopy (AFM)

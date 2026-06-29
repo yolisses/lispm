@@ -1,7 +1,6 @@
 ---
 title: Modular design
 parent: Methodology
-layout: default
 ---
 
 # Modular design

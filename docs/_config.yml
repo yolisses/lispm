@@ -6,3 +6,9 @@ color_scheme: dark
 url: https://yolisses.github.io/lispm
 logo: "assets/logo text white.svg"
 favicon: "assets/favicon.svg"
+
+defaults:
+  - scope:
+      path: "" # Empty string target applies this rule to all files in the project
+    values:
+      layout: "default" # Replace "default" with your chosen layout name

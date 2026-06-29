@@ -1,7 +1,6 @@
 ---
 title: Sample
 parent: Parts
-layout: default
 ---
 
 # Sample

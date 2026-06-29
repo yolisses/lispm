@@ -1,7 +1,6 @@
 ---
 title: Biggest risks
 parent: Methodology
-layout: default
 ---
 
 # Biggest risks

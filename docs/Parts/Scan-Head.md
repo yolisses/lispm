@@ -1,7 +1,6 @@
 ---
 title: Scan Head
 parent: Parts
-layout: default
 ---
 
 # Scan Head
