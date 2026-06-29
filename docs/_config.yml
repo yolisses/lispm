@@ -1,11 +1,10 @@
-title: LiSPM
-description: Low cost open source scanning tunneling microscope (STM) and atomic force microscope (AFM).
-theme: just-the-docs
-
 color_scheme: dark
-url: https://yolisses.github.io/lispm
+description: Low cost open source scanning tunneling microscope (STM) and atomic force microscope (AFM).
+favicon: "assets/favicon.ico"
 logo: "assets/logo text white.svg"
-favicon: "assets/favicon.svg"
+theme: just-the-docs
+title: LiSPM
+url: https://yolisses.github.io/lispm
 
 defaults:
   - scope:
