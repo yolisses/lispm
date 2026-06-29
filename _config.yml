@@ -8,6 +8,6 @@ title: LiSPM
 url: https://yolisses.github.io/lispm
 defaults:
   - scope:
-      path: "" # Empty string target applies this rule to all files in the project
+      path: "docs" # Empty string target applies this rule to all files in the project
     values:
       layout: "default" # Replace "default" with your chosen layout name
