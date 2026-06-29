@@ -1,3 +1,9 @@
+---
+title: Piezo Support
+parent: Parts
+layout: default
+---
+
 # Piezo Support
 
 The piezo support keeps the piezo disk close and aligned to the coarse approach linear slider.  

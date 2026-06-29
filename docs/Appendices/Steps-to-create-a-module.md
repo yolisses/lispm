@@ -1,3 +1,9 @@
+---
+title: Steps to create a module
+parent: Appendices
+layout: default
+---
+
 # Steps to create a module
 
 I get lost too much changing from part to part. I guess it helps in the beginning, where the goal is to know what is the design space, the limiting factor, the tradeoffs and so on. But right now I need to deliver and test the basic hypothesis. It means finishing orderable modules. But sometimes I think a module is done but it isn’t, or require an entire redesign, so here’s my checklist from start to finish for every module:

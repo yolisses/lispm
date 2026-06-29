@@ -1,3 +1,9 @@
+---
+title: Sample
+parent: Parts
+layout: default
+---
+
 # Sample
 
 For STM, the sample must be electrically conductive. In a lab setting, this would typically be Highly Oriented Pyrolytic Graphite (HOPG). HOPG is extremely flat — which prevents the tip from crashing during lateral movement — and regular enough to serve as calibration reference, using the known diameter of carbon atoms. However, as you might expect, it is not a common item and therefore tends to be expensive.  

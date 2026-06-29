@@ -1,3 +1,9 @@
+---
+title: Chronology
+parent: Methodology
+layout: default
+---
+
 # Chronology
 
 ## [John Alexander's STM (2003)](https://john-alexander42.github.io/simple-stm-web-page/Project.htm)

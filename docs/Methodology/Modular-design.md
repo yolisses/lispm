@@ -1,3 +1,9 @@
+---
+title: Modular design
+parent: Methodology
+layout: default
+---
+
 # Modular design
 
 I decided to use a modular design. That means that instead of having a big PCB with multiple functional blocks together, like Dan Berard did, the ICs will be in separate boards, which can be replaced separately. It has some cons, like occupying more space and possible signal loss problems with longer wires, but I think it is worth it.

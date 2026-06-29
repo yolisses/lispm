@@ -1,3 +1,9 @@
+---
+title: Controller
+parent: Parts
+layout: default
+---
+
 # Controller
 
 The controller coordinates all subsystems, maintains the feedback control loop, and outputs the scan data.  
