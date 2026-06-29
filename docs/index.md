@@ -1,3 +1,8 @@
+---
+title: Home
+layout: home
+---
+
 # LiSPM
 
 ![3D model of the LiSPM](assets/3D%20Model.png)
