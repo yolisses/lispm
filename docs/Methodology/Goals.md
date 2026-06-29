@@ -1,3 +1,9 @@
+---
+title: Goals
+parent: Methodology
+layout: default
+---
+
 # Goals
 
 ## Basic Goals

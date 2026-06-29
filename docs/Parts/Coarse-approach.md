@@ -1,3 +1,9 @@
+---
+title: Coarse approach
+parent: Parts
+layout: default
+---
+
 # Coarse approach
 
 Before fine scanning can begin, the tip must be brought close enough to be within the range of the fine piezo actuator. The most common approach is a tripod with precision screws — elegant, but the screws are expensive since they are not mass-produced. Mounting them is also quite cumbersome and typically requires custom support parts.  

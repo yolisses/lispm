@@ -1,3 +1,9 @@
+---
+title: Piezo DAC
+parent: Parts
+layout: default
+---
+
 # Piezo DAC
 
 DAC stands for digital to analog converter.  

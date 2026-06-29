@@ -1,3 +1,9 @@
+---
+title: Enclousure
+parent: Parts
+layout: default
+---
+
 # Enclousure
 
 It’s important to put the microscope in a metallic enclosure so it acts as a Faraday cage and blocks electromagnetic interference. MechRedPanda got a [nice video take](https://youtu.be/7N3OqTEq08g?si=hz3K6g661GhllOzK&t=442) showing it.  

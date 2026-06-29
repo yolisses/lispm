@@ -1,3 +1,9 @@
+---
+title: Vibration isolation
+parent: Parts
+layout: default
+---
+
 # Vibration isolation
 
 Some other projects use spring suspension systems with aluminium and magnets for damping. While effective, that kind of setup takes up a lot of space and can be costly due to custom-made parts.  

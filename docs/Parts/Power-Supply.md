@@ -1,3 +1,9 @@
+---
+title: Power Supply
+parent: Parts
+layout: default
+---
+
 # Power Supply
 
 The two most important parameters for the power supply are cost and noise.  

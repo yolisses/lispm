@@ -1,6 +1,7 @@
 ---
-title: Home
+title: LiSPM
 layout: home
+nav_order: 1
 ---
 
 # LiSPM

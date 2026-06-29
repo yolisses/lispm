@@ -1,3 +1,9 @@
+---
+title: Bootstraping
+parent: Appendices
+layout: default
+---
+
 # Bootstraping
 
 In programming there are compilers which create the executable machine code from the high level code writing by humans. Usually compilers are created in the language they compile. A similar thing will happen to nanofactories, since one of the goals is creating more nanofactories. To solve this chicken or the egg problem, a technique called bootstrapping is used. In this context, bootstrapping means using external tools to create the first version of the compiler and gradually replacing them using programs compiled with the first version.  

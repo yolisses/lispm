@@ -1,3 +1,9 @@
+---
+title: Resolution comparison
+parent: Appendices
+layout: default
+---
+
 # Resolution comparison
 
 Here are some images to give a sense of bandwidth:

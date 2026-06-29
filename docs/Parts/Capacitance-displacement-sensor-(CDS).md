@@ -1,3 +1,9 @@
+---
+title: Capacitance displacement sensor (CDS)
+parent: Parts
+layout: default
+---
+
 # Capacitance displacement sensor (CDS)
 
 **Warning: AI was used to fix my shitty wandering writting. I will fix its mistakes later.**

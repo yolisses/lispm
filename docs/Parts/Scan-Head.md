@@ -1,3 +1,9 @@
+---
+title: Scan Head
+parent: Parts
+layout: default
+---
+
 # Scan Head
 
 The scan head of the LiSPM is relatively simple. All it has to do is keep the following parts in place:
