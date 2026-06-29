@@ -1,10 +1,6 @@
 ---
 title: Wireless
-layout: home
-parent: parts
 layout: default
-nav_order: 1
-nav_enabled: true
 ---
 
 # Wireless
