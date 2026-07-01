@@ -1,6 +1,7 @@
 color_scheme: dark
 description: Low cost open source scanning tunneling microscope (STM) and atomic force microscope (AFM).
 favicon: "favicon.ico"
+ga_tracking: G-JYVDL8MF2E
 logo: "assets/logo text white.svg"
 remote_theme: just-the-docs
 theme: just-the-docs
