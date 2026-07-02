@@ -1,9 +1,9 @@
 ---
-title: Transimpedance Amplifier (TIA)
+title: TIA (Transimpedance Amplifier)
 parent: Parts
 ---
 
-# Transimpedance Amplifier (TIA)
+# TIA (Transimpedance Amplifier)
 
 ## Context
 

@@ -1,9 +1,9 @@
 ---
-title: Capacitance displacement sensor (CDS)
+title: CPS (Capacitance displacement sensor)
 parent: Parts
 ---
 
-# Capacitance displacement sensor (CDS)
+# CPS (Capacitance displacement sensor)
 
 **Warning: AI was used to fix my shitty wandering writting. I will fix its mistakes later.**
 
