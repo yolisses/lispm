@@ -3,6 +3,7 @@ description: Low cost open source scanning tunneling microscope (STM) and atomic
 favicon: "favicon.ico"
 ga_tracking: G-JYVDL8MF2E
 logo: "assets/logo text white.svg"
+math: katex
 remote_theme: just-the-docs
 theme: just-the-docs
 title: LiSPM
