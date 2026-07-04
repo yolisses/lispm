@@ -7,7 +7,9 @@ math: katex
 remote_theme: just-the-docs
 theme: just-the-docs
 title: LiSPM
-url: https://yolisses.github.io/lispm
+url: "https://lispm.site"
+plugins:
+  - jekyll-sitemap
 defaults:
   - scope:
       path: "docs" # Empty string target applies this rule to all files in the project
