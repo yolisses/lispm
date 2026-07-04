@@ -1,5 +1,5 @@
 ---
-title: Overview
+title: LiSPM - Low cost open-source scanning probe microscope
 layout: home
 nav_order: 1
 ---
