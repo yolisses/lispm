@@ -1,5 +1,6 @@
 ---
 title: ADRs
+layout: default
 ---
 
 # ADRs
