@@ -12,6 +12,6 @@ plugins:
   - jekyll-sitemap
 defaults:
   - scope:
-      path: "docs" # Empty string target applies this rule to all files in the project
+      path: "docs"
     values:
-      layout: "default" # Replace "default" with your chosen layout name
+      layout: "giscus"
