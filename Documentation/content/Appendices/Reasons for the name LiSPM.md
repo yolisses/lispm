@@ -8,7 +8,7 @@
 - LiSTM is written similar to LispM (Lisp Machine) which is a cool, remarkably technical idea.
 - “Li” in Portuguese means read in the past tense. I read a lot to make it possible.
 - It’s a short name, which saves time. And time is money.
-- It sounds like 𝘓𝘦 𝘚𝘗𝘔. It’s good to be The STM.
+- It sounds like _Le SPM_. It’s good to be _The STM_.
 - It sounds like LiDAR, which is a cool technology, related to the TDC used in the AFM mode.
 - In LiDAR, Li stands for light. This is a lightweight microscope.
 
