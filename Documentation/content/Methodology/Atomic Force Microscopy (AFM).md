@@ -1,3 +1,40 @@
+<script>
+  import { onMount } from 'svelte';
+
+    const apiKey="824d2909b1fc4498ae83e66915711461"
+    const graphDivId="calculator"
+	
+	onMount(() => {
+		let script = document.createElement('script');
+        script.src = "https://www.desmos.com/api/v1.12/calculator.js?apiKey=" + apiKey;
+        document.head.append(script);
+	
+		script.onload = function() {
+			let elt = document.getElementById(graphDivId);
+            let calculator = Desmos.GraphingCalculator(elt, {
+				expressions: true,
+				expressionsCollapsed: true,
+				dragMode: Desmos.DragModes.NONE
+			});
+            calculator.setExpression({
+				id: 'graph1',
+				latex: "F_{rep}(x)=48x^{-13}\\left\\{x>0\\right\\}",
+				color: Desmos.Colors.RED
+			});
+            calculator.setExpression({
+				id: 'grahp2',
+				latex: "F_{att}(x)=-24x^{-7}\\left\\{x>0\\right\\}",
+				color: Desmos.Colors.GREEN
+			});
+            calculator.setExpression({
+				id: 'grahp3',
+				latex: "F(x)=F_{rep}(x)+F_{att}(x)",
+				color: Desmos.Colors.BLUE
+			});
+      };							  
+	});
+</script>
+
 # Atomic Force Microscopy (AFM)
 
 ## Introduction
@@ -13,7 +50,7 @@ The atomic forces are:
 
 Here’s graph showing the characteristics of the attractive force (in green), repulsive force (in red) and combination of both (in blue):
 
-[![Graph of the atomic forces](atomic-forces-graph.svg)](https://www.desmos.com/calculator/1yqzwat0iy)
+<div id="calculator" style="height: 20rem;"></div>
 
 The numerical values in this example are not meaningful, though, since they depend on specific coefficients for each material. Here they are just 1, to simplify.
 
