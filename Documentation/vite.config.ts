@@ -6,6 +6,7 @@ import { mdsvex } from 'mdsvex';
 import { promises as fs } from 'node:fs';
 import { extname, relative, resolve } from 'node:path';
 import { createIndex } from 'pagefind';
+import { svelteSitemap } from 'svelte-sitemap/vite'; // <-- Add svelte-sitemap vite plugin
 import { defineConfig } from 'vitest/config';
 
 async function walkHtmlFiles(dir) {
@@ -88,7 +89,8 @@ export default defineConfig({
 			async closeBundle() {
 				await buildPagefindIndex();
 			}
-		}
+		},
+		svelteSitemap({ domain: 'https://lispm.site' })
 	],
 	test: {
 		expect: { requireAssertions: true },
