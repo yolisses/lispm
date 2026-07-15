@@ -1,15 +1,14 @@
 <script lang="ts">
 	import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 	import Fa from 'svelte-fa';
-
-	let isDark = $state(true);
+	import { themeIsDark } from './themeIsDark';
 
 	function handleClick() {
-		isDark = !isDark;
+		themeIsDark.update((value) => !value);
 	}
 </script>
 
 <button class="basic-button basic-border" onclick={handleClick}>
-	<Fa icon={isDark ? faMoon : faSun} />
-	{isDark ? 'Dark' : 'Light'}
+	<Fa icon={$themeIsDark ? faMoon : faSun} />
+	{$themeIsDark ? 'Dark' : 'Light'}
 </button>
