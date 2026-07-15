@@ -4,6 +4,6 @@
 
 <nav class="flex flex-col">
 	{#each docs as doc (doc.slug)}
-		<a href={`/${encodeURIComponent(doc.slug)}`} class="basic-button">{doc.slug}</a>
+		<a href={`/${doc.routeSlug}`} class="basic-button">{doc.slug}</a>
 	{/each}
 </nav>
