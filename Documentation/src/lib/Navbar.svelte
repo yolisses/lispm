@@ -1,6 +1,6 @@
 <script lang="ts">
 	import DocNavSection from './DocNavSection.svelte';
-	import { buildDocTree } from './tree/content';
+	import { buildDocTree } from './tree/buildDocTree';
 
 	const sections = buildDocTree();
 </script>
