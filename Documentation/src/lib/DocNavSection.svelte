@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { DocTreeNode } from './content';
+	import type { DocTreeNode } from './tree/content';
 
 	const { node }: { node: DocTreeNode } = $props();
 </script>

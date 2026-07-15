@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import { getDoc } from '$lib/content';
+	import { getDoc } from '$lib/tree/content';
 
 	const slug = $derived(
 		Array.isArray($page.params.slug) ? $page.params.slug.join('/') : ($page.params.slug ?? '')
