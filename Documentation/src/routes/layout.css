@@ -4,8 +4,35 @@
 html {
 	@apply flex flex-col bg-zinc-950 text-white;
 }
+
+html.dark {
+	@apply bg-zinc-950 text-white;
+}
+
+html:not(.dark) {
+	@apply bg-zinc-50 text-zinc-900;
+}
+
+.pagefind-ui__search-input {
+	@apply rounded-xl border border-zinc-300 bg-white text-zinc-900 shadow-sm ring-0 outline-none dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100;
+}
+
+.pagefind-ui__search-input::placeholder {
+	@apply text-zinc-500 dark:text-zinc-400;
+}
+
+.pagefind-ui__drawer {
+	@apply text-zinc-900 dark:text-zinc-100;
+}
+
+.pagefind-ui__message,
+.pagefind-ui__result-link,
+.pagefind-ui__result-excerpt {
+	@apply text-zinc-900 dark:text-zinc-100;
+}
+
 @layer components {
 	.basic-button {
-		@apply flex gap-2 rounded p-2 hover:bg-black/10 dark:hover:bg-white/10;
+		@apply flex items-center gap-2 rounded p-2 transition-colors hover:bg-black/10 dark:hover:bg-white/10;
 	}
 }

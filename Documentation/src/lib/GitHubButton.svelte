@@ -3,7 +3,11 @@
 	import Fa from 'svelte-fa';
 </script>
 
-<!-- TODO open in new tab -->
-<a href="https://github.com/yolisses/lispm" class="basic-button">
+<a
+	href="https://github.com/yolisses/lispm"
+	target="_blank"
+	rel="noopener noreferrer"
+	class="basic-button"
+>
 	<Fa icon={faGithub} size="lg" /> See source files
 </a>

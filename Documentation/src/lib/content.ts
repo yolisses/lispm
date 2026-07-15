@@ -99,3 +99,19 @@ export function buildDocTree() {
 
 	return root.children;
 }
+
+export function getAdjacentDocs(currentSlug: string) {
+	const normalized = toRouteSlug(currentSlug);
+	const currentIndex = docs.findIndex(
+		(doc) => doc.routeSlug === normalized || doc.slug === currentSlug
+	);
+
+	if (currentIndex < 0) {
+		return { prev: null, next: null };
+	}
+
+	return {
+		prev: docs[currentIndex - 1] ?? null,
+		next: docs[currentIndex + 1] ?? null
+	};
+}
