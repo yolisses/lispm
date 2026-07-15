@@ -5,9 +5,10 @@ Some other projects use batteries or linear power supplies. These are great opti
 I decided to use a standard laptop charger, since most people already have one. The downside is that it requires a switching converter to generate the negative rail, plus large capacitors to filter out switching noise. These components are cheap, though.  
 The required voltage rails are:
 
-- \+15 V
-- −15 V
-- 5 V
+- +15 V
+- -15 V
+- +5 V
+- -5 V
 - 3.3 V
 - GND
 
