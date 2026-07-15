@@ -7,7 +7,7 @@
 <div class="flex flex-col gap-1">
 	{#if node.type === 'folder'}
 		{#if node.indexDoc}
-			<a href={`/${node.indexDoc.routeSlug}`} class="basic-button">{node.indexDoc.title}</a>
+			<a href={`/${node.indexDoc.routeSlug}`} class="basic-button">{node.name}</a>
 		{:else}
 			<div class="font-semibold">{node.name}</div>
 		{/if}
