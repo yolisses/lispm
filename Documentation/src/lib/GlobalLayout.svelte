@@ -3,6 +3,7 @@
 	import Navbar from './Navbar.svelte';
 
 	import logo from '$lib/assets/logo text white.svg';
+	import GitHubButton from './GitHubButton.svelte';
 	const { children } = $props();
 	let searchElement: HTMLElement | null = $state(null);
 
@@ -42,13 +43,14 @@
 
 <div class="flex min-h-svh flex-1">
 	<aside class="bg-zinc-900">
-		<a href="/" class="basic-button">
-			<img src={logo} width="100" alt="LiSPM documentation home" />
-		</a>
 		<div class="sticky top-0 p-2">
+			<a href="/" class="basic-button">
+				<img src={logo} width="100" alt="LiSPM documentation home" />
+			</a>
 			<div bind:this={searchElement} class="mb-4"></div>
 			Contents
 			<Navbar />
+			<GitHubButton />
 		</div>
 	</aside>
 	<main class="p-2">
