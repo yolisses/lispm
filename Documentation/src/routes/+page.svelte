@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { docs } from '$lib/content';
+	import { docs } from '$lib/tree/content';
 
 	const doc = docs[0];
 </script>
