@@ -1,11 +1,23 @@
 @plugin '@tailwindcss/typography';
 @import 'tailwindcss';
 
+/* Add dark/light theme control using the class "dark" for the container. */
+@custom-variant dark (&:where(.dark, .dark *));
+
 html {
-	@apply flex flex-col bg-zinc-950 text-white;
+	@apply flex flex-col bg-white text-black dark:bg-zinc-950 dark:text-white;
 }
+
+button {
+	@apply not-disabled:cursor-pointer;
+}
+
 @layer components {
 	.basic-button {
-		@apply flex gap-2 rounded p-2 hover:bg-black/10 dark:hover:bg-white/10;
+		@apply flex items-center gap-2 rounded p-2 hover:bg-black/10 dark:hover:bg-white/10;
+	}
+
+	.basic-border {
+		@apply border border-black/10 dark:border-white/10;
 	}
 }
