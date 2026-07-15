@@ -1,9 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import Navbar from './Navbar.svelte';
 
-	import logo from '$lib/assets/logo text white.svg';
-	import GitHubButton from './GitHubButton.svelte';
+	import SidePanel from './SidePanel.svelte';
 	const { children } = $props();
 	let searchElement: HTMLElement | null = $state(null);
 
@@ -42,17 +40,7 @@
 </svelte:head>
 
 <div class="flex min-h-svh flex-1">
-	<aside class="bg-zinc-900">
-		<div class="sticky top-0 p-2">
-			<a href="/" class="basic-button">
-				<img src={logo} width="100" alt="LiSPM documentation home" />
-			</a>
-			<div bind:this={searchElement} class="mb-4"></div>
-			Contents
-			<Navbar />
-			<GitHubButton />
-		</div>
-	</aside>
+	<SidePanel />
 	<main class="p-2">
 		{@render children()}
 	</main>

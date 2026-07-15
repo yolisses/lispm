@@ -2,7 +2,6 @@
 	import { onMount } from 'svelte';
 
 	let searchElement: HTMLElement | null = $state(null);
-	let isReady = $state(false);
 
 	onMount(() => {
 		const loadPagefindUi = () => {
@@ -16,7 +15,6 @@
 				element: searchElement,
 				showImages: false
 			});
-			isReady = true;
 		};
 
 		if (typeof window === 'undefined') {
@@ -40,14 +38,5 @@
 </svelte:head>
 
 <div class="mx-auto max-w-3xl p-8">
-	<h1 class="text-2xl font-semibold">Pagefind search test</h1>
-	<p class="mt-2 text-slate-600">
-		This page renders the docs search box for the generated Pagefind index.
-	</p>
-
 	<div bind:this={searchElement} class="mt-6"></div>
-
-	{#if isReady}
-		<p class="mt-4 text-sm text-slate-500">The search box is ready.</p>
-	{/if}
 </div>
