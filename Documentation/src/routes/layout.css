@@ -5,7 +5,15 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 html {
-	@apply flex flex-col bg-white text-black dark:bg-black dark:text-white;
+	@apply flex flex-col bg-white text-black dark:bg-zinc-950 dark:text-white;
+}
+
+html {
+	scrollbar-color: rgb(107 114 128 / 0.7) rgb(107 114 128 / 0.2);
+}
+
+html.dark {
+	scrollbar-color: rgb(255 255 255 / 0.35) rgb(0 0 0 / 0.2);
 }
 
 button {
