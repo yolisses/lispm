@@ -1,5 +1,11 @@
+@plugin '@tailwindcss/typography';
 @import 'tailwindcss';
 
-body {
-	@apply bg-zinc-950 text-white;
+html {
+	@apply flex flex-col bg-zinc-950 text-white;
+}
+@layer components {
+	.basic-button {
+		@apply flex gap-2 rounded p-2 hover:bg-black/10 dark:hover:bg-white/10;
+	}
 }
