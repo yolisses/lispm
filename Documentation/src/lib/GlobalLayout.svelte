@@ -39,9 +39,9 @@
 	<link rel="stylesheet" href="/pagefind/pagefind-ui.css" />
 </svelte:head>
 
-<div class="flex min-h-svh flex-1">
+<div class="flex">
 	<SidePanel />
-	<main class="p-2">
+	<main class="p-2 flex justify-center">
 		{@render children()}
 	</main>
 </div>
