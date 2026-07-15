@@ -4,7 +4,7 @@ To make sure we are getting the most bang for the buck, I created a [price compa
 
 Here's a nice, and probably outdated at the time you are reading, graph of prices. The up to date one is in the spreadsheet itself.
 
-![Chart showing the stacked prices of each main part of various DIY SPMs](/assets/price-comparison-chart.svg)
+![Chart showing the stacked prices of each main part of various DIY SPMs](/price-comparison-chart.svg)
 
 Note that some projects are indicated with "Not all the parts". It may be because they are not publicly specified, the project is already too expensive, or just because I didn't bother searching enough.
 

@@ -6,7 +6,7 @@ A signal's bandwidth is usually limited by how fast a converter can work, which 
 
 Bandwidth is measured in hertz (Hz). Since a real frequency response usually rolls off gradually rather than stopping abruptly, a somewhat arbitrary threshold is used as the standard boundary: the [cutoff frequency](https://en.wikipedia.org/wiki/Cutoff_frequency), defined as the point where the signal has dropped 3 dB relative to its flat, low-frequency response.
 
-![Graph of a low pass filter with the -3dB point highlighted](/assets/desmos-graph-bandwidth.svg)
+![Graph of a low pass filter with the -3dB point highlighted](/desmos-graph-bandwidth.svg)
 
 Bandwidth is critical in the microscope's control loop, since it determines how fast the probe's position can be corrected, and therefore how likely the probe is to crash into the sample.
 
