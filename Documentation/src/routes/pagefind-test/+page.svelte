@@ -1,33 +1,53 @@
-<script>
-	// prettier-ignore
+<script lang="ts">
 	import { onMount } from 'svelte';
 
-	async function doTheThing() {
-		const a = await import('pagefind');
-		console.log('here');
-		// Create a Pagefind search index to work with
-		const { index } = await a.createIndex();
+	let searchElement: HTMLElement | null = $state(null);
+	let isReady = $state(false);
 
-		// Index all HTML files in a directory
-		await index.addDirectory({
-			path: 'public'
-		});
+	onMount(() => {
+		const loadPagefindUi = () => {
+			const PagefindUI = window.PagefindUI;
 
-		// Add extra content
-		await index.addCustomRecjord({
-			url: '/resume.pdf',
-			content: 'Aenean lacinia bibendum nulla sed consectetur',
-			language: 'en'
-		});
+			if (!PagefindUI || !searchElement) {
+				return;
+			}
 
-		// Get the index files in-memory
-		const { files } = await index.getFiles();
+			new PagefindUI({
+				element: searchElement,
+				showImages: false
+			});
+			isReady = true;
+		};
 
-		// Or, write the index to disk
-		await index.writeFiles({
-			outputPath: 'public/pagefind'
-		});
-	}
+		if (typeof window === 'undefined') {
+			return;
+		}
 
-	onMount(() => doTheThing());
+		if (window.PagefindUI) {
+			loadPagefindUi();
+			return;
+		}
+
+		const script = document.createElement('script');
+		script.src = '/pagefind/pagefind-ui.js';
+		script.onload = loadPagefindUi;
+		document.head.appendChild(script);
+	});
 </script>
+
+<svelte:head>
+	<link rel="stylesheet" href="/pagefind/pagefind-ui.css" />
+</svelte:head>
+
+<div class="mx-auto max-w-3xl p-8">
+	<h1 class="text-2xl font-semibold">Pagefind search test</h1>
+	<p class="mt-2 text-slate-600">
+		This page renders the docs search box for the generated Pagefind index.
+	</p>
+
+	<div bind:this={searchElement} class="mt-6"></div>
+
+	{#if isReady}
+		<p class="mt-4 text-sm text-slate-500">The search box is ready.</p>
+	{/if}
+</div>
