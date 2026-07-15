@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { docs } from '$lib/tree/content';
+	import { getDoc } from '$lib/tree/getDoc';
 
-	const doc = docs[0];
+	const doc = getDoc('index');
 </script>
 
 {#if doc}
