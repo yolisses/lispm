@@ -8,6 +8,7 @@
 {#if doc}
 	{@const DocComponent = doc.default as any}
 	<DocComponent />
+	<hr />
 	<CommentSection />
 {:else}
 	<p>Select a document to view its contents.</p>

@@ -12,6 +12,7 @@
 {#if doc}
 	{@const DocComponent = doc.default as any}
 	<DocComponent />
+	<hr />
 	{#key doc.routeSlug}
 		<CommentSection />
 	{/key}
