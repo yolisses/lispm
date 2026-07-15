@@ -29,3 +29,5 @@ Beyond the associated meaning:
 
 - It will be easy to google it. Five letters.
 - And there’s nothing to compete with this name except LispM.
+
+If you invent another reason, please let me know it in the comments.
