@@ -1,9 +1,12 @@
 <script lang="ts">
-	import { docs } from './content';
+	import { buildDocTree } from './content';
+	import DocNavSection from './DocNavSection.svelte';
+
+	const sections = buildDocTree();
 </script>
 
-<nav class="flex flex-col">
-	{#each docs as doc (doc.slug)}
-		<a href={`/${doc.routeSlug}`} class="basic-button">{doc.slug}</a>
+<nav class="flex flex-col gap-2">
+	{#each sections as section}
+		<DocNavSection node={section} />
 	{/each}
 </nav>
