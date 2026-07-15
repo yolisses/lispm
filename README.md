@@ -4,4 +4,4 @@
 
 LiSPM aims to be a low cost scanning probe microscope (SPM), that works both as scanning tunneling microscope (STM) and atomic force microscope (AFM)
 
-[More info on Docs](https://yolisses.github.io/lispm/)
+[More info on Docs](https://lispm.site)
