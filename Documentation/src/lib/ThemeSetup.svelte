@@ -1,9 +1,10 @@
 <script lang="ts">
+	import { browser } from '$app/environment';
 	import { themeIsDark } from './themeIsDark';
 
-	themeIsDark.subscribe((value) => {
-		if (typeof document != 'undefined') {
+	if (browser) {
+		themeIsDark.subscribe((value) => {
 			document.documentElement.classList.toggle('dark', value);
-		}
-	});
+		});
+	}
 </script>
