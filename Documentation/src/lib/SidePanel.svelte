@@ -6,13 +6,15 @@
 	import SearchButton from './SearchButton.svelte';
 </script>
 
-<aside class="bg-zinc-900">
-	<div class="sticky top-0 p-2">
+<aside class="bg-zinc-900 sticky top-0 max-h-dvh overflow-hidden p-2 flex flex-col">
+	<div class="flex py-2 justify-between items-center border-b dark:border-white/10 border-black/10">
 		<a href={resolve('/')} class="basic-button">
 			<img src={logo} width="100" alt="LiSPM documentation home" />
 		</a>
 		<SearchButton />
-		<Navbar />
+	</div>
+	<Navbar />
+	<div class="flex justify-between items-center border-t dark:border-white/10 border-black/10">
 		<GitHubButton />
 	</div>
 </aside>
