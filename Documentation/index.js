@@ -1,30 +1,64 @@
+import { promises as fs } from 'node:fs';
+import { extname, relative, resolve } from 'node:path';
 import { createIndex } from 'pagefind';
 
+async function walkHtmlFiles(dir) {
+	const entries = await fs.readdir(dir, { withFileTypes: true });
+	const files = [];
+
+	for (const entry of entries) {
+		const fullPath = resolve(dir, entry.name);
+
+		if (entry.isDirectory()) {
+			files.push(...(await walkHtmlFiles(fullPath)));
+		} else if (entry.isFile() && extname(entry.name) === '.html') {
+			files.push(fullPath);
+		}
+	}
+
+	return files;
+}
+
+function toUrl(relativePath) {
+	const normalized = relativePath
+		.replace(/\\/g, '/')
+		.replace(/\/index\.html$/, '/')
+		.replace(/\.html$/, '');
+
+	if (!normalized || normalized === '/') {
+		return '/';
+	}
+
+	return `/${normalized.replace(/^\//, '')}`;
+}
+
 async function doTheThing() {
-	console.log('here');
-	// Create a Pagefind search index to work with
+	console.log('indexing generated html files');
+	const buildDir = resolve(process.cwd(), 'build');
+	const htmlFiles = await walkHtmlFiles(buildDir);
 	const { index } = await createIndex();
 
-	// Index all HTML files in a directory
-	await index.addDirectory({
-		path: 'content'
-	});
+	for (const filePath of htmlFiles) {
+		const relativePath = relative(buildDir, filePath).replace(/\\/g, '/');
+		const html = await fs.readFile(filePath, 'utf8');
 
-	// Add extra content
-	await index.addCustomRecord({
-		url: '/resume.pdf',
-		content: 'Aenean lacinia bibendum nulla sed consectetur',
-		language: 'en'
-	});
+		if (!relativePath.startsWith('_app/')) {
+			await index.addHTMLFile({
+				sourcePath: relativePath,
+				url: toUrl(relativePath),
+				content: html
+			});
+		}
+	}
 
-	// Get the index files in-memory
-	const { files } = await index.getFiles();
-
-	// Or, write the index to disk
 	await index.writeFiles({
 		outputPath: 'static/pagefind'
 	});
+
+	console.log(`indexed ${htmlFiles.length} html files`);
 }
 
-doTheThing();
-console.log('index');
+doTheThing().catch((error) => {
+	console.error(error);
+	process.exit(1);
+});
