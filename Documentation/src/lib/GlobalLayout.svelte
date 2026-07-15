@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Navbar from './Navbar.svelte';
+	import Search from './Search.svelte';
 
 	import logo from '$lib/assets/logo text white.svg';
 	const { children } = $props();
@@ -11,7 +12,7 @@
 			<img src={logo} width="100" />
 		</a>
 		<div class="sticky top-0 p-2">
-			Contents
+			<Search />
 			<Navbar />
 		</div>
 	</aside>
