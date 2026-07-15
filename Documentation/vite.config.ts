@@ -7,6 +7,7 @@ import rehypeKatexSvelte from 'rehype-katex-svelte';
 import remarkMath from 'remark-math';
 import { svelteSitemap } from 'svelte-sitemap/vite';
 import { defineConfig } from 'vitest/config';
+import { buildPagefindIndex } from './plugin/buildPagefindIndex';
 
 export default defineConfig({
 	plugins: [
@@ -27,14 +28,14 @@ export default defineConfig({
 			],
 			extensions: ['.svelte', '.svx', '.md']
 		}),
-		// {
-		// 	name: 'pagefind-build-plugin',
-		// 	apply: 'build',
-		// 	enforce: 'post',
-		// 	async closeBundle() {
-		// 		await buildPagefindIndex();
-		// 	}
-		// },
+		{
+			name: 'pagefind-build-plugin',
+			apply: 'build',
+			enforce: 'post',
+			async closeBundle() {
+				await buildPagefindIndex();
+			}
+		},
 		svelteSitemap({ domain: 'https://lispm.site' })
 	],
 	test: {
