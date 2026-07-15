@@ -8,6 +8,10 @@ declare global {
 		// interface PageState {}
 		// interface Platform {}
 	}
+
+	interface Window {
+		PagefindUI?: new (options: { element: HTMLElement; showImages?: boolean }) => void;
+	}
 }
 
 export {};
