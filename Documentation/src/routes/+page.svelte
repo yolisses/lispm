@@ -5,6 +5,12 @@
 	const doc = getDoc('index');
 </script>
 
+<svelte:head>
+	{#if doc}
+		<title>LiSPM: Low cost open source scanning probe microscope (SPM)</title>
+	{/if}
+</svelte:head>
+
 {#if doc}
 	{@const DocComponent = doc.default as any}
 	<DocComponent />
