@@ -9,6 +9,12 @@
 	const doc = $derived(getDoc(slug));
 </script>
 
+<svelte:head>
+	{#if doc}
+		<title>{doc.title} | LiSPM</title>
+	{/if}
+</svelte:head>
+
 {#if doc}
 	{@const DocComponent = doc.default as any}
 	<DocComponent />
