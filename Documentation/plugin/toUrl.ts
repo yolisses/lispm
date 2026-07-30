@@ -1,12 +1,12 @@
 export function toUrl(relativePath: string) {
-	const normalized = relativePath
-		.replace(/\\/g, '/')
-		.replace(/\/index\.html$/, '/')
-		.replace(/\.html$/, '');
+  const normalized = relativePath
+    .replace(/\\/g, '/')
+    .replace(/\/index\.html$/, '/')
+    .replace(/\.html$/, '');
 
-	if (!normalized || normalized === '/') {
-		return '/';
-	}
+  if (!normalized || normalized === '/') {
+    return '/';
+  }
 
-	return `/${normalized.replace(/^\//, '')}`;
+  return `/${normalized.replace(/^\//, '')}`;
 }

@@ -10,60 +10,60 @@ import { defineConfig } from 'vitest/config';
 import { buildPagefindIndex } from './plugin/buildPagefindIndex';
 
 export default defineConfig({
-	plugins: [
-		tailwindcss(),
-		sveltekit({
-			compilerOptions: {
-				// Force runes mode for the project, except for libraries. Can be removed in svelte 6.
-				runes: ({ filename }) =>
-					filename.split(/[/\\]/).includes('node_modules') ? undefined : true
-			},
-			adapter: adapter(),
-			preprocess: [
-				mdsvex({
-					extensions: ['.svx', '.md'],
-					remarkPlugins: [remarkMath],
-					rehypePlugins: [rehypeKatexSvelte]
-				})
-			],
-			extensions: ['.svelte', '.svx', '.md']
-		}),
-		{
-			name: 'pagefind-build-plugin',
-			apply: 'build',
-			enforce: 'post',
-			async closeBundle() {
-				await buildPagefindIndex();
-			}
-		},
-		svelteSitemap({ domain: 'https://lispm.site' })
-	],
-	test: {
-		expect: { requireAssertions: true },
-		projects: [
-			{
-				extends: './vite.config.ts',
-				test: {
-					name: 'client',
-					browser: {
-						enabled: true,
-						provider: playwright(),
-						instances: [{ browser: 'chromium', headless: true }]
-					},
-					include: ['src/**/*.svelte.{test,spec}.{js,ts}'],
-					exclude: ['src/lib/server/**']
-				}
-			},
+  plugins: [
+    tailwindcss(),
+    sveltekit({
+      compilerOptions: {
+        // Force runes mode for the project, except for libraries. Can be removed in svelte 6.
+        runes: ({ filename }) =>
+          filename.split(/[/\\]/).includes('node_modules') ? undefined : true,
+      },
+      adapter: adapter(),
+      preprocess: [
+        mdsvex({
+          extensions: ['.svx', '.md'],
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [rehypeKatexSvelte],
+        }),
+      ],
+      extensions: ['.svelte', '.svx', '.md'],
+    }),
+    {
+      name: 'pagefind-build-plugin',
+      apply: 'build',
+      enforce: 'post',
+      async closeBundle() {
+        await buildPagefindIndex();
+      },
+    },
+    svelteSitemap({ domain: 'https://lispm.site' }),
+  ],
+  test: {
+    expect: { requireAssertions: true },
+    projects: [
+      {
+        extends: './vite.config.ts',
+        test: {
+          name: 'client',
+          browser: {
+            enabled: true,
+            provider: playwright(),
+            instances: [{ browser: 'chromium', headless: true }],
+          },
+          include: ['src/**/*.svelte.{test,spec}.{js,ts}'],
+          exclude: ['src/lib/server/**'],
+        },
+      },
 
-			{
-				extends: './vite.config.ts',
-				test: {
-					name: 'server',
-					environment: 'node',
-					include: ['src/**/*.{test,spec}.{js,ts}'],
-					exclude: ['src/**/*.svelte.{test,spec}.{js,ts}']
-				}
-			}
-		]
-	}
+      {
+        extends: './vite.config.ts',
+        test: {
+          name: 'server',
+          environment: 'node',
+          include: ['src/**/*.{test,spec}.{js,ts}'],
+          exclude: ['src/**/*.svelte.{test,spec}.{js,ts}'],
+        },
+      },
+    ],
+  },
 });

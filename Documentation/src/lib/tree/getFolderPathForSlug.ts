@@ -1,20 +1,23 @@
 export function getFolderPathForSlug(slug: string) {
-	const normalizedSlug = slug.replace(/\\/g, '/').replace(/^\//, '').replace(/\/$/, '');
+  const normalizedSlug = slug
+    .replace(/\\/g, '/')
+    .replace(/^\//, '')
+    .replace(/\/$/, '');
 
-	if (!normalizedSlug || normalizedSlug === 'index') {
-		return '';
-	}
+  if (!normalizedSlug || normalizedSlug === 'index') {
+    return '';
+  }
 
-	const parts = normalizedSlug.split('/');
-	const lastPart = parts.at(-1);
+  const parts = normalizedSlug.split('/');
+  const lastPart = parts.at(-1);
 
-	if (lastPart === 'index') {
-		return parts.slice(0, -1).join('/');
-	}
+  if (lastPart === 'index') {
+    return parts.slice(0, -1).join('/');
+  }
 
-	if (parts.length > 1) {
-		return '';
-	}
+  if (parts.length > 1) {
+    return '';
+  }
 
-	return normalizedSlug;
+  return normalizedSlug;
 }

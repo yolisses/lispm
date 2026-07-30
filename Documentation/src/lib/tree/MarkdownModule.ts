@@ -1,4 +1,4 @@
 export type MarkdownModule = {
-	default: unknown;
-	metadata?: Record<string, unknown>;
+  default: unknown;
+  metadata?: Record<string, unknown>;
 };
