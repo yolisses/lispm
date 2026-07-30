@@ -7,6 +7,7 @@ const config = {
   plugins: ['prettier-plugin-svelte', 'prettier-plugin-tailwindcss'],
   overrides: [{ files: '*.svelte', options: { parser: 'svelte' } }],
   tailwindStylesheet: './src/routes/layout.css',
+  proseWrap: 'always',
 };
 
 export default config;
