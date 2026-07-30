@@ -5,27 +5,27 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 html {
-	@apply flex flex-col bg-white text-black dark:bg-zinc-950 dark:text-white;
+  @apply flex flex-col bg-white text-black dark:bg-zinc-950 dark:text-white;
 }
 
 html {
-	scrollbar-color: rgb(107 114 128 / 0.7) rgb(107 114 128 / 0.2);
+  scrollbar-color: rgb(107 114 128 / 0.7) rgb(107 114 128 / 0.2);
 }
 
 html.dark {
-	scrollbar-color: rgb(255 255 255 / 0.35) rgb(0 0 0 / 0.2);
+  scrollbar-color: rgb(255 255 255 / 0.35) rgb(0 0 0 / 0.2);
 }
 
 button {
-	@apply not-disabled:cursor-pointer;
+  @apply not-disabled:cursor-pointer;
 }
 
 @layer components {
-	.basic-button {
-		@apply flex items-center gap-2 rounded p-2 hover:bg-black/10 dark:hover:bg-white/10;
-	}
+  .basic-button {
+    @apply flex items-center gap-2 rounded p-2 hover:bg-black/10 dark:hover:bg-white/10;
+  }
 
-	.basic-border {
-		@apply border border-black/10 dark:border-white/10;
-	}
+  .basic-border {
+    @apply border border-black/10 dark:border-white/10;
+  }
 }

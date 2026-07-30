@@ -3,62 +3,62 @@ import { extname, relative, resolve } from 'node:path';
 import { createIndex } from 'pagefind';
 
 async function walkHtmlFiles(dir) {
-	const entries = await fs.readdir(dir, { withFileTypes: true });
-	const files = [];
+  const entries = await fs.readdir(dir, { withFileTypes: true });
+  const files = [];
 
-	for (const entry of entries) {
-		const fullPath = resolve(dir, entry.name);
+  for (const entry of entries) {
+    const fullPath = resolve(dir, entry.name);
 
-		if (entry.isDirectory()) {
-			files.push(...(await walkHtmlFiles(fullPath)));
-		} else if (entry.isFile() && extname(entry.name) === '.html') {
-			files.push(fullPath);
-		}
-	}
+    if (entry.isDirectory()) {
+      files.push(...(await walkHtmlFiles(fullPath)));
+    } else if (entry.isFile() && extname(entry.name) === '.html') {
+      files.push(fullPath);
+    }
+  }
 
-	return files;
+  return files;
 }
 
 function toUrl(relativePath) {
-	const normalized = relativePath
-		.replace(/\\/g, '/')
-		.replace(/\/index\.html$/, '/')
-		.replace(/\.html$/, '');
+  const normalized = relativePath
+    .replace(/\\/g, '/')
+    .replace(/\/index\.html$/, '/')
+    .replace(/\.html$/, '');
 
-	if (!normalized || normalized === '/') {
-		return '/';
-	}
+  if (!normalized || normalized === '/') {
+    return '/';
+  }
 
-	return `/${normalized.replace(/^\//, '')}`;
+  return `/${normalized.replace(/^\//, '')}`;
 }
 
 async function doTheThing() {
-	console.log('indexing generated html files');
-	const buildDir = resolve(process.cwd(), 'build');
-	const htmlFiles = await walkHtmlFiles(buildDir);
-	const { index } = await createIndex();
+  console.log('indexing generated html files');
+  const buildDir = resolve(process.cwd(), 'build');
+  const htmlFiles = await walkHtmlFiles(buildDir);
+  const { index } = await createIndex();
 
-	for (const filePath of htmlFiles) {
-		const relativePath = relative(buildDir, filePath).replace(/\\/g, '/');
-		const html = await fs.readFile(filePath, 'utf8');
+  for (const filePath of htmlFiles) {
+    const relativePath = relative(buildDir, filePath).replace(/\\/g, '/');
+    const html = await fs.readFile(filePath, 'utf8');
 
-		if (!relativePath.startsWith('_app/')) {
-			await index.addHTMLFile({
-				sourcePath: relativePath,
-				url: toUrl(relativePath),
-				content: html
-			});
-		}
-	}
+    if (!relativePath.startsWith('_app/')) {
+      await index.addHTMLFile({
+        sourcePath: relativePath,
+        url: toUrl(relativePath),
+        content: html,
+      });
+    }
+  }
 
-	await index.writeFiles({
-		outputPath: 'static/pagefind'
-	});
+  await index.writeFiles({
+    outputPath: 'static/pagefind',
+  });
 
-	console.log(`indexed ${htmlFiles.length} html files`);
+  console.log(`indexed ${htmlFiles.length} html files`);
 }
 
 doTheThing().catch((error) => {
-	console.error(error);
-	process.exit(1);
+  console.error(error);
+  process.exit(1);
 });
