@@ -1,4 +1,4 @@
-# Standoff
+# Tip Standoff
 
 The standoff should be rigid and lightweight, so the motion of the piezo
 translates nicely in the tip motion, and insulated, so the flow of the tip does
