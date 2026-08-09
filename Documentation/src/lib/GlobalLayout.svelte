@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { afterNavigate } from '$app/navigation';
   import GlobalHeader from './GlobalHeader.svelte';
   import Navbar from './Navbar.svelte';
   import SidePanel from './SidePanel.svelte';
@@ -6,6 +7,10 @@
   const { children } = $props();
 
   let menuIsOpen = $state(true);
+
+  afterNavigate(() => {
+    menuIsOpen = false;
+  });
 </script>
 
 <ThemeSetup />
