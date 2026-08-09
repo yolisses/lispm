@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
+  import Fa from 'svelte-fa';
   import type { DocTreeNode } from './tree/DocTreeNode';
   const { node }: { node: DocTreeNode } = $props();
 </script>
@@ -7,11 +9,12 @@
   {#if node.type === 'folder'}
     {#if node.children.length || node.files.length}
       <details open class="group">
-        <summary class="flex items-center gap-2 list-none p-0">
-          <span
-            class="inline-block transition-transform duration-100 rotate-icon"
-            >▶</span
+        <summary class="flex items-center list-none p-0">
+          <div
+            class="basic-button transition-transform duration-100 px-2 rotate-icon opacity-50"
           >
+            <Fa icon={faChevronRight} />
+          </div>
 
           {#if node.indexDoc}
             <a
