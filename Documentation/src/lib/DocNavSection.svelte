@@ -9,7 +9,7 @@
       <details open class="group">
         <summary class="flex items-center gap-2 list-none p-0">
           <span
-            class="inline-block transition-transform duration-75 rotate-icon"
+            class="inline-block transition-transform duration-100 rotate-icon"
             >▶</span
           >
 
