@@ -13,7 +13,7 @@
   <div class="sticky top-0">
     <GlobalHeader bind:menuIsOpen />
     {#if menuIsOpen}
-      <div class="bg-white dark:bg-zinc-950 h-screen overflow-y-auto">
+      <div class="bg-white dark:bg-zinc-950 h-screen overflow-y-auto md:hidden">
         <Navbar />
       </div>
     {/if}
