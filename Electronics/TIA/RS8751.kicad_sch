@@ -1476,16 +1476,6 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 90.17) (xy 203.2 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "25c02f56-4bbe-4829-b3e1-0cf8db227438")
-	)
-	(wire
-		(pts
 			(xy 111.76 101.6) (xy 114.3 101.6)
 		)
 		(stroke
@@ -1523,6 +1513,16 @@
 			(type default)
 		)
 		(uuid "36d8031a-3af6-41fe-85cc-4cf753180a78")
+	)
+	(wire
+		(pts
+			(xy 203.2 90.17) (xy 203.2 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c3a0b3a-0bac-4dd6-87b9-c80ab202b3f1")
 	)
 	(wire
 		(pts
@@ -1696,6 +1696,16 @@
 	)
 	(wire
 		(pts
+			(xy 203.2 132.08) (xy 208.28 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96c11383-253d-44d5-ac40-8f322b0323de")
+	)
+	(wire
+		(pts
 			(xy 88.9 76.2) (xy 101.6 76.2)
 		)
 		(stroke
@@ -1703,6 +1713,16 @@
 			(type default)
 		)
 		(uuid "971018c3-cf7e-4f60-8d41-d8b33a72f168")
+	)
+	(wire
+		(pts
+			(xy 208.28 132.08) (xy 208.28 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ab9c46a-9d6c-4280-a9be-32a6ca2b458a")
 	)
 	(wire
 		(pts
@@ -1816,7 +1836,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 139.7) (xy 203.2 139.7)
+			(xy 190.5 139.7) (xy 193.04 139.7)
 		)
 		(stroke
 			(width 0)
@@ -1853,6 +1873,16 @@
 			(type default)
 		)
 		(uuid "f373e313-3305-4b1f-bdac-d1fa3b7bb5ed")
+	)
+	(wire
+		(pts
+			(xy 205.74 139.7) (xy 208.28 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f79c39a4-5a40-44c3-9958-65d58bacf398")
 	)
 	(wire
 		(pts
@@ -2238,7 +2268,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1n"
+		(property "Value" "100n"
 			(at 156.21 71.1199 0)
 			(effects
 				(font
@@ -2509,7 +2539,7 @@
 				)
 			)
 		)
-		(property "Value" "10M"
+		(property "Value" "1G"
 			(at 120.65 72.39 90)
 			(effects
 				(font
@@ -3994,6 +4024,69 @@
 			(project "TIA"
 				(path "/71573f97-d585-4d55-ac00-8cb3ed311569/447ab444-b820-479d-9c03-ff04d3523599"
 					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 193.04 137.16)
+		(size 12.7 5.08)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7746299d-eccb-48f0-b0ac-93836fd9725b")
+		(property "Sheetname" "RS8751 Stage3 (page 10)1"
+			(at 193.04 136.4484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "OPA858 Stage.kicad_sch"
+			(at 193.04 142.8246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "IN" input
+			(at 193.04 139.7 180)
+			(uuid "3641d394-1b63-4bc0-9713-5e2cb57c92d3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "OUT" input
+			(at 205.74 139.7 0)
+			(uuid "6391bf0b-bf27-4a2d-a008-097caacbbf11")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "TIA"
+				(path "/71573f97-d585-4d55-ac00-8cb3ed311569/447ab444-b820-479d-9c03-ff04d3523599"
+					(page "11")
 				)
 			)
 		)
