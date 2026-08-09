@@ -23,7 +23,7 @@
       </div>
     {/if}
   </div>
-  <div class="hidden md:flex">
+  <div class="hidden md:flex border-r border-black/10 dark:border-white/10">
     <SidePanel />
   </div>
   <div class="flex justify-center flex-1 p-2" class:select-none={menuIsOpen}>
