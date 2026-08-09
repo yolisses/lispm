@@ -11,9 +11,9 @@
       <details open class="group">
         <summary class="flex items-center list-none p-0">
           <div
-            class="basic-button transition-transform duration-100 px-2 rotate-icon opacity-50"
+            class="basic-button transition-transform duration-100 px-2 rotate-icon"
           >
-            <Fa icon={faChevronRight} />
+            <Fa icon={faChevronRight} class="opacity-50" />
           </div>
 
           {#if node.indexDoc}
