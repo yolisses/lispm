@@ -1,6 +1,8 @@
-<script>
+<script lang="ts">
   import LogoButton from './LogoButton.svelte';
   import MenuButton from './MenuButton.svelte';
+
+  let { menuIsOpen = $bindable() }: { menuIsOpen: boolean } = $props();
 </script>
 
 <div
@@ -8,5 +10,5 @@
 >
   <LogoButton />
   <div class="flex-1"></div>
-  <MenuButton />
+  <MenuButton bind:menuIsOpen />
 </div>
