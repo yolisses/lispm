@@ -1,0 +1,8 @@
+Fix the documentation responsivity.
+Fix the TIA documentation file.
+Finish the export BOM tool.
+Create a table for the variations of the TIA to be tried out.
+Copy the TODOs from the schematics.
+Copy the TODOs from the GitHub.
+Move the TODO file to the repository root.
+Name each module, like I did for the TIA variations.
