@@ -2,5 +2,5 @@
   "files.associations": {
     "*.css": "tailwindcss"
   },
-  "cSpell.words": ["Berard", "responsivity", "TLV9061IDBVR"]
+  "cSpell.words": ["Berard", "responsivity", "TLV9061IDBVR", "transimpedance"]
 }

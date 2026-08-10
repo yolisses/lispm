@@ -130,13 +130,13 @@ From these parameters, the following boards were designed:
 
 <div style="overflow-x: auto;">
 
-| name  | IC           | stages | size | extra features                             | hypothesis                                                        |
-| ----- | ------------ | ------ | ---- | ------------------------------------------ | ----------------------------------------------------------------- |
-| T961N | TLV9061IDBVR | 1      | S-1  | none                                       | The simplest thing that can possibly work.                        |
-| T961P | TLV9061IDBVR | 1      | S-2  | none                                       | The super tiny size may be useful for integration with AFM.       |
-| T962L | TLV9061IDBVR | 2      | S-1  | level shifter                              | The simplest thing with integrated level shifter.                 |
-| LC62B | LMC6032IMX   | 2      | S-1  | buffer                                     | Too expensive to try a bunch of things. But should work.          |
-| R874B | RS8751XF     | 4      | S0   | buffer, compensation capacitor, screw hole | Complicated thing but should provide 1GΩ gain and 1MHz bandwidth. |
+| name  | IC           | stages | size | extra features                             | hypothesis                                                         |
+| ----- | ------------ | ------ | ---- | ------------------------------------------ | ------------------------------------------------------------------ |
+| T961N | TLV9061IDBVR | 1      | S-1  | none                                       | The simplest thing that can possibly work.                         |
+| T961P | TLV9061IDBVR | 1      | S-2  | none                                       | The super tiny size may be useful for integration with AFM.        |
+| T962L | TLV9061IDBVR | 2      | S-1  | level shifter                              | The simplest thing with integrated level shifter.                  |
+| LC62B | LMC6032IMX   | 2      | S-1  | buffer                                     | Too expensive to try a bunch of things. But should work.           |
+| R874B | RS8751XF     | 4      | S0   | buffer, compensation capacitor, screw hole | Complicated thing, but should provide 1GΩ gain and 1MHz bandwidth. |
 
 </div>
 
