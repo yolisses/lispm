@@ -16,7 +16,7 @@
 </script>
 
 <ThemeSetup />
-<div class="flex md:flex-row flex-col">
+<div class="flex md:flex-row flex-col min-h-screen">
   <div class="sticky top-0">
     <GlobalHeader bind:menuIsOpen />
     {#if menuIsOpen}
