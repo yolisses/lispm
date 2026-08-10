@@ -34,7 +34,7 @@
   <div class="hidden md:flex border-r border-black/10 dark:border-white/10">
     <SidePanel />
   </div>
-  <div class="flex justify-center flex-1 p-2" class:select-none={menuIsOpen}>
+  <div class="flex justify-center flex-1 p-2">
     <main class="justify-center w-full max-w-2xl md:py-2">
       {@render children()}
     </main>
