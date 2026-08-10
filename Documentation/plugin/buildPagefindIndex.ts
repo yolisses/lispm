@@ -1,24 +1,28 @@
-import type { fs } from 'node:fs/promises';
+import { access, readFile } from 'node:fs/promises';
 import { createIndex } from 'pagefind';
 import { relative, resolve } from 'path/posix';
 import { toUrl } from './toUrl';
 import { walkHtmlFiles } from './walkHtmlFiles';
 
-export async function buildPagefindIndex() {
+export async function buildPagefindIndex(): Promise<void> {
   const buildDir = resolve(process.cwd(), 'build');
 
   try {
-    await fs.access(buildDir);
+    await access(buildDir);
   } catch {
     return;
   }
 
   const htmlFiles = await walkHtmlFiles(buildDir);
-  const { index } = await createIndex();
+  const result = await createIndex();
+  const index = result.index;
+  if (!index) {
+    throw new Error('Pagefind index was not created.');
+  }
 
   for (const filePath of htmlFiles) {
     const relativePath = relative(buildDir, filePath).replace(/\\/g, '/');
-    const html = await fs.readFile(filePath, 'utf8');
+    const html = await readFile(filePath, 'utf8');
 
     if (!relativePath.startsWith('_app/')) {
       await index.addHTMLFile({

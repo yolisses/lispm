@@ -1,9 +1,9 @@
-import type { fs } from 'node:fs/promises';
+import { readdir } from 'node:fs/promises';
 import { extname, resolve } from 'path/posix';
 
-export async function walkHtmlFiles(dir) {
-  const entries = await fs.readdir(dir, { withFileTypes: true });
-  const files = [];
+export async function walkHtmlFiles(dir: string): Promise<string[]> {
+  const entries = await readdir(dir, { withFileTypes: true });
+  const files: string[] = [];
 
   for (const entry of entries) {
     const fullPath = resolve(dir, entry.name);

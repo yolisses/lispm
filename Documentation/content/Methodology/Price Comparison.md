@@ -9,7 +9,7 @@ design that there's basically no comparison of parts.
 Here's a preview. It may get too shrinked to fit in this page.
 
 <div class="overflow-auto">
-<iframe width="939" height="472" class="w-full" seamless frameborder="0" scrolling="yes" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQwseu9ZNBlsXy_UNZk5sbZHV0igHEu7i9kEx0DhHaTaEJR0XDxkKz2xaa8qJZoIBkbeAU8TqVDVuLU/pubchart?oid=1992324209&amp;format=interactive"></iframe>
+<iframe title="Price comparison spreadsheet preview" width="939" height="472" class="w-full" seamless frameborder="0" scrolling="yes" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQwseu9ZNBlsXy_UNZk5sbZHV0igHEu7i9kEx0DhHaTaEJR0XDxkKz2xaa8qJZoIBkbeAU8TqVDVuLU/pubchart?oid=1992324209&amp;format=interactive"></iframe>
 </div>
 
 Some things to keep in mind:
