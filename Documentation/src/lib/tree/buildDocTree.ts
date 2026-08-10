@@ -3,7 +3,6 @@ import type { DocTreeNode } from './DocTreeNode';
 
 export function buildDocTree() {
   const root: DocTreeNode = {
-    type: 'folder',
     name: 'Root',
     path: '',
     files: [],
@@ -16,14 +15,10 @@ export function buildDocTree() {
     let current = root;
 
     for (const part of parts) {
-      let child = current.children.find(
-        (entry): entry is Extract<DocTreeNode, { type: 'folder' }> =>
-          entry.type === 'folder' && entry.name === part,
-      );
+      let child = current.children.find((entry) => entry.name === part);
 
       if (!child) {
         child = {
-          type: 'folder',
           name: part,
           path: `${current.path}/${part}`.replace(/^\//, ''),
           files: [],
