@@ -158,3 +158,6 @@ Basic details about the ICs:
 | LMC6032IMX   | 1.4 MHz | 40fA typical, 100pA max | $ 1.2112 | 10X less input bias, roughly the same GBW |
 
 </div>
+
+The RS8751XF and TLV9061IDBVR have the same SOT23 footprint, so they can in
+theory be replaced in the boards even though they are not designed for this.
