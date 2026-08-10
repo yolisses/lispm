@@ -25,9 +25,12 @@ components have to be taken into account:
   the high frequencies, limiting the bandwidth. A higher resistance makes it
   take longer to charge the parasitic capacitance, so less bandwidth.
 - Noise in the resistor. All the conductors are susceptible to Johnson noise,
-  which is the random movement of charges due to thermal energy. A resistor with
-  higher value has less thermal noise since it resists these random movements,
-  so less noise.
+  which is the random movement of charges due to thermal energy. The resistor's
+  own noise _voltage_ actually grows with resistance ($v_n = \sqrt{4kTRB}$), but
+  what matters for a TIA is the noise referred to the input as a _current_:
+  $i_n = v_n / R = \sqrt{4kTB/R}$. That current noise shrinks as R grows, so a
+  higher-value feedback resistor gives a quieter TIA even though the resistor
+  itself is "noisier" in voltage terms.
 
 Because of these factors, some more advanced TIAs use a second stage to
 distribute some of the required gain. The first stage can, this way, have a
@@ -73,17 +76,29 @@ One important aspect of the op amp is the GBW. It dictates the cutoff frequency
 caused by the filter made of the input capacitance and feedback resistor.
 
 $$
-f_{\text{bandwidth}} \approx \sqrt{\dfrac{\text{GBW}}{R_f C_{\text{in}}}}
+f_{\text{bandwidth}} \approx \sqrt{\dfrac{\text{GBW}}{2\pi R_f C_{\text{in}}}}
 $$
 
-For a typical 10pF input capacitance and 100M gain:
+For a typical 10pF input capacitance and 100MΩ feedback resistor:
 
 $$
-f_{\text{bandwidth}} \approx \sqrt{\dfrac{\text{GBW}}{100 \times 10^{6} \times 10 \times 10^{-12}}}
+f_{\text{bandwidth}} \approx \sqrt{\dfrac{\text{GBW}}{2\pi \times 100 \times 10^{6} \times 10 \times 10^{-12}}}
 $$
 
-TODO continue the calculation to find a good enough GBW value to get 100 kHz
-bandwidth.
+Solving for GBW instead, to find what's needed for a 100 kHz bandwidth target
+with the same 100MΩ resistor and 10pF input capacitance:
+
+$$
+\text{GBW} \approx f_{\text{bandwidth}}^2 \times 2\pi R_f C_{\text{in}}
+$$
+
+$$
+\text{GBW} \approx (100 \times 10^{3})^2 \times 2\pi \times 100 \times 10^{6} \times 10 \times 10^{-12} \approx 62.8 \text{ MHz}
+$$
+
+That's a fairly demanding GBW for a 100MΩ gain stage, which is why the higher
+gain single-stage boards in the table below (like R874B) lean on op amps with
+GBW in the hundreds of MHz instead.
 
 Keep in mind there's also the filter caused by the parasitic capacitance of the
 feedback resistor itself.
@@ -99,8 +114,8 @@ I guess a good current sensing range is the one used by Dan Berard. The setpoint
 is 1 nA, but can measure up to 100 nA for dealing with the exponential nature of
 the tunneling.
 
-The gain is set by the feedback resistor. A resistor of 1 MHz produces 1V output
-for a 1nA input.
+The gain is set by the feedback resistor. A resistor of 1 GΩ produces 1V output
+for a 1nA input (V = I × R = 1 nA × 1 GΩ = 1 V).
 
 Since the LiSPM uses an ADC range of 0 to 3.3V instead of -15 to 15V of the Dan
 Berard's one, the gain can be smaller. But smaller the gain, smaller the
