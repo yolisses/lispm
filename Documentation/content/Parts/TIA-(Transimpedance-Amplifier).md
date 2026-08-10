@@ -151,11 +151,12 @@ Basic details about the ICs:
 
 <div style="overflow-x: auto;">
 
-| IC           | GBW     | input bias              | price    | comparison with the one from Dan Berard   |
-| ------------ | ------- | ----------------------- | -------- | ----------------------------------------- |
-| RS8751XF     | 250 MHz | 1pA typical, 10pA max   | $ 0.2590 | 10X less input bias, roughly the same GBW |
-| TLV9061IDBVR | 10 MHz  | 1pA typical, 10pA max   | $ 0.1028 | 10X more input bias, 10X more GBW         |
-| LMC6032IMX   | 1.4 MHz | 40fA typical, 100pA max | $ 1.2112 | 10X less input bias, roughly the same GBW |
+| IC           | input bias              | GBW     | price         | supply voltage | comparison with the one from Dan Berard    |
+| ------------ | ----------------------- | ------- | ------------- | -------------- | ------------------------------------------ |
+| OPA124U      | 1pA typical, 5pA max    | ~2 MHz  | not available | ±15V           | the same, you know                         |
+| LMC6032IMX   | 40fA typical, 100pA max | 1.4 MHz | $ 1.2112      | ±8V            | 100X less input bias, roughly the same GBW |
+| RS8751XF     | 1pA typical, 10pA max   | 250 MHz | $ 0.2590      | ±2.75V         | roughly the same input bias, 100X more GBW |
+| TLV9061IDBVR | 0.5pA typical, 10pA max | 10 MHz  | $ 0.1028      | ±2.75V         | roughly 2X less input bias, 10X more GBW   |
 
 </div>
 
