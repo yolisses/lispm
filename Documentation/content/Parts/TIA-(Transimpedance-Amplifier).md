@@ -69,6 +69,25 @@ That's probably why oscilloscopes are expensive. They have to record not only a
 single value, but a frame of multiple values to get to the high bandwidth they
 have.
 
+One important aspect of the op amp is the GBW. It dictates the cutoff frequency
+caused by the filter made of the input capacitance and feedback resistor.
+
+$$
+f_{\text{bandwidth}} \approx \sqrt{\dfrac{\text{GBW}}{R_f C_{\text{in}}}}
+$$
+
+For a typical 10pF input capacitance and 100M gain:
+
+$$
+f_{\text{bandwidth}} \approx \sqrt{\dfrac{\text{GBW}}{100 \times 10^{6} \times 10 \times 10^{-12}}}
+$$
+
+TODO continue the calculation to find a good enough GBW value to get 100 kHz
+bandwidth.
+
+Keep in mind there's also the filter caused by the parasitic capacitance of the
+feedback resistor itself.
+
 ## Gain calculation
 
 Gain refers to how many times the output signal is amplified in relation to the
@@ -93,3 +112,49 @@ If the Johnson noise is noticeable, one option is to use a higher gain and scale
 down the output later to 0 to 3.3V. It also makes the noise picked up in the
 cable from the TIA to the ADC less pronounced (because the noise gets scaled
 down before conversion).
+
+## Variations
+
+Since there are a lot of things going on in the design, I decided to order
+variations to increase the chance of at least one of them working out.
+
+They can be classified by:
+
+- The selected op amp IC.
+- The number of op amps.
+- The presence of a buffer.
+- The presence of a level shifter.
+- The size (which has its own tradeoffs).
+
+From these parameters, the following boards were designed:
+
+<div style="overflow-x: auto;">
+
+| name  | IC           | stages | size | extra features                             | hypothesis                                                        |
+| ----- | ------------ | ------ | ---- | ------------------------------------------ | ----------------------------------------------------------------- |
+| T961N | TLV9061IDBVR | 1      | S-1  | none                                       | The simplest thing that can possibly work.                        |
+| T961P | TLV9061IDBVR | 1      | S-2  | none                                       | The super tiny size may be useful for integration with AFM.       |
+| T962L | TLV9061IDBVR | 2      | S-1  | level shifter                              | The simplest thing with integrated level shifter.                 |
+| LC62B | LMC6032IMX   | 2      | S-1  | buffer                                     | Too expensive to try a bunch of things. But should work.          |
+| R874B | RS8751XF     | 4      | S0   | buffer, compensation capacitor, screw hole | Complicated thing but should provide 1GΩ gain and 1MHz bandwidth. |
+
+</div>
+
+The size here means:
+
+- S0: just small.
+- S-1: so small it can be mounted on the STM tip standoff.
+- S-2: so small it can be mount on the STM tip standoff and has some
+  inconveniences in the assembly / mounting.
+
+Basic details about the ICs:
+
+<div style="overflow-x: auto;">
+
+| IC           | GBW     | input bias              | price    | comparison with the one from Dan Berard   |
+| ------------ | ------- | ----------------------- | -------- | ----------------------------------------- |
+| RS8751XF     | 250 MHz | 1pA typical, 10pA max   | $ 0.2590 | 10X less input bias, roughly the same GBW |
+| TLV9061IDBVR | 10 MHz  | 1pA typical, 10pA max   | $ 0.1028 | 10X more input bias, 10X more GBW         |
+| LMC6032IMX   | 1.4 MHz | 40fA typical, 100pA max | $ 1.2112 | 10X less input bias, roughly the same GBW |
+
+</div>
