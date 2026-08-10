@@ -86,7 +86,7 @@ $$
 R_F < \frac{1}{2\pi (1 \times 10^{-6})} \approx 1.59 \times 10^5\ \Omega
 $$
 
-So R_F < 159 kΩ.
+So R_F &lt;derp> 159 kΩ.
 
 At first I thought 15.9 kΩ would be far too low, but there’s this excellent
 paper called
