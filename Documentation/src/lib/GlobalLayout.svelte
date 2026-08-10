@@ -8,7 +8,7 @@
   import ThemeSetup from './ThemeSetup.svelte';
   const { children } = $props();
 
-  let menuIsOpen = $state(true);
+  let menuIsOpen = $state(false);
 
   afterNavigate(() => {
     menuIsOpen = false;
