@@ -1,8 +1,7 @@
 <script lang="ts">
   import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
   import Fa from 'svelte-fa';
-  import DocNavSection from './DocNavSection.svelte';
-  import type { DocTreeNode } from './tree/DocTreeNode';
+  import type { DocTreeNode } from '../tree/DocTreeNode';
   const { node }: { node: DocTreeNode } = $props();
 </script>
 
@@ -33,7 +32,7 @@
       {#if node.children.length}
         <div class="ml-3 flex flex-col gap-1">
           {#each node.children as child}
-            <DocNavSection node={child} />
+            <NavSection node={child} />
           {/each}
         </div>
       {/if}
