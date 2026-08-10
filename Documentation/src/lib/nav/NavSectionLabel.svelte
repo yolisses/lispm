@@ -17,7 +17,7 @@
       ? 'basic-button flex-1 text-left'
       : 'basic-button'}
   >
-    {node.title}
+    {node.name}
   </a>
 {:else if mode === 'summary'}
   <span class="basic-button flex-1 text-left font-semibold">{node.name}</span>
