@@ -1,9 +1,10 @@
-import type { DocItem } from './DocItem';
-
 export type DocTreeNode = {
   name: string;
   path: string;
-  indexDoc?: DocItem;
-  files: DocItem[];
+  slug: string;
+  routeSlug: string;
+  title: string;
+  metadata?: Record<string, unknown>;
+  default: unknown;
   children: DocTreeNode[];
 };

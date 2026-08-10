@@ -5,8 +5,11 @@ export function buildDocTree() {
   const root: DocTreeNode = {
     name: 'Root',
     path: '',
-    files: [],
+    slug: '',
+    routeSlug: '',
+    title: 'Root',
     children: [],
+    default: undefined,
   };
 
   for (const doc of docs) {
@@ -21,8 +24,11 @@ export function buildDocTree() {
         child = {
           name: part,
           path: `${current.path}/${part}`.replace(/^\//, ''),
-          files: [],
+          slug: `${current.slug}/${part}`.replace(/^\//, ''),
+          routeSlug: `${current.routeSlug}/${part}`.replace(/^\//, ''),
+          title: part,
           children: [],
+          default: undefined,
         };
         current.children.push(child);
       }
@@ -31,9 +37,22 @@ export function buildDocTree() {
     }
 
     if (fileName === 'index') {
-      current.indexDoc = doc;
+      current.slug = doc.slug;
+      current.routeSlug = doc.routeSlug;
+      current.title = doc.title;
+      current.metadata = doc.metadata;
+      current.default = doc.default;
     } else {
-      current.files.push(doc);
+      current.children.push({
+        name: doc.title,
+        path: `${current.path}/${fileName}`.replace(/^\//, ''),
+        slug: doc.slug,
+        routeSlug: doc.routeSlug,
+        title: doc.title,
+        metadata: doc.metadata,
+        default: doc.default,
+        children: [],
+      });
     }
   }
 
