@@ -4,7 +4,11 @@
 
 The TIA design is somewhat more complicated than, let’s say, just plugging a DAC
 to the analog and digital circuits. It takes some calculations to balance
-bandwidth, noise and stability.  
+bandwidth, noise and stability.
+
+Because of this, I'm designing multiple variations, to have higher chances of
+getting some of them right.
+
 The Dan Berard’s TIA is the simplest built version I could find. It is just the
 operational amplifier, the feedback resistor and some capacitors for power
 supply decoupling. It’s beautiful. It got me thinking it would be that easy. But
@@ -27,84 +31,65 @@ components have to be taken into account:
 
 Because of these factors, some more advanced TIAs use a second stage to
 distribute some of the required gain. The first stage can, this way, have a
-lesser gain, higher bandwidth and higher signal to noise ratio in the feedback
-resistor. But the feedback of the second amplifier can cause poles in the
-response by frequency curve (like in some low pass filters), destabilizing the
-system. And it’s important to make sure the operational amplifier on the second
-stage doesn’t add more noise than it saves.  
-Here’re some useful articles:  
-[Transimpedance Amplifiers: What Op Amp Bandwidth do I Need?](https://e2e.ti.com/cfs-file/__key/telligent-evolution-components-attachments/01-930-00-00-00-66-60-61/Op-Amp-Bandwidth-for-Transimpedance-Amplifiers.pdf) Covers
-the basics on GBW.  
-[Fast low-noise transimpedance amplifier for scanning tunneling microscopy and beyond](https://pubs.aip.org/aip/rsi/article-abstract/91/7/074701/967357/Fast-low-noise-transimpedance-amplifier-for?redirectedFrom=fulltext) Covers
-how to create a fast… It’s in the title.  
-And [this repository by Philip Turner](https://github.com/philipturner/transimpedance-amplifier)
-shows some first hand experience.
+lesser gain, higher bandwidth. But the feedback of the second amplifier can
+cause poles in the response by frequency curve (like in some low pass filters),
+destabilizing the system. And it’s important to make sure the operational
+amplifier on the second stage doesn’t add more noise than it saves.
+
+Here’re some useful articles:
+
+- [Transimpedance Amplifiers: What Op Amp Bandwidth do I Need?](https://e2e.ti.com/cfs-file/__key/telligent-evolution-components-attachments/01-930-00-00-00-66-60-61/Op-Amp-Bandwidth-for-Transimpedance-Amplifiers.pdf)
+  Covers the basics on GBW.
+
+- [Fast low-noise transimpedance amplifier for scanning tunneling microscopy and beyond](https://pubs.aip.org/aip/rsi/article-abstract/91/7/074701/967357/Fast-low-noise-transimpedance-amplifier-for?redirectedFrom=fulltext)
+  Covers how to create a fast… It’s in the title.
+
+- And
+  [this repository by Philip Turner](https://github.com/philipturner/transimpedance-amplifier)
+  shows some first hand experience.
 
 ## Bandwidth goal
 
-For the first version I want around 1MHz bandwidth. It will make scanning
+For the first version I wanted around 1MHz bandwidth. It would make scanning
 somewhat enjoyable, and I hypothesize that increasing speed is the most
 important thing to optimize in order to achieve atomic manipulation or protein
 characterization (followed by reducing noise).
 
+But turns out ADCs with that bandwidth are expensive. The datasheet claims at
+the title are sometimes misleading too. 1MHz ADC usually only means it outputs 1
+Mega sample per second. But the input has a lower bandwidth limitation. For
+instance, the
+[TLV320ADC5140](https://www.ti.com/lit/ds/symlink/tlv320adc5140.pdf) claims to
+be a 768kHz ADC, but also states a mere 80kHZ bandwidth.
+
+The extra samples help to reduce noise, but still... not the full input
+bandwidth.
+
+That's probably why oscilloscopes are expensive. They have to record not only a
+single value, but a frame of multiple values to get to the high bandwidth they
+have.
+
 ## Gain calculation
+
+Gain refers to how many times the output signal is amplified in relation to the
+conversion 1 volt to 1 ampere. It's important to have an adequate gain. If the
+gain is too small, the ADC can't see the difference between voltages. Too high
+and it will just swing from 0 to 1 with very little values in between.
 
 I guess a good current sensing range is the one used by Dan Berard. The setpoint
 is 1 nA, but can measure up to 100 nA for dealing with the exponential nature of
-the tunneling. Considering the input range of 0 V to 1.65 V of the ADC
-(considering biasing), we can calculate the gain:
+the tunneling.
 
-$$
-V_{out} = I_{in} \cdot G
-$$
+The gain is set by the feedback resistor. A resistor of 1 MHz produces 1V output
+for a 1nA input.
 
-$$
-1.65 = 100 \times 10^{-9} \cdot G
-$$
+Since the LiSPM uses an ADC range of 0 to 3.3V instead of -15 to 15V of the Dan
+Berard's one, the gain can be smaller. But smaller the gain, smaller the
+feedback resistor value and thus higher the Johnson noise. By now I don't now
+what the noise floor will be. Maybe the Johnson noise is irrelevant for now, and
+maybe isn't.
 
-$$
-G = \frac{1.65}{100 \times 10^{-9}} = 16.5 \times 10^6\ \Omega
-$$
-
-So the required transimpedance gain is about 16.5 MΩ.
-
-## Bottleneck
-
-The maximum frequency f_P is given by:
-
-$$
-f_P = \frac{1}{2\pi R_F C_F}
-$$
-
-For a realistic C_F = 1 pF and f_P > 1 MHz:
-
-$$
-\frac{1}{2\pi R_F (1 \times 10^{-12})} > 1 \times 10^6
-$$
-
-$$
-R_F < \frac{1}{2\pi (1 \times 10^{-6})} \approx 1.59 \times 10^5\ \Omega
-$$
-
-So R_F &lt;derp> 159 kΩ.
-
-At first I thought 15.9 kΩ would be far too low, but there’s this excellent
-paper called
-[100 MHz large bandwidth preamplifier and record-breaking 50 kHz scanning rate quantum point contact mode probe microscopy imaging with atomic resolution](https://doi.org/10.1063/5.0024802),
-where they use a single-stage, 10k gain, decompensated amplifier. It uses a
-peculiar resistor from the sample surface to the TIA for providing noise (!) to
-prevent ringing on lower frequencies. They achieve an SNR of 90dB, which means a
-signal-to-noise ratio of one billion to one.
-
-$$
-V_{out} = I_{in} \cdot G
-$$
-
-$$
-V_{out} = 100 \times 10^{-9} \cdot 10^4 = 1 \times 10^{-3}\,\mathrm{V}
-$$
-
-So the output would be 1mV, which is too low for tunneling. The circuit proposed
-in the article only works in quantum point contact mode (QPCM). This doesn’t
-seem good for moving atoms. I can generate cool images for sure, but not move
-atoms.
+If the Johnson noise is noticeable, one option is to use a higher gain and scale
+down the output later to 0 to 3.3V. It also makes the noise picked up in the
+cable from the TIA to the ADC less pronounced (because the noise gets scaled
+down before conversion).
