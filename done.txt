@@ -1,2 +1,5 @@
 x 2026-08-10 Fix the documentation responsivity.
 x 2026-08-10 Fix the TIA documentation file.
+x 2026-08-10 Copy the TODOs from the GitHub
+x 2026-08-10 Copy the TODOs from the schematics
+x 2026-08-10 Check the ADC input M pins

@@ -3,13 +3,10 @@ Test the FPGA TDC
 Add sample bias DAC
 Document every part
 Order the damn parts
-Check the ADC input M pins
 Finish the export BOM tool
 Simulate the TIA variations
-Copy the TODOs from the GitHub
 Crystal oscillator at Jaunty FPGA
 Double check QTF load capacitance
-Copy the TODOs from the schematics
 Add a QR code for https://lispm.site
 Import the updated PCBs to the 3D model
 See how each PCBs fixed in the 3D model

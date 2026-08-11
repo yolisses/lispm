@@ -1,7 +1,19 @@
-x 2026-08-10 Fix the TIA documentation file.
-Finish the export BOM tool.
-Create a table for the variations of the TIA to be tried out.
-Copy the TODOs from the schematics.
-Copy the TODOs from the GitHub.
-Move the TODO file to the repository root.
-Name each module, like I did for the TIA variations.
+TIA offset stage
+Test the FPGA TDC
+Add sample bias DAC
+Document every part
+Order the damn parts
+x 2026-08-10 Check the ADC input M pins
+Finish the export BOM tool
+Simulate the TIA variations
+Crystal oscillator at Jaunty FPGA
+Double check QTF load capacitance
+Add a QR code for https://lispm.site
+Import the updated PCBs to the 3D model
+See how each PCBs fixed in the 3D model
+Move the TODO file to the repository root
+Add extra capacitors for QTF, just in case
+Simplify BOM. Mainly capacitors and resistors.
+Name each module, like I did for the TIA variations
+Check each board and list here the ones missing things
+Create a table for the variations of the TIA to be tried out
