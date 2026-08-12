@@ -21,23 +21,14 @@
       "showGrid": true,
       "traces": [
         {
-          "color": "rgb(0, 228, 225)",
-          "cursor1": {
-            "position": 422580791.8215875,
-            "x_format": "3~Hz",
-            "y_format": "3~°"
-          },
-          "cursorD": {
-            "x_format": "3~s",
-            "y_format": "3~V"
-          },
-          "signal": "V(/RS8751/OUT) (phase)",
+          "color": "rgb(0, 255, 255)",
+          "signal": "V(/TLV906/OUT) (phase)",
           "trace_type": 517
         },
         {
-          "color": "rgb(0, 228, 6)",
-          "cursor2": {
-            "position": 149.51077375824303,
+          "color": "rgb(228, 26, 28)",
+          "cursor1": {
+            "position": 265204.437166962,
             "x_format": "3~Hz",
             "y_format": "3~dB"
           },
@@ -45,7 +36,7 @@
             "x_format": "3~s",
             "y_format": "3~V"
           },
-          "signal": "V(/RS8751/OUT) (gain)",
+          "signal": "V(/TLV906/OUT) (gain)",
           "trace_type": 521
         }
       ]
