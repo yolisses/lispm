@@ -1,4 +1,4 @@
-# LiSPM
+# Overview
 
 ![3D model of the LiSPM](/3D%20Model.png)
 
