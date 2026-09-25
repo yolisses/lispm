@@ -1,7 +1,7 @@
 <script lang="ts">
   import LogoButton from './LogoButton.svelte';
   import MenuButton from './MenuButton.svelte';
-  import SearchButton from './SearchButton.svelte';
+  import SearchButton from './search/SearchButton.svelte';
   import ThemeButton from './ThemeButton.svelte';
 
   let { menuIsOpen = $bindable() }: { menuIsOpen: boolean } = $props();

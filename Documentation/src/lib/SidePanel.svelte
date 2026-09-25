@@ -2,7 +2,7 @@
   import GitHubButton from './GitHubButton.svelte';
   import LogoButton from './LogoButton.svelte';
   import Navbar from './Navbar.svelte';
-  import SearchButton from './SearchButton.svelte';
+  import SearchButton from './search/SearchButton.svelte';
   import ThemeButton from './ThemeButton.svelte';
 </script>
 
