@@ -8,10 +8,9 @@
   }
 </script>
 
-<button
-  class="basic-button basic-border flex-1 md:flex-auto"
-  onclick={handleClick}
->
+<button class="dual-button" onclick={handleClick}>
   <Fa icon={$themeIsDark ? faMoon : faSun} />
-  {$themeIsDark ? 'Dark' : 'Light'}
+  <div class="hidden md:flex">
+    {$themeIsDark ? 'Dark' : 'Light'}
+  </div>
 </button>

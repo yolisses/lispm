@@ -2,9 +2,7 @@
   import { afterNavigate } from '$app/navigation';
   import GlobalHeader from './GlobalHeader.svelte';
   import Navbar from './Navbar.svelte';
-  import SearchButton from './SearchButton.svelte';
   import SidePanel from './SidePanel.svelte';
-  import ThemeButton from './ThemeButton.svelte';
   import ThemeSetup from './ThemeSetup.svelte';
   const { children } = $props();
 
@@ -23,10 +21,6 @@
       <div
         class="bg-white flex flex-col dark:bg-zinc-950 h-screen overflow-y-auto md:hidden"
       >
-        <div class="flex justify-stretch">
-          <ThemeButton />
-          <SearchButton />
-        </div>
         <Navbar />
       </div>
     {/if}

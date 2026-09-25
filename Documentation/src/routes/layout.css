@@ -20,12 +20,20 @@ button {
   @apply not-disabled:cursor-pointer;
 }
 
-@layer components {
-  .basic-button {
-    @apply flex items-center gap-2 rounded p-2 hover:bg-black/10 dark:hover:bg-white/10;
-  }
+@utility bg-highlight {
+  @apply hover:bg-black/10 dark:hover:bg-white/10;
+}
 
-  .basic-border {
-    @apply border border-black/10 dark:border-white/10;
+@utility basic-button {
+  @apply flex items-center gap-2 rounded bg-highlight p-2;
+}
+
+@utility basic-border {
+  @apply border border-black/10 dark:border-white/10;
+}
+
+@layer components {
+  .dual-button {
+    @apply flex flex-row items-center gap-2 rounded bg-highlight p-2 px-4 py-2 md:basic-border;
   }
 }

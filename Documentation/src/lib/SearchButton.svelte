@@ -3,7 +3,7 @@
   import Fa from 'svelte-fa';
 </script>
 
-<a href="/search" class="basic-button basic-border flex-1 md:flex-auto">
+<a href="/search" class="dual-button">
   <Fa icon={faSearch} />
-  Search
+  <div class="hidden md:flex">Search</div>
 </a>
