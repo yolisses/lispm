@@ -1,21 +1,8 @@
 <script lang="ts">
+  import type { PagefindAPI } from './PagefindAPI';
+  import type { PagefindMatch } from './PagefindMatch';
   import SearchBar from './SearchBar.svelte';
-
-  interface SearchResult {
-    url: string;
-    excerpt: string;
-    meta?: { title?: string };
-  }
-
-  interface PagefindMatch {
-    data: () => Promise<SearchResult>;
-  }
-
-  interface PagefindAPI {
-    debouncedSearch: (
-      term: string,
-    ) => Promise<{ results: PagefindMatch[] } | null>;
-  }
+  import type { SearchResult } from './SearchResult';
 
   const PAGE_SIZE = 10;
   const PAGEFIND_PATH = '/pagefind/pagefind.js';
@@ -97,23 +84,24 @@
   aria-busy={loading}
 >
   {#if loading}
-    <p>Searching...</p>
+    <div>Searching...</div>
   {:else if error}
-    <p>Search is unavailable right now. Please try again.</p>
+    <div>Search is unavailable right now. Please try again.</div>
   {:else if hasSearched && resultCount === 0}
-    <p>No results for <strong>“{query.trim()}”</strong>.</p>
+    <div>No results for <strong>“{query.trim()}”</strong>.</div>
   {:else if hasSearched}
     <div>
-      <p>{resultCount} {resultCount === 1 ? 'result' : 'results'}</p>
+      {resultCount}
+      {resultCount === 1 ? 'result' : 'results'}
     </div>
-    <ol>
+    <ol class="m-0 p-0">
       {#each results as result (result.url)}
-        <li>
+        <ul class="m-0 p-0">
           <a class="font-bold" href={result.url}>
             {result.meta?.title || result.url}
           </a>
           <p>{@html result.excerpt}</p>
-        </li>
+        </ul>
       {/each}
     </ol>
     {#if results.length < resultCount}

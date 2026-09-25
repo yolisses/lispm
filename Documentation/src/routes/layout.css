@@ -20,6 +20,15 @@ button {
   @apply not-disabled:cursor-pointer;
 }
 
+/* Present in the search page results */
+mark {
+  @apply bg-yellow-500/50;
+}
+
+mark {
+  color: inherit;
+}
+
 @utility bg-highlight {
   @apply hover:bg-black/10 dark:hover:bg-white/10;
 }

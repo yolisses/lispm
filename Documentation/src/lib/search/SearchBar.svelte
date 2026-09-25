@@ -13,13 +13,11 @@
     <Fa icon={faSearch} />
   </div>
   <input
-    type="search"
+    autofocus
     class="bg-highlight p-2 pl-8 w-full"
-    value={query}
     oninput={(event) => onChange(event.currentTarget.value)}
     placeholder="Search topics, parts, and methods"
+    type="search"
+    value={query}
   />
-  {#if query}
-    <button class="basic-button">Clear</button>
-  {/if}
 </label>
