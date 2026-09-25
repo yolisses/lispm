@@ -1,6 +1,14 @@
 import { docs } from './content';
 import type { DocTreeNode } from './DocTreeNode';
 
+const topLevelCategoryOrder = [
+  'Methodology',
+  'Parts',
+  'Theory',
+  'ADRs',
+  'Appendices',
+];
+
 export function buildDocTree() {
   const root: DocTreeNode = {
     name: 'Root',
@@ -56,5 +64,15 @@ export function buildDocTree() {
     }
   }
 
-  return root.children;
+  return root.children.sort((left, right) => {
+    const leftOrder = topLevelCategoryOrder.indexOf(left.name);
+    const rightOrder = topLevelCategoryOrder.indexOf(right.name);
+
+    if (leftOrder === -1 && rightOrder === -1) {
+      return left.name.localeCompare(right.name);
+    }
+    if (leftOrder === -1) return 1;
+    if (rightOrder === -1) return -1;
+    return leftOrder - rightOrder;
+  });
 }
