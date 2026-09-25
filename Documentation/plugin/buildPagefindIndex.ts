@@ -34,6 +34,6 @@ export async function buildPagefindIndex(): Promise<void> {
   }
 
   await index.writeFiles({
-    outputPath: resolve(process.cwd(), 'static/pagefind'),
+    outputPath: resolve(buildDir, 'pagefind'),
   });
 }
