@@ -3,6 +3,7 @@
   import type { PagefindMatch } from './PagefindMatch';
   import SearchBar from './SearchBar.svelte';
   import type { SearchResult } from './SearchResult';
+  import SearchResultItem from './SearchResultItem.svelte';
 
   const PAGE_SIZE = 10;
   const PAGEFIND_PATH = '/pagefind/pagefind.js';
@@ -94,20 +95,17 @@
       {resultCount}
       {resultCount === 1 ? 'result' : 'results'}
     </div>
-    <ol class="m-0 p-0">
-      {#each results as result (result.url)}
-        <ul class="m-0 p-0">
-          <a class="font-bold" href={result.url}>
-            {result.meta?.title || result.url}
-          </a>
-          <p>{@html result.excerpt}</p>
-        </ul>
-      {/each}
-    </ol>
+    {#each results as result (result.url)}
+      <SearchResultItem {result} />
+    {/each}
     {#if results.length < resultCount}
-      <button class="more-button" type="button" onclick={showMore}
-        >Show more results</button
+      <button
+        class="basic-button w-full flex-col"
+        type="button"
+        onclick={showMore}
       >
+        Show more results
+      </button>
     {/if}
   {/if}
 </section>

@@ -29,6 +29,10 @@ mark {
   color: inherit;
 }
 
+a {
+  text-decoration: none;
+}
+
 @utility bg-highlight {
   @apply hover:bg-black/10 dark:hover:bg-white/10;
 }
