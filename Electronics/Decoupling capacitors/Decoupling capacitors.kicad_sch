@@ -838,12 +838,6 @@
 		(uuid "0c837a7b-e7f5-486f-98e8-b4d3c969d38b")
 	)
 	(junction
-		(at 241.3 88.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1f981e01-7cda-498e-8812-00dd05a1604e")
-	)
-	(junction
 		(at 76.2 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -897,7 +891,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 88.9) (xy 241.3 88.9)
+			(xy 228.6 88.9) (xy 236.22 88.9)
 		)
 		(stroke
 			(width 0)
@@ -917,16 +911,6 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 125.73) (xy 228.6 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "082a89a1-475a-4e49-9c7a-29edd3c69606")
-	)
-	(wire
-		(pts
 			(xy 177.8 104.14) (xy 177.8 99.06)
 		)
 		(stroke
@@ -937,13 +921,13 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 116.84) (xy 228.6 111.76)
+			(xy 228.6 104.14) (xy 228.6 99.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1caeaa25-e076-406f-8acd-cf2fa4935f32")
+		(uuid "20e4a537-790f-4485-84ec-19a0a9e787df")
 	)
 	(wire
 		(pts
@@ -953,7 +937,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "2348c74f-7eb2-44fc-8056-43ee88e992a3")
+		(uuid "2980d421-efc4-44d2-be71-60a730f47f39")
 	)
 	(wire
 		(pts
@@ -964,16 +948,6 @@
 			(type default)
 		)
 		(uuid "2ba601b9-1bae-4bd1-9f9e-cdd3ec9c86c8")
-	)
-	(wire
-		(pts
-			(xy 228.6 104.14) (xy 228.6 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "33301ba4-502e-417b-9682-a91c3469509b")
 	)
 	(wire
 		(pts
@@ -994,6 +968,16 @@
 			(type default)
 		)
 		(uuid "38623a55-34b8-4138-b427-9a01339592fa")
+	)
+	(wire
+		(pts
+			(xy 228.6 116.84) (xy 228.6 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ffd1152-3b15-4019-a9cb-79d98dca771d")
 	)
 	(wire
 		(pts
@@ -1027,16 +1011,6 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 104.14) (xy 241.3 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4f6cb35f-4f8f-469c-9ad5-90436e6b1199")
-	)
-	(wire
-		(pts
 			(xy 76.2 116.84) (xy 76.2 111.76)
 		)
 		(stroke
@@ -1047,6 +1021,16 @@
 	)
 	(wire
 		(pts
+			(xy 215.9 104.14) (xy 215.9 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58598ddb-792c-471d-a185-a6892bab456c")
+	)
+	(wire
+		(pts
 			(xy 127 88.9) (xy 139.7 88.9)
 		)
 		(stroke
@@ -1054,16 +1038,6 @@
 			(type default)
 		)
 		(uuid "6009676a-74b5-4d42-afb2-a1457bf34837")
-	)
-	(wire
-		(pts
-			(xy 215.9 104.14) (xy 215.9 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "661e9ff8-a63d-4f12-a881-aab97b2b7bd9")
 	)
 	(wire
 		(pts
@@ -1084,16 +1058,6 @@
 			(type default)
 		)
 		(uuid "69941a3b-5f9f-4182-a552-c6a854e33315")
-	)
-	(wire
-		(pts
-			(xy 241.3 116.84) (xy 241.3 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6d68025e-da8b-4a10-95da-a26ddd1f68f2")
 	)
 	(wire
 		(pts
@@ -1137,16 +1101,6 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 91.44) (xy 241.3 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7ee10096-b3e4-406e-a62c-f33baa57a4fd")
-	)
-	(wire
-		(pts
 			(xy 203.2 88.9) (xy 205.74 88.9)
 		)
 		(stroke
@@ -1164,6 +1118,16 @@
 			(type default)
 		)
 		(uuid "850893b6-009f-4253-8ba9-c76367ca1920")
+	)
+	(wire
+		(pts
+			(xy 215.9 116.84) (xy 215.9 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85ce2a98-3527-4f8a-834d-f73c73e775e5")
 	)
 	(wire
 		(pts
@@ -1217,16 +1181,6 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 116.84) (xy 215.9 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ac71dab0-1e65-4eb0-9ff2-ede20a9ca409")
-	)
-	(wire
-		(pts
 			(xy 152.4 88.9) (xy 154.94 88.9)
 		)
 		(stroke
@@ -1244,16 +1198,6 @@
 			(type default)
 		)
 		(uuid "b1637215-47f9-4fd8-9676-78d0925864a3")
-	)
-	(wire
-		(pts
-			(xy 241.3 125.73) (xy 241.3 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b755d259-7123-49ef-9f9c-51d706d50f42")
 	)
 	(wire
 		(pts
@@ -1324,16 +1268,6 @@
 			(type default)
 		)
 		(uuid "d41670ac-6264-443a-9aa6-ea80c329c304")
-	)
-	(wire
-		(pts
-			(xy 241.3 88.9) (xy 254 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d6e0d4fd-92e3-4552-ba43-aa3ea970b768")
 	)
 	(wire
 		(pts
@@ -1415,6 +1349,16 @@
 		)
 		(uuid "f42a994c-650e-43ba-adf1-4000c3165442")
 	)
+	(wire
+		(pts
+			(xy 228.6 125.73) (xy 228.6 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb60d2e1-ee22-4d8f-9fc3-f064932f730d")
+	)
 	(label "OUT2"
 		(at 88.9 88.9 0)
 		(effects
@@ -1436,7 +1380,7 @@
 		(uuid "52182956-6243-47bd-82f1-14afe2fcd5f4")
 	)
 	(label "OUT4"
-		(at 254 88.9 0)
+		(at 236.22 88.9 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1660,72 +1604,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 215.9 125.73 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "28c21681-96b7-4bf5-ae79-8ca33c509fed")
-		(property "Reference" "#PWR010"
-			(at 215.9 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 215.9 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 215.9 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 215.9 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 215.9 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ed396173-e8c6-4162-9cd6-6df7aea7241b")
-		)
-		(instances
-			(project "Decoupling capacitors"
-				(path "/804d17e9-0221-4862-8273-97157b6b58e7"
-					(reference "#PWR010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Simulation_SPICE:VSIN")
 		(at 50.8 93.98 0)
 		(unit 1)
@@ -1897,76 +1775,6 @@
 			(project "Decoupling capacitors"
 				(path "/804d17e9-0221-4862-8273-97157b6b58e7"
 					(reference "L4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:L")
-		(at 215.9 107.95 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3ab74b19-e78f-496b-9ba4-2d5473cc4c02")
-		(property "Reference" "L6"
-			(at 217.17 106.6799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "633.26p"
-			(at 217.17 109.2199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 215.9 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 215.9 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Inductor"
-			(at 215.9 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "6e166a97-568d-45a6-afc5-2d43750e1f8b")
-		)
-		(pin "1"
-			(uuid "76de1878-3bd8-4fc8-8223-6f1c6a4eed1d")
-		)
-		(instances
-			(project "Decoupling capacitors"
-				(path "/804d17e9-0221-4862-8273-97157b6b58e7"
-					(reference "L6")
 					(unit 1)
 				)
 			)
@@ -2246,76 +2054,6 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 228.6 120.65 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5bc00adf-f4fd-40db-870f-309bdf0b1dc0")
-		(property "Reference" "R11"
-			(at 231.14 119.3799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0.006"
-			(at 231.14 121.9199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 226.822 120.65 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 228.6 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 228.6 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "e3863d1e-e1ee-41dc-9106-6a3742263ed0")
-		)
-		(pin "1"
-			(uuid "6f0bb41e-cec2-456d-a7fc-6c4189785f56")
-		)
-		(instances
-			(project "Decoupling capacitors"
-				(path "/804d17e9-0221-4862-8273-97157b6b58e7"
-					(reference "R11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
 		(at 127 120.65 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2521,35 +2259,34 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 241.3 120.65 0)
+		(lib_id "power:GND")
+		(at 215.9 125.73 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "6c44c144-4c13-4a9a-9676-ab339713d6fe")
-		(property "Reference" "R12"
-			(at 243.84 119.3799 0)
+		(uuid "6c0aebb2-f76d-4870-a038-8a8e5d1ae69f")
+		(property "Reference" "#PWR015"
+			(at 215.9 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(hide yes)
 			)
 		)
-		(property "Value" "0.006"
-			(at 243.84 121.9199 0)
+		(property "Value" "GND"
+			(at 215.9 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 239.522 120.65 90)
+			(at 215.9 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2557,8 +2294,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 241.3 120.65 0)
+		(property "Datasheet" ""
+			(at 215.9 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2566,25 +2303,22 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 241.3 120.65 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 215.9 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "2"
-			(uuid "2faa15d4-65dc-4ac2-8145-f3773c2676a0")
 		)
 		(pin "1"
-			(uuid "4dfc6a1e-99d2-40ab-b978-9613ce740868")
+			(uuid "29a36b7c-ffab-467c-83eb-3792bbd8b6b5")
 		)
 		(instances
 			(project "Decoupling capacitors"
 				(path "/804d17e9-0221-4862-8273-97157b6b58e7"
-					(reference "R12")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -2729,17 +2463,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 228.6 95.25 0)
+		(lib_id "Device:L")
+		(at 228.6 107.95 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "76c8c8e4-06aa-4598-80f4-e1d740d406d6")
-		(property "Reference" "C7"
-			(at 232.41 93.9799 0)
+		(uuid "76f40633-825f-4233-b29d-d6af508cd0ee")
+		(property "Reference" "L6"
+			(at 229.87 106.6799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2747,8 +2481,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u"
-			(at 232.41 96.5199 0)
+		(property "Value" "281.45p"
+			(at 229.87 109.2199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2757,7 +2491,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 229.5652 99.06 0)
+			(at 228.6 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2766,7 +2500,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 228.6 95.25 0)
+			(at 228.6 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2774,8 +2508,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 228.6 95.25 0)
+		(property "Description" "Inductor"
+			(at 228.6 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2784,15 +2518,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "d50c76a3-991d-4e57-9fda-9d7e74b58f2a")
+			(uuid "0285222b-b22e-48c9-903d-342f76caafb6")
 		)
 		(pin "1"
-			(uuid "017f4012-32cd-491b-bfd1-6c6d7b35d891")
+			(uuid "02134142-bf2f-41ad-bfb0-d0f054c43d5d")
 		)
 		(instances
 			(project "Decoupling capacitors"
 				(path "/804d17e9-0221-4862-8273-97157b6b58e7"
-					(reference "C7")
+					(reference "L6")
 					(unit 1)
 				)
 			)
@@ -2863,76 +2597,6 @@
 			(project "Decoupling capacitors"
 				(path "/804d17e9-0221-4862-8273-97157b6b58e7"
 					(reference "C4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 241.3 95.25 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "821a9ca1-b2ed-4076-bc60-3bce2ae7083d")
-		(property "Reference" "C8"
-			(at 245.11 93.9799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10u"
-			(at 245.11 96.5199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 242.2652 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 241.3 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 241.3 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "50199327-ff31-4823-a1bd-fed0e9b15e07")
-		)
-		(pin "1"
-			(uuid "a1eda273-8ccd-4391-bf25-8ba032fa3893")
-		)
-		(instances
-			(project "Decoupling capacitors"
-				(path "/804d17e9-0221-4862-8273-97157b6b58e7"
-					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -3082,7 +2746,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "8e3ae162-bc6e-492d-a0a7-88f2e9159427")
 		(property "Reference" "V4"
 			(at 207.01 91.3101 0)
@@ -3139,7 +2802,7 @@
 			)
 		)
 		(property "Sim.Params" "dc=0 ampl=1 f=1k ac=1"
-			(at 207.01 96.3901 0)
+			(at 201.676 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3253,76 +2916,6 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 228.6 107.95 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "96a3827f-5efb-424c-a69a-dc08dcfbc043")
-		(property "Reference" "L7"
-			(at 229.87 106.6799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "633.26p"
-			(at 229.87 109.2199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 228.6 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 228.6 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Inductor"
-			(at 228.6 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "81ca41c2-05a6-486b-8214-d703c1d13337")
-		)
-		(pin "1"
-			(uuid "fc185518-624e-4e86-81f8-bc4b900c08fe")
-		)
-		(instances
-			(project "Decoupling capacitors"
-				(path "/804d17e9-0221-4862-8273-97157b6b58e7"
-					(reference "L7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:L")
 		(at 177.8 107.95 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3386,6 +2979,76 @@
 			(project "Decoupling capacitors"
 				(path "/804d17e9-0221-4862-8273-97157b6b58e7"
 					(reference "L9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 215.9 120.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a19f73fa-380b-4161-83a2-2fa09731c54b")
+		(property "Reference" "R14"
+			(at 218.44 119.3799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.02"
+			(at 218.44 121.9199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 214.122 120.65 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 215.9 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 215.9 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c02b230a-6b69-4eeb-a36a-2095a4cd7b6b")
+		)
+		(pin "1"
+			(uuid "00034cab-3a80-405e-bd2d-0612239da5d7")
+		)
+		(instances
+			(project "Decoupling capacitors"
+				(path "/804d17e9-0221-4862-8273-97157b6b58e7"
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -3910,6 +3573,72 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 228.6 125.73 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "baeec60c-4253-4eb8-9e5d-5e110ef8e94e")
+		(property "Reference" "#PWR010"
+			(at 228.6 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 228.6 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 228.6 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 228.6 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 228.6 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0944373e-fc38-435e-8916-b9fb8f54fb83")
+		)
+		(instances
+			(project "Decoupling capacitors"
+				(path "/804d17e9-0221-4862-8273-97157b6b58e7"
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 71.12 67.31 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3975,34 +3704,35 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 228.6 125.73 0)
+		(lib_id "Device:C")
+		(at 228.6 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "c654e8b8-b8c5-4a0e-bbb8-fa234114b049")
-		(property "Reference" "#PWR011"
-			(at 228.6 132.08 0)
+		(uuid "c38d842a-ae24-4703-9b77-f6c9e2ca5817")
+		(property "Reference" "C6"
+			(at 232.41 93.9799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
+				(justify left)
 			)
 		)
-		(property "Value" "GND"
-			(at 228.6 130.81 0)
+		(property "Value" "100n"
+			(at 232.41 96.5199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 228.6 125.73 0)
+			(at 229.5652 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4010,8 +3740,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 228.6 125.73 0)
+		(property "Datasheet" "~"
+			(at 228.6 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4019,22 +3749,25 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 228.6 125.73 0)
+		(property "Description" "Unpolarized capacitor"
+			(at 228.6 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(pin "2"
+			(uuid "eb5c026f-14a2-4552-ad6a-e887fd0e488d")
 		)
 		(pin "1"
-			(uuid "2ea3068c-ad5d-4c0e-91d1-764a7a4b3076")
+			(uuid "3db6f1b7-b8f2-4f86-96f0-bc860af541f5")
 		)
 		(instances
 			(project "Decoupling capacitors"
 				(path "/804d17e9-0221-4862-8273-97157b6b58e7"
-					(reference "#PWR011")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -4105,6 +3838,146 @@
 			(project "Decoupling capacitors"
 				(path "/804d17e9-0221-4862-8273-97157b6b58e7"
 					(reference "L1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:L")
+		(at 215.9 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d54872f1-a110-47ef-aa91-fe2317145a01")
+		(property "Reference" "L10"
+			(at 217.17 106.6799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "281.45p"
+			(at 217.17 109.2199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 215.9 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 215.9 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Inductor"
+			(at 215.9 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "57d4e37c-dcfa-4d99-a0a6-89ded1c0b1c6")
+		)
+		(pin "1"
+			(uuid "51645f4f-85cb-4c99-b765-9cd23d6f6efe")
+		)
+		(instances
+			(project "Decoupling capacitors"
+				(path "/804d17e9-0221-4862-8273-97157b6b58e7"
+					(reference "L10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 215.9 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d69bd457-65d1-4122-ba8c-b2db2d61fc32")
+		(property "Reference" "C10"
+			(at 219.71 93.9799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 219.71 96.5199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 216.8652 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 215.9 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 215.9 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "af878c25-b0a1-4064-a85b-b04d61def0fd")
+		)
+		(pin "1"
+			(uuid "60dad9c3-410d-4589-90a5-02ea735635dc")
+		)
+		(instances
+			(project "Decoupling capacitors"
+				(path "/804d17e9-0221-4862-8273-97157b6b58e7"
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -4182,16 +4055,16 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 215.9 120.65 0)
+		(at 228.6 120.65 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "d7c34143-2559-4214-a6a7-7e6200dd984f")
+		(uuid "ddeed72a-d590-4fc2-8595-3601cf247415")
 		(property "Reference" "R10"
-			(at 218.44 119.3799 0)
+			(at 231.14 119.3799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4199,8 +4072,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.006"
-			(at 218.44 121.9199 0)
+		(property "Value" "0.02"
+			(at 231.14 121.9199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4209,7 +4082,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 214.122 120.65 90)
+			(at 226.822 120.65 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4218,7 +4091,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 215.9 120.65 0)
+			(at 228.6 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4227,7 +4100,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 215.9 120.65 0)
+			(at 228.6 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4236,85 +4109,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "6d86959c-c91b-4119-af0b-c7dc3d7d445b")
+			(uuid "07592100-5b1e-4a10-adc0-86cf3a45f278")
 		)
 		(pin "1"
-			(uuid "b863cc8f-4d49-4be0-8fee-e330d9ec8e04")
+			(uuid "9c65bad3-8183-4bb8-b03b-bf2289833d1a")
 		)
 		(instances
 			(project "Decoupling capacitors"
 				(path "/804d17e9-0221-4862-8273-97157b6b58e7"
 					(reference "R10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 215.9 95.25 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "db1a3497-2c3d-4888-8bfb-216cef5a4cab")
-		(property "Reference" "C6"
-			(at 219.71 93.9799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10u"
-			(at 219.71 96.5199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 216.8652 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 215.9 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 215.9 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "75a21f6a-ff20-4ce4-9f7d-3c3674869709")
-		)
-		(pin "1"
-			(uuid "a9b8b276-8b27-4608-b19f-836e6e83eca0")
-		)
-		(instances
-			(project "Decoupling capacitors"
-				(path "/804d17e9-0221-4862-8273-97157b6b58e7"
-					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -4447,76 +4250,6 @@
 			(project "Decoupling capacitors"
 				(path "/804d17e9-0221-4862-8273-97157b6b58e7"
 					(reference "#PWR09")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:L")
-		(at 241.3 107.95 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ebca1a55-cef7-45f5-8ead-0894f019f527")
-		(property "Reference" "L8"
-			(at 242.57 106.6799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "633.26p"
-			(at 242.57 109.2199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 241.3 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 241.3 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Inductor"
-			(at 241.3 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "2223134b-c4e7-473f-b4bc-ce76ad25aef5")
-		)
-		(pin "1"
-			(uuid "147b8951-7225-4572-995f-27554fa89d64")
-		)
-		(instances
-			(project "Decoupling capacitors"
-				(path "/804d17e9-0221-4862-8273-97157b6b58e7"
-					(reference "L8")
 					(unit 1)
 				)
 			)
@@ -4830,72 +4563,6 @@
 			(project "Decoupling capacitors"
 				(path "/804d17e9-0221-4862-8273-97157b6b58e7"
 					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 241.3 125.73 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fc6b9c1d-2009-45de-a78b-1a028f06ade5")
-		(property "Reference" "#PWR012"
-			(at 241.3 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 241.3 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 241.3 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 241.3 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 241.3 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "89adb738-a555-451e-a06d-8d05d43d4676")
-		)
-		(instances
-			(project "Decoupling capacitors"
-				(path "/804d17e9-0221-4862-8273-97157b6b58e7"
-					(reference "#PWR012")
 					(unit 1)
 				)
 			)
