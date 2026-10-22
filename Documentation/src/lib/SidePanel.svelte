@@ -19,7 +19,7 @@
     </div>
   </div>
   <Navbar />
-  <div class="p-2 border-t dark:border-white/10 border-black/10">
+  <div class="border-t dark:border-white/10 border-black/10">
     <GitHubButton />
   </div>
 </aside>

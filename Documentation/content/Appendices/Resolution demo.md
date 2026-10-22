@@ -2,8 +2,6 @@
 
 Here are some images to give a sense of bandwidth:
 
-TODO bring back the images from Google Docs.
-
 ## 250x250
 
 <img src="/resolution-demo-250x250.png" alt="Image of a circuit on 250 by 250 pixels" style="width: 100%"/>
