@@ -2,6 +2,7 @@
   import { page } from '$app/stores';
   import CommentSection from '$lib/CommentSection.svelte';
   import FolderContents from '$lib/FolderContents.svelte';
+  import PageNavigation from '$lib/PageNavigation.svelte';
   import { getDoc } from '$lib/tree/getDoc';
 
   const slug = $derived(
@@ -22,6 +23,7 @@
   {@const DocComponent = doc.default as any}
   <DocComponent />
   <FolderContents />
+  <PageNavigation routeSlug={doc.routeSlug} />
   <hr />
   {#key doc.routeSlug}
     <CommentSection />
