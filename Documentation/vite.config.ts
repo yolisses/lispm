@@ -8,6 +8,7 @@ import remarkMath from 'remark-math';
 import { svelteSitemap } from 'svelte-sitemap/vite';
 import { defineConfig } from 'vitest/config';
 import { buildPagefindIndex } from './plugin/buildPagefindIndex';
+import { rehypeOpenLinksInNewTab } from './plugin/rehypeOpenLinksInNewTab';
 
 export default defineConfig({
   plugins: [
@@ -23,7 +24,7 @@ export default defineConfig({
         mdsvex({
           extensions: ['.svx', '.md'],
           remarkPlugins: [remarkMath],
-          rehypePlugins: [rehypeKatexSvelte],
+          rehypePlugins: [rehypeKatexSvelte, rehypeOpenLinksInNewTab],
         }),
       ],
       extensions: ['.svelte', '.svx', '.md'],

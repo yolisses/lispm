@@ -17,7 +17,8 @@ as a ballpark:
 - Speed in the order of magnitude of 1 MSps scanning. 1 MHz gives 86% of an
   Instagram square photo per second. Some more recent parts selection reduced my
   hopes to 0.5 MHz or higher price range. It should still be okay, I guess.
-  [Appendix I](<>) shows some image examples
+  [Appendix: Resolution demo](/Appendices/Resolution-demo) shows some image
+  examples
 - 2 suppliers (JLCPCB and Aliexpress). Not counting things bought locally, cause
   it’s just another stop when buying groceries.
 - 4 hours assembling. People tend to underestimate it because tasks like cutting
