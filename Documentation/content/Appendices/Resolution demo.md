@@ -6,16 +6,16 @@ TODO bring back the images from Google Docs.
 
 ## 250x250
 
-![Image of a circuit on 250 by 250 pixels](/resolution-demo-250x250.png)
+<img src="/resolution-demo-250x250.png" alt="Image of a circuit on 250 by 250 pixels" style="width: 100%"/>
 
 ## 500x500
 
-![Image of a circuit on 500 by 500 pixels](/resolution-demo-500x500.png)
+<img src="/resolution-demo-500x500.png" alt="Image of a circuit on 500 by 500 pixels" style="width: 100%"/>
 
 ## 1000x1000
 
-![Image of a circuit on 1000 by 1000 pixels](/resolution-demo-1000x1000.png)
+<img src="/resolution-demo-1000x1000.png" alt="Image of a circuit on 1000 by 1000 pixels" style="width: 100%"/>
 
 ## 1080x1080
 
-![Image of a circuit on 1080 by 1080 pixels](/resolution-demo-1080x1080.png)
+<img src="/resolution-demo-1080x1080.png" alt="Image of a circuit on 1080 by 1080 pixels" style="width: 100%"/>
