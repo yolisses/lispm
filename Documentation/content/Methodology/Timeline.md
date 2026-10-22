@@ -1,4 +1,4 @@
-# Chronology
+# Timeline
 
 ## [John Alexander's STM (2003)](https://john-alexander42.github.io/simple-stm-web-page/Project.htm)
 
