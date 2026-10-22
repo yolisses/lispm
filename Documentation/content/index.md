@@ -1,6 +1,6 @@
 # Overview
 
-![3D model of the LiSPM](/3D%20Model.png)
+![3D model of the LiSPM](</3D Model.png>)
 
 LiSPM is an open-source Scanning Probe Microscope (SPM). It can operate as a
 Scanning Tunneling Microscope (STM), an Atomic Force Microscope (AFM), or both
