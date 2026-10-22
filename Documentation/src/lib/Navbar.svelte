@@ -1,12 +1,12 @@
 <script lang="ts">
-  import NavSection from './nav/NavSection.svelte';
+  import NavNode from './nav/NavNode.svelte';
   import { buildDocTree } from './tree/buildDocTree';
 
-  const sections = buildDocTree();
+  const nodes = buildDocTree();
 </script>
 
 <nav class="flex flex-1 flex-col overflow-y-auto">
-  {#each sections as section (section.path)}
-    <NavSection node={section} />
+  {#each nodes as node (node.path)}
+    <NavNode {node} />
   {/each}
 </nav>
