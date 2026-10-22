@@ -14,13 +14,13 @@
   <a
     href={'/' + node.routeSlug}
     class={mode === 'summary'
-      ? 'basic-button flex-1 text-left'
+      ? 'basic-button flex-1 text-left font-semibold'
       : 'basic-button'}
   >
     {node.name}
   </a>
 {:else if mode === 'summary'}
-  <span class="basic-button flex-1 text-left font-semibold">{node.name}</span>
+  <span class="basic-button flex-1 text-left font-bold">{node.name}</span>
 {:else}
   <div class="font-semibold">{node.name}</div>
 {/if}

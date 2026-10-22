@@ -5,7 +5,7 @@
   const sections = buildDocTree();
 </script>
 
-<nav class="flex flex-1 flex-col gap-2 overflow-y-auto">
+<nav class="flex flex-1 flex-col overflow-y-auto">
   {#each sections as section (section.path)}
     <NavSection node={section} />
   {/each}

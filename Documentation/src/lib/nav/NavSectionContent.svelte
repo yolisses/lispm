@@ -6,8 +6,8 @@
 </script>
 
 {#if node.children.length}
-  <div class="ml-3 flex flex-col gap-1">
-    {#each node.children as child}
+  <div class="ml-3 flex flex-col">
+    {#each node.children as child (child.path)}
       <NavSection node={child} />
     {/each}
   </div>
