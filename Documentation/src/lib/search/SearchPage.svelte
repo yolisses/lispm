@@ -79,7 +79,7 @@
 <h1>Search</h1>
 <SearchBar bind:query onChange={searchDocs} />
 <section
-  class="results"
+  class="results not-prose"
   aria-label="Search results"
   aria-live="polite"
   aria-busy={loading}

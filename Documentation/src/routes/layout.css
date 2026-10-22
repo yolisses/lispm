@@ -29,11 +29,8 @@ mark {
   color: inherit;
 }
 
-.prose a {
+.prose :where(a):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
   @apply text-blue-700 dark:text-blue-300;
-}
-
-.prose a {
   font-weight: unset;
 }
 
