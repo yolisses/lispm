@@ -12,6 +12,8 @@
     level?: number;
   } = $props();
 
+  const hasChildren = $derived(mode === 'summary');
+
   const indentation = $derived(`calc(0.5rem + ${level * 0.75}rem)`);
   const href = $derived('/' + node.routeSlug);
   const isCurrentPage = $derived(
@@ -23,14 +25,14 @@
   <a
     {href}
     aria-current={isCurrentPage ? 'page' : undefined}
-    class={mode === 'summary'
-      ? `basic-button flex-1 text-left font-semibold ${isCurrentPage ? 'text-red-600 dark:text-red-400' : ''}`
-      : `basic-button ${isCurrentPage ? 'text-red-600 dark:text-red-400' : ''}`}
+    class:currentPage={isCurrentPage}
+    class:hasChildren
+    class="basic-button flex-1"
     style:padding-left={indentation}
   >
     {node.name}
   </a>
-{:else if mode === 'summary'}
+{:else if hasChildren}
   <span
     class="basic-button flex-1 text-left font-bold"
     style:padding-left={indentation}
@@ -40,3 +42,15 @@
 {:else}
   <div class="font-semibold" style:padding-left={indentation}>{node.name}</div>
 {/if}
+
+<style>
+  @reference "src/routes/layout.css";
+
+  .hasChildren {
+    @apply font-semibold;
+  }
+
+  .currentPage {
+    @apply text-red-600 dark:text-red-400;
+  }
+</style>
