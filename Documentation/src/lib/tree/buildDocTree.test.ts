@@ -11,4 +11,10 @@ describe('buildDocTree', () => {
       'Appendices',
     ]);
   });
+
+  it('uses the folder name as the title for its index page', () => {
+    const parts = buildDocTree().find((node) => node.name === 'Parts');
+
+    expect(parts?.title).toBe('Parts');
+  });
 });

@@ -47,7 +47,7 @@ export function buildDocTree() {
     if (fileName === 'index') {
       current.slug = doc.slug;
       current.routeSlug = doc.routeSlug;
-      current.title = doc.title;
+      current.title = current.name;
       current.metadata = doc.metadata;
       current.default = doc.default;
     } else {
