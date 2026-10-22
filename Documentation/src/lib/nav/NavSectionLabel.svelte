@@ -10,7 +10,8 @@
     mode?: 'summary' | 'leaf';
     level?: number;
   } = $props();
-  const indentation = `calc(0.5rem + ${level * 0.75}rem)`;
+
+  const indentation = $derived(`calc(0.5rem + ${level * 0.75}rem)`);
 </script>
 
 {#if node.routeSlug}
